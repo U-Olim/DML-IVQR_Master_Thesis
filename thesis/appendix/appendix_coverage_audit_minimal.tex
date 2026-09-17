@@ -1,0 +1,26 @@
+\section{Coverage Audit and Inferential Informativeness}
+\label{app:coverage-forensic-audit}
+
+\subsection{Direct-at-Truth Coverage Audit}
+
+Coverage is evaluated directly at the exact true structural effect $\alpha_0(\tau)$, independently of whether that value lies on the finite candidate grid. The forensic audit checked 60,000 direct truth evaluations: 500 replications for each of 120 sample-size, quantile, instrument-strength, and estimator cells.
+
+Wilson 95\% Monte Carlo intervals exclude nominal $0.95$ coverage in 54 of the 120 cells. The audit finds no missing or nonfinite true-parameter $W$ statistics. The large coverage distortions reported in the main text are therefore neither plotting-grid artifacts nor consequences of missing-value handling. The frozen audit report and supporting diagnostics remain preserved in the repository.
+
+These checks rule out those numerical explanations for the reported coverage patterns. They do not establish correct theoretical specification, validate the asymptotic reference distribution for this DGP, or establish nominal finite-sample calibration.
+
+\subsection{Coverage-Audit Summary}
+
+Table~\ref{tab:coverage-audit-summary} summarizes the audit by estimator and sample size. Each row contains 20 quantile--$\kappa$ cells. Recalculation from integer acceptance counts reproduces 53 cells with an upper Wilson endpoint below 0.95 and one with a lower endpoint above 0.95, giving the reported total of 54. Comparisons use unrounded endpoints and the same 500-evaluation denominator in every cell.
+
+\input{tables/appendix_coverage_audit_summary}
+\FloatBarrier
+
+\subsection{Full-Domain Grid Acceptance}
+
+The domain-expansion diagnostics in Appendix~\ref{app:numerical-domain-diagnostics} are complemented by Figure~\ref{fig:appendix_full_domain_acceptance}, which reports how often every evaluated point in the primary domain is accepted. Reading this frequency alongside coverage distinguishes retention of the true effect from the ability to exclude competing candidates within the maintained domain. Coverage near nominal can coexist with frequent acceptance of all primary-grid candidates: retaining the true value does not imply excluding alternatives.
+
+The heatmap uses stored grid-profile evaluations, whereas coverage uses a separate evaluation directly at truth. These are distinct computations; in DML-IVQR, fresh pivotal draws can differ between them, so their acceptance events need not coincide even when truth is a grid point. Full-domain grid acceptance refers only to the 41 evaluated points in $A_0=[-1,3]$, not to acceptance of the real line or global unboundedness of an unrestricted confidence region.
+
+\input{tables/figure_full_domain_acceptance}
+\FloatBarrier

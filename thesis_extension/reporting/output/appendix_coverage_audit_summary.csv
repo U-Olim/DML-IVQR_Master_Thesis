@@ -1,0 +1,7 @@
+estimator,n,cells,min_coverage,max_coverage,below,above,missing_nonfinite
+Oracle-GMM,500,20,0.858,0.954,6,0,0
+Oracle-GMM,1000,20,0.86,0.964,8,0,0
+Full-GMM,500,20,0.442,0.962,9,0,0
+Full-GMM,1000,20,0.502,0.962,12,0,0
+DML-IVQR,500,20,0.658,0.976,8,1,0
+DML-IVQR,1000,20,0.498,0.968,10,0,0

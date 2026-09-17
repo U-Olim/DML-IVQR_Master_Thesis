@@ -1,0 +1,23 @@
+{
+  "cells": 120,
+  "evaluations": 60000,
+  "below": 53,
+  "above": 1,
+  "excluded": 54,
+  "missing_nonfinite": 0,
+  "minimum_truth_boundary_distance": 0.7184484344553992,
+  "diagnostic_replications": 100,
+  "domain_table_values_unchanged": true,
+  "domain_cells_with_one_failed_profile": 2,
+  "input_sha256": {
+    "thesis_extension/config/extension_config.R": "08e7c3836f4c4498773dd6e8a84d6cd1ff2d504a59b16cdb2a6e8d364e36cd85",
+    "thesis_extension/src/dgp_kappa.R": "2747623cd5991af2cc5f28301e40f27b8b817d25bb1e6261bcfd46fc25fbd226",
+    "thesis_extension/diagnostics/coverage_audit/coverage_audit_functions.R": "aee29320c7b0f8ad56ba898823eb14da68155c2e29b1e4d9549b4556dc324745",
+    "thesis_extension/diagnostics/grid_sensitivity/grid_sensitivity_config.R": "77c6f70a4aaab530fd07f2d08ae0b2ca863704f18d638d392b9fae0ede1a86da",
+    "thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_config.txt": "ccc743f91a69406849cbdfdeb193ac0f05fc96714e1bc1dd390b23444227c659",
+    "thesis_extension\\diagnostics\\coverage_audit\\output\\coverage_audit_all_cells.csv": "815c64904c00bb6f0677a669d3df879a5a58dafb7f10701b6a0e663a9a17717b",
+    "thesis_extension\\final\\output\\n500\\results.csv": "258fce913afbb8730e5d1afca9d52ebc265ab1bc1638f407b415038bc33bd780",
+    "thesis_extension\\final\\output\\n1000\\results.csv": "456fc20eb5080d00e2d5dcaabc77422ba3ee088dc358a6a8cb791f1a94b1b4e3",
+    "thesis_extension\\diagnostics\\grid_sensitivity\\output\\stage2\\stage2_summary.csv": "5162811ebbbf3cd3e077260bb5703b3d7c50a77f1466ac879f8749bcb938d304"
+  }
+}

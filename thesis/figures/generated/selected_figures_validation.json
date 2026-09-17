@@ -1,0 +1,28 @@
+{
+  "nominal_coverage": 0.95,
+  "nominal_size": 0.05,
+  "critical_value": 5.991464547107982,
+  "replications_per_cell": 500,
+  "heatmap_cells": 120,
+  "power_points": 168,
+  "profile_evaluations": 2460000,
+  "missing_or_failed": 0,
+  "grid": {
+    "lower": -1,
+    "upper": 3,
+    "points": 41,
+    "step": 0.1
+  },
+  "input_sha256": {
+    "thesis_extension\\final\\output\\n500\\summary.csv": "5ea9c4368966c39e6b6f874cc7dc9019d1c58b5b56b65ecb9b9b72c823f96f38",
+    "thesis_extension\\final\\output\\n500\\results.csv": "258fce913afbb8730e5d1afca9d52ebc265ab1bc1638f407b415038bc33bd780",
+    "thesis_extension\\final\\output\\n1000\\summary.csv": "da067bc5bf1f86703d5764c0ba4d164fbaea6b06f917c70d44bf027332e61cfd",
+    "thesis_extension\\final\\output\\n1000\\results.csv": "456fc20eb5080d00e2d5dcaabc77422ba3ee088dc358a6a8cb791f1a94b1b4e3",
+    "thesis_extension\\final\\output\\n500\\profiles.csv": "5ae3102fd7cf776d1187434fe1e0b3cee3ddc387dd80b7abb88da6c4b4821e7a",
+    "thesis_extension\\final\\output\\n1000\\profiles.csv": "52caa2419fc9a2738a0edebf3be4b5d30d321e05f3cc02d4ceb23ad6bd6e9d98",
+    "thesis_extension\\final\\output\\n500\\power.csv": "2208386fa9c85bbf3e873b594420caf095cf278841889fe419ef7aea3467948e",
+    "thesis_extension\\final\\output\\n500\\power_summary.csv": "c1168cef8c2a4b1345e01a08386e7c2505c642f61d7211ba9b962d27c5c0bd8e",
+    "thesis_extension\\final\\output\\n1000\\power.csv": "e834315f163ccb13aeda553802f15a3900aab08adfe2a4f994f845c1f8d3d477",
+    "thesis_extension\\final\\output\\n1000\\power_summary.csv": "fa24ec859a8fd1df9575f4385f7c42113047b3077e514832aa55b080a2019adc"
+  }
+}

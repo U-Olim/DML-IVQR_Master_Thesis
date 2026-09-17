@@ -1,0 +1,181 @@
+\section{Derivation and Properties of the \texorpdfstring{\(\kappa\)}{κ}-Extension}
+\label{app:kappa-derivation}
+
+\subsection{Baseline and Design Objective}
+
+This appendix explains how the experiment weakens the instruments' contribution to treatment while preserving the treatment distribution. The baseline assumptions come from the executable design of \textcite{chen_huang_tien_2021}, described in Section~\ref{sec:monte-carlo-design}. The relevance parameter and compensating noise are additions made by this thesis; the coefficient on that noise is derived below.
+
+For observation $i$, the primitive excluded components $z_{1i}$ and $z_{2i}$ are the parts of the instruments that enter treatment assignment directly. The assignment disturbance $\epsilon_i$ also enters treatment, while the outcome disturbance $u_i$ generates unobserved variation in the treatment effect. Their joint distribution is specified in Equation~\eqref{eq:dgp-disturbances}: both have mean zero and variance one, with covariance 0.3. This 0.3 is an assumed baseline parameter, not an estimate or a result of the extension. Because both variances equal one, it is also their correlation.
+
+The variables $z_{1i},z_{2i},v_{1i},v_{2i}$ and $x_{ji}$, $j=1,\ldots,100$, are mutually independent standard normals, independent of the pair $(u_i,\epsilon_i)$. A standard-normal variable has mean zero and variance one. Observations are independent across $i$. The observed controls are $X_{ji}=\Phi(x_{ji})$. Here $\Phi$ is the standard-normal cumulative distribution function, and $\Phi^{-1}$ is its quantile function. The observed instruments $Z_{1i},Z_{2i}$ combine the primitive $z$ components, independent noise $v$, and selected observed controls; their exact equations are given below. Uppercase $Z$ therefore does not denote the same variable as lowercase $z$.
+
+The parameter $\kappa$ is a chosen experimental setting, not an estimated quantity. The simulations use $1.00,0.50,0.25,0.10$; the construction is defined for the whole interval $[0,1]$. We write $d_i^*(\kappa)$ for the latent treatment index, an unobserved real-valued assignment variable, and $D_i(\kappa)=\Phi(d_i^*(\kappa))$ for the observed treatment. At the baseline setting,
+\[
+ d_i^*(1)=z_{1i}+z_{2i}+\epsilon_i.
+\]
+To decide what must be preserved, first calculate its variance. For the excluded component, the variance-of-a-sum identity gives
+\[
+ \begin{aligned}
+ \operatorname{Var}(z_{1i}+z_{2i})
+ &=\operatorname{Var}(z_{1i})+\operatorname{Var}(z_{2i})
+   +2\operatorname{Cov}(z_{1i},z_{2i})\\
+ &=1+1+0=2.
+ \end{aligned}
+\]
+The number two is the combined variance of two independent unit-variance variables. Since $\epsilon_i$ is independent of them and has variance one, the complete baseline index has variance $2+1=3$.
+
+Now consider simply replacing the excluded component by $\kappa(z_{1i}+z_{2i})$. This would give
+\[
+ \operatorname{Var}\!\left[\kappa(z_{1i}+z_{2i})+\epsilon_i\right]
+ =2\kappa^2+1.
+\]
+For example, at $\kappa=0.50$ the variance would be $2(0.50)^2+1=1.5$, rather than three. The index remains normal but its distribution changes. Applying $\Phi$ then also changes the marginal treatment distribution. Simple scaling therefore changes two things at once: instrument contribution and treatment dispersion.
+
+To isolate the first change, this thesis introduces a new standard-normal variable $w_i$, independent of all baseline variables. Its purpose is to replace the removed signal variance with independent noise. This is a specific experimental design choice, not an assumption inherited from the source authors.
+
+\subsection{Deriving the Compensating Coefficient}
+
+The next step is to find the amount of independent noise needed to retain the baseline variance of three. Begin with an unknown nonnegative coefficient $c(\kappa)$ on $w_i$:
+\begin{equation}
+ d_i^*(\kappa)=\kappa(z_{1i}+z_{2i})+c(\kappa)w_i+\epsilon_i,
+ \qquad \kappa\in[0,1].
+ \label{eq:appendix-kappa-unknown}
+\end{equation}
+For a constant $a$ and random variable $V$, $\operatorname{Var}(aV)=a^2\operatorname{Var}(V)$. Thus multiplying a variable by a constant scales its variance quadratically. Applying this identity to the excluded component, whose variance is two, and to $w_i$, whose variance is one, gives
+\[
+ \operatorname{Var}\!\left[\kappa(z_{1i}+z_{2i})\right]=2\kappa^2,
+ \qquad \operatorname{Var}\!\left[c(\kappa)w_i\right]=c(\kappa)^2.
+\]
+The variance of a sum also includes twice each pairwise covariance. Here those terms vanish: $\operatorname{Cov}(z_{1i}+z_{2i},w_i)=0$, $\operatorname{Cov}(z_{1i}+z_{2i},\epsilon_i)=0$, and $\operatorname{Cov}(w_i,\epsilon_i)=0$, by the stated independence assumptions. This does not make $\epsilon_i$ independent of $u_i$; their dependence is deliberately retained, and $u_i$ is not a separate component of the index. Adding the three component variances yields
+\[
+ \operatorname{Var}\!\left[d_i^*(\kappa)\right]
+ =2\kappa^2+c(\kappa)^2+1.
+\]
+We now impose the design requirement that this sum equal the baseline variance of three. Subtracting the disturbance variance of one and the remaining signal variance gives
+\begin{equation}
+ \begin{aligned}
+  2\kappa^2+c(\kappa)^2+1&=3,\\
+  c(\kappa)^2&=3-1-2\kappa^2,\\
+  c(\kappa)^2&=2-2\kappa^2,\\
+  c(\kappa)^2&=2(1-\kappa^2),\\
+  c(\kappa)&=\sqrt{2(1-\kappa^2)}.
+ \end{aligned}
+ \label{eq:appendix-kappa-coefficient}
+\end{equation}
+The term $\kappa^2$ appears because variance scales quadratically. The square root is needed because $c(\kappa)$ is a coefficient, not a variance: its square is the variance contributed by unit-variance $w_i$. We choose the nonnegative root by convention. Symmetry of independent normal noise makes either sign distributionally equivalent. The range $\kappa\in[0,1]$ ensures that the required added variance is nonnegative. This coefficient follows from the chosen independent-noise construction; it is not a universal weak-instrument formula.
+
+For a worked example, take $\kappa=0.50$. The remaining signal variance is $2(0.50)^2=0.5$. The missing signal variance is $2-0.5=1.5$, so $c(0.50)=\sqrt{1.5}\approx1.2247$. The added noise variance is exactly $(\sqrt{1.5})^2=1.5$; squaring the displayed rounded coefficient gives approximately the same value. Hence the complete variance is $0.5+1.5+1=3$. Calculations use the unrounded coefficient; rounding is only for display. Independent noise restores dispersion but does not create new instrument signal.
+
+The resulting assignment equation therefore is
+\begin{equation}
+ \begin{aligned}
+ d_i^*(\kappa)&=\kappa(z_{1i}+z_{2i})+\sqrt{2(1-\kappa^2)}\,w_i+\epsilon_i,\\
+ D_i(\kappa)&=\Phi\!\left(d_i^*(\kappa)\right).
+ \end{aligned}
+ \label{eq:appendix-kappa-assignment}
+\end{equation}
+
+\subsection{Preserving the Marginal Treatment Distribution}
+
+The variance calculation answers only part of the distributional question. The index is normal because it is a linear combination of jointly normal primitives. Each component has mean zero, so the index has mean zero. Its variance is three for every setting, giving
+\[
+ d_i^*(\kappa)\sim\mathcal{N}(0,3)
+ \qquad\text{for every }\kappa\in[0,1].
+\]
+In this notation, three denotes the variance, not the standard deviation; the standard deviation is $\sqrt{3}$. Equal variance alone would not establish equal distributions. Here normality means that the unchanged mean and variance determine the entire index distribution. Applying the same function $\Phi$ to identically distributed indices therefore produces identically distributed treatments.
+
+To see the treatment distribution explicitly, let $d$ be a possible treatment threshold in $(0,1)$. Substitute the definition of treatment, then use the fact that $\Phi$ is strictly increasing to apply its inverse to both sides of the inequality. Finally, divide the zero-mean index by its standard deviation $\sqrt{3}$ to obtain a standard normal variable:
+\begin{equation}
+ \begin{aligned}
+ \Pr\!\left[D_i(\kappa)\le d\right]
+ &=\Pr\!\left[\Phi(d_i^*(\kappa))\le d\right]\\
+ &=\Pr\!\left[d_i^*(\kappa)\le\Phi^{-1}(d)\right]\\
+ &=\Phi\!\left(\frac{\Phi^{-1}(d)}{\sqrt{3}}\right).
+ \end{aligned}
+ \label{eq:appendix-treatment-cdf}
+\end{equation}
+Treatment lies in $(0,1)$, so its CDF is zero for $d\le0$ and one for $d\ge1$. The formula contains no $\kappa$, which establishes marginal invariance. It is not the uniform CDF $d$ on $(0,1)$: applying the standard-normal CDF to an index with variance three does not give a Uniform$(0,1)$ variable.
+
+\subsection{Changing Instrument Relevance}
+
+To describe the relationship that changes, consider the observed instruments in Equations~\eqref{eq:dgp-instrument1}--\eqref{eq:dgp-instrument2}:
+\[
+ Z_{1i}=z_{1i}+v_{1i}+X_{2i}+X_{3i}+X_{4i},
+\]
+\[
+ Z_{2i}=z_{2i}+v_{2i}+X_{7i}+X_{8i}+X_{9i}+X_{10i}.
+\]
+Write $C_{1i}=X_{2i}+X_{3i}+X_{4i}$ and $C_{2i}=X_{7i}+X_{8i}+X_{9i}+X_{10i}$. Although these control sums have nonzero means, they are independent of every component of the treatment index. The independent instrument noise $v_{ji}$ has the same zero-covariance property. Expanding covariance by linearity, for $j=1,2$,
+\begin{equation}
+ \begin{aligned}
+ \operatorname{Cov}(Z_{ji},d_i^*(\kappa))
+ &=\kappa\operatorname{Cov}(z_{ji},z_{1i}+z_{2i})
+   +c(\kappa)\operatorname{Cov}(z_{ji},w_i)
+   +\operatorname{Cov}(z_{ji},\epsilon_i)\\
+ &\quad+\kappa\operatorname{Cov}(v_{ji},z_{1i}+z_{2i})
+   +c(\kappa)\operatorname{Cov}(v_{ji},w_i)
+   +\operatorname{Cov}(v_{ji},\epsilon_i)\\
+ &\quad+\kappa\operatorname{Cov}(C_{ji},z_{1i}+z_{2i})
+   +c(\kappa)\operatorname{Cov}(C_{ji},w_i)
+   +\operatorname{Cov}(C_{ji},\epsilon_i).
+ \end{aligned}
+ \label{eq:appendix-instrument-covariance}
+\end{equation}
+In the first line, the covariance with $z_{1i}+z_{2i}$ is one: $z_{ji}$ has covariance one with itself and zero with the other primitive excluded component. Its covariances with $w_i$ and $\epsilon_i$ are zero by independence. All three terms in the second line vanish because $v_{ji}$ is independent of the index components. All three terms in the third line vanish because the controls are independent of those components. The nonzero means of the transformed controls do not change this independence argument. Only the first term remains, giving
+\[
+ \operatorname{Cov}(Z_{ji},d_i^*(\kappa))=\kappa,\qquad j=1,2.
+\]
+This result concerns the latent index, not the nonlinear treatment: it does not assert that $\operatorname{Cov}(Z_{ji},D_i(\kappa))=\kappa$. Thus $\kappa$ orders designed relevance, but is neither an $F$-statistic nor a universal measure of IVQR identification strength.
+
+\subsection{Preserving the Relationship Generating Endogeneity}
+
+The experiment should also preserve the relationship between treatment and the unobserved outcome disturbance. Expanding covariance with the index shows which component carries that relationship:
+\[
+ \begin{aligned}
+ \operatorname{Cov}(u_i,d_i^*(\kappa))
+ &=\kappa\operatorname{Cov}(u_i,z_{1i}+z_{2i})
+   +c(\kappa)\operatorname{Cov}(u_i,w_i)
+   +\operatorname{Cov}(u_i,\epsilon_i)\\
+ &=0+0+0.3=0.3.
+ \end{aligned}
+\]
+The first term is zero because the primitive excluded components are independent of $u_i$. The second is zero because the new noise $w_i$ is independently introduced. The third is the assumed baseline covariance 0.3 between $u_i$ and $\epsilon_i$; it is unchanged by scaling the other components.
+
+To establish more than unchanged covariance, use joint normality. The pair $(u_i,\epsilon_i)$ is jointly normal and independent of the other normal primitives, so $(u_i,d_i^*(\kappa))$ is jointly normal as well. Both means are zero. The diagonal entries of its covariance matrix are the variance of $u_i$, one, and the index variance, three. Its two off-diagonal entries equal the covariance 0.3 just computed:
+\begin{equation}
+ \begin{pmatrix}u_i\\d_i^*(\kappa)\end{pmatrix}
+ \sim\mathcal{N}\!\left(
+ \begin{pmatrix}0\\0\end{pmatrix},
+ \begin{pmatrix}1&0.3\\0.3&3\end{pmatrix}\right).
+ \label{eq:appendix-endogeneity-invariance}
+\end{equation}
+For a jointly normal pair, its mean vector and covariance matrix determine its distribution. Their invariance therefore establishes an unchanged joint distribution, a conclusion that covariance alone would not justify without joint normality. Applying $\Phi$ to the second component preserves the joint distribution of $(u_i,D_i(\kappa))$. The construction preserves the relationship generating endogeneity, not merely one covariance.
+
+Treatment realizations can still differ across $\kappa$ within the same replication because the signal and noise weights change. Relationships involving the instruments are deliberately changed. Reusing primitive draws across settings aids comparison, but is not the reason for marginal invariance: the distributional argument above holds separately at every setting.
+
+\subsection{Structural Effects and Endpoint Cases}
+
+The structural effect follows from the potential-outcome equation, Equation~\eqref{eq:dgp-potential-outcome}. For a fixed treatment value $d\in(0,1)$,
+\[
+ Y_i(d)=1+5\sum_{j=1}^{7}X_{ji}+d(1+u_i).
+\]
+The constant one inside $d(1+u_i)$ is the baseline coefficient on treatment in the outcome equation; it is distinct from the outcome intercept of one. The coefficient five on each of the seven relevant controls is also inherited from the baseline. Since $u_i$ is independent of $X_i$, its conditional $\tau$-quantile is the standard-normal quantile $\Phi^{-1}(\tau)$. For $d>0$, multiplying by $d$ preserves order, so the quantile of $d(1+u_i)$ is $d[1+\Phi^{-1}(\tau)]$. Adding the fixed intercept and control contribution gives
+\[
+ Q_{Y_i(d)\mid X_i}(\tau)
+ =1+5\sum_{j=1}^{7}X_{ji}+d\left[1+\Phi^{-1}(\tau)\right],
+\]
+and the coefficient of treatment in the structural quantile function is $\alpha_0(\tau)=1+\Phi^{-1}(\tau)$. This is a potential-outcome quantile at fixed treatment, not an observational quantile conditional on the endogenous realized treatment. Modifying treatment assignment does not change the potential-outcome equation or the distribution of $u_i$ conditional on $X_i$, and hence does not alter this structural effect.
+
+At $\kappa=1$, $c(1)=0$ and $D_i(1)=\Phi(z_{1i}+z_{2i}+\epsilon_i)$, recovering the baseline. At the conceptual endpoint $\kappa=0$,
+\[
+ d_i^*(0)=\sqrt{2}\,w_i+\epsilon_i,
+ \qquad D_i(0)=\Phi(\sqrt{2}\,w_i+\epsilon_i),
+\]
+so the primitive excluded signal disappears from assignment. At the weakest simulated setting, $\kappa=0.10$, the signal variance is still positive: $2(0.10)^2=0.02$. These endpoint statements describe the construction; they are not a proof of global identification or non-identification for every IVQR model.
+
+\subsection{Numerical Illustration}
+
+Table~\ref{tab:kappa-illustration} extends the worked $\kappa=0.50$ example to all four settings. Signal variance, replacement-noise variance and $\epsilon_i$'s unit variance always sum to three.
+
+\input{tables/appendix_kappa_illustration}
+\FloatBarrier
