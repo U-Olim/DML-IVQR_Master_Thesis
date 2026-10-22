@@ -1,0 +1,176 @@
+               (︃               )︃                 {︄ 𝑛 [︃√︃                    √︃               ]︃ 2           }︄
+                      𝑟 𝑗0 (𝑎)                       ∑︁
+                                                                                   𝑓𝑖 (𝑎) 𝑋𝑖′ 𝛾 𝑗 + P 𝑗,𝑎 (𝛾 𝑗 ) .
+                      ˆ︁
+                                   = arg min                 𝑓𝑖 (𝑎)𝑍 𝑗𝑖 − 𝑟 𝑗0 − ˆ︁
+                                                             ˆ︁                                                       (D.4)
+                    Γimp, 𝑗 (𝑎)
+                    ˆ︁                (𝑟 𝑗0 ,𝛾 𝑗 )
+                                                𝑖=1
+
+                                                              𝑟 𝑗0 (𝑎) − 𝑋𝑖′ ˆ︁
+                                           ˆ︁ 𝑗𝑖 (𝑎) = 𝑍 𝑗𝑖 − ˆ︁
+                                           Ψ                                 Γimp, 𝑗 (𝑎),
+                                                                                                                      (D.5)
+                                            ˆ︁𝑖 (𝑎) = 𝑍𝑖 − ˆ︁
+                                            Ψ                          Γimp (𝑎) 𝑋𝑖 .
+                                                             𝑟 0 (𝑎) − ˆ︁
+                                (︃             )︃            𝑛
+                                   𝑏 0,orc (𝑎)              ∑︁     (︂                             )︂
+                                                                𝜌 𝜏 𝑌𝑖 − 𝐷 𝑖′ 𝑎 − 𝑏 0 − 𝑋𝑆′ 0 ,𝑖 𝑏 .
+                                  ˆ︁
+                                                  = arg min                                                           (D.6)
+                                    𝛽ˆ︁orc (𝑎)        𝑏0 ,𝑏 𝑖=1
+                                  (︃              )︃            𝑛
+                                     𝑏 0,full (𝑎)              ∑︁
+                                                                   𝜌 𝜏 𝑌𝑖 − 𝐷 𝑖′ 𝑎 − 𝑏 0 − 𝑋𝑖′ 𝑏 .
+                                    ˆ︁                                (︁                        )︁
+                                                     = arg min                                                        (D.7)
+                                      𝛽full (𝑎)
+                                      ˆ︁                 𝑏0 ,𝑏 𝑖=1
+
+                                      𝑛                                           𝑛
+                                   1 ∑︁      ′ ˆ︁                              1 ∑︁        ′ ˆ︁
+                          𝑀𝑒 (𝑎) =
+                          ˆ︁             𝑍𝑖 𝑋𝑒,𝑖 𝑓𝑒,𝑖 (𝑎),            𝐽𝑒 (𝑎) =
+                                                                      ˆ︁             𝑋𝑒,𝑖 𝑋𝑒,𝑖 𝑓𝑒,𝑖 (𝑎),
+                                   𝑛 𝑖=1                                       𝑛 𝑖=1                                  (D.8)
+                                    ˆ︁𝑒 (𝑎) 𝐽ˆ︁𝑒 (𝑎) −1 ,
+                           𝛿𝑒 (𝑎) = 𝑀
+                           ˆ︁                                                      𝛿𝑒 (𝑎) 𝑋𝑒,𝑖 .
+                                                                  ˆ︁𝑒,𝑖 (𝑎) = 𝑍𝑖 − ˆ︁
+                                                                  Ψ
+The first five equations describe DML-IVQR. The last three describe Oracle-GMM and Full-GMM, with
+𝑆0 = {1, . . . , 10}, 𝑋orc,𝑖 = 𝑋𝑆0 ,𝑖 , and 𝑋full,𝑖 = 𝑋𝑖 . Their quantile regressions include an intercept, but their
+matrix residualization includes no constant regressor. DML retains the ordinary√︃intercept of a transformed
+regression and subtracts it from the original instrument without dividing by ˆ︁            𝑓𝑖 (𝑎). It is therefore not
+the exact sample counterpart of the ideal density-weighted intercept. All procedures use same-sample
+nuisance fits and scores; cross-fitting is absent. The comparison does not isolate regularization from these
+residualization differences.
+
+D.3    Score algebra and its conditions
+The ideal nuisance vector and derivative identities are retained below. They presume finite density-weighted
+moments and permissible differentiation, conditions not established for the simulation DGP’s non-finite
+true residual density. They are not implementation-level assertions.
+
+                                      𝑐(𝑎)                                        𝑐 0 (𝜏)
+                           𝜂(𝑎) = ­ 𝛽(𝑎) ® ,                𝜂0 = 𝜂(𝛼0 (𝜏)) = ­    𝛽0 (𝜏)
+                                  ©         ª                                ©                 ª
+                                                                                               ®.                     (D.9)
+                                  «vec{𝛿(𝑎)}¬                                «vec{𝛿(𝛼  0 (𝜏))} ¬
+
+                                    E 𝜏 − 1 𝑌𝑖 ≤ 𝐷 𝑖′ 𝑎 + 𝑐(𝑎) + 𝑋𝑖′ 𝛽(𝑎) 𝑋
+                                     [︁{︁  [︁                            ]︁ }︁ ]︁
+                                                                              ˜︁𝑖 = 0.                               (D.10)
+
+                                                            ˜︁𝑖′ 𝑓 𝜖0 (0 | 𝑋𝑖 , 𝑍𝑖 ) ,
+                                                     [︁                             ]︁
+                                               𝑀0 = E 𝑍𝑖 𝑋
+                                                            ˜︁𝑖′ 𝑓 𝜖0 (0 | 𝑋𝑖 , 𝑍𝑖 ) ,
+                                                     [︁                             ]︁
+                                               𝐽0 = E 𝑋 ˜︁𝑖 𝑋                                                        (D.11)
+                                                𝛿0 = 𝑀0 𝐽0−1 .
+                                                                                   ˜︁𝑖′ 𝑓 𝜖0 (0 | 𝑋𝑖 , 𝑍𝑖 )
+                                                                   [︁                                       ]︁
+                       𝜕(𝑐,𝛽 ′ ) E[𝑔 𝜏 (𝑊𝑖 ; 𝛼0 (𝜏), 𝜂)] 𝜂=𝜂0 = − E (𝑍𝑖 − 𝛿0 𝑋
+                                                                             ˜︁𝑖 ) 𝑋
+                                                                                                                     (D.12)
+                                                                = − [𝑀0 − 𝛿0 𝐽0 ] = 0.
+
+
+    𝜕 𝛿 𝑗 E 𝑔 𝜏, 𝑗 (𝑊𝑖 ; 𝛼0 (𝜏), 𝜂) 𝜂=𝜂 = − E 𝜏 − 1 𝑌𝑖 ≤ 𝐷 𝑖′ 𝛼0 (𝜏) + 𝑐 0 (𝜏) + 𝑋𝑖′ 𝛽0 (𝜏) 𝑋
+           [︁                      ]︁        [︁{︁  [︁                                      ]︁ }︁ ′ ]︁
+                                                                                                ˜︁𝑖 = 0.             (D.13)
+                                           0
+
+
+The first derivative cancels by 𝛿0 = 𝑀0 𝐽0−1 ; the second cancels by the profiled quantile moment.
+Orthogonality concerns local nuisance sensitivity, and does not establish identification or finite-sample
+calibration.
+
+
+                                                                 28
+D.4    Numerics, failures, and reproduction workflow
+Scores use an uncentered second moment with denominator 𝑛 and no finite-sample correction. Matrix
+inversions are direct, without generalized inverses or added regularization. Errors and non-finite statistics
+are stored with design, replication, estimator, candidate, stage, and message, and yield missing statistics.
+Incomplete profiles receive missing aggregate measures. The main run has zero recorded numerical
+failures. The grid diagnostic’s single Stage-1 error is recorded in Appendix A; Stage 2 has no new
+evaluation failures.
+    Point estimates select the first exact minimizer on the ordered 41-point grid. Acceptance is 𝑊𝑛 (𝑎) ≤
+5.991464547 . . ., with an asymptotic two-degree-of-freedom chi-square cutoff. Coverage and each power
+alternative are evaluated directly, separately from stored grid profiles. Domain diagnostics retain interiors
+and add tails on the same samples. Neither numerical inversion nor a density proxy establishes the ideal
+regularity conditions.
+    The frozen workflow, documented in docs/REPRODUCIBILITY_NOTES.md, first runs thesis_
+extension/final/run_final.R separately with –sample-size=500 and –sample-size=1000, each
+with –execute-final. Calibration, grid Stage 1 and triggered Stage 2, and the coverage audit follow
+before reporting. The reporting builder requires the freeze commit, all empirical inputs, deliberately
+empty output directories, and absent reporting manifests; it refuses to replace existing reporting outputs.
+Simulation scripts have no general overwrite safeguard, so regeneration requires preserving the canonical
+archive and preparing separate output locations. Seed and environment records do not imply a universal
+one-command reproduction guarantee. Machine-readable records and full numerical tables are retained
+without duplicating simulation datasets in this article package.
+
+
+
+
+                                                     29
+E    Complete Frozen Numerical Results
+Tables E.1–E.6 retain the full numerical comparisons: point accuracy, finite-domain measure and grid
+share, boundary frequencies, direct coverage and size, and rejection of the six specified false candidates.
+Each main-design cell uses 500 replications. Oracle-GMM denotes the known-control benchmark,
+Full-GMM the unregularized all-control implementation, and DML-IVQR the regularized implementation.
+MAE, RMSE, and MCSE denote mean absolute error, root mean squared error, and Monte Carlo standard
+error. Grid share is the fraction of evaluated points accepted; mean points is their average count. False
+acceptance is one minus rejection probability at a specified false candidate. Wilson intervals are pointwise
+Monte Carlo intervals, not simultaneous significance tests. Figure E.1 summarizes the complete RMSE
+patterns. All entries are retained from the frozen reporting tables.
+
+                                  Table E.1: Full point-estimation performance
+  𝑛    𝜏    𝜅 Estimator                                                                   Bias MAE RMSE
+ 500 0.10 1.00 Oracle-GMM                                                               -0.115 0.155 0.200
+ 500 0.10 1.00 Full-GMM                                                                 -0.684 0.693 0.789
+ 500 0.10 1.00 DML-IVQR                                                                 -0.204 0.296 0.453
+ 500 0.10 0.50 Oracle-GMM                                                               -0.285 0.394 0.642
+ 500 0.10 0.50 Full-GMM                                                                 -0.901 0.960 1.219
+ 500 0.10 0.50 DML-IVQR                                                                 -0.827 0.926 1.335
+ 500 0.10 0.25 Oracle-GMM                                                               -0.705 0.895 1.276
+ 500 0.10 0.25 Full-GMM                                                                 -1.155 1.283 1.612
+ 500 0.10 0.25 DML-IVQR                                                                 -1.059 1.207 1.585
+ 500 0.10 0.10 Oracle-GMM                                                               -0.847 1.097 1.457
+ 500 0.10 0.10 Full-GMM                                                                 -1.272 1.396 1.707
+ 500 0.10 0.10 DML-IVQR                                                                 -1.065 1.258 1.618
+ 500 0.25 1.00 Oracle-GMM                                                               -0.048 0.097 0.123
+ 500 0.25 1.00 Full-GMM                                                                 -0.218 0.246 0.295
+ 500 0.25 1.00 DML-IVQR                                                                  0.006 0.118 0.150
+ 500 0.25 0.50 Oracle-GMM                                                               -0.083 0.213 0.294
+ 500 0.25 0.50 Full-GMM                                                                 -0.272 0.423 0.553
+ 500 0.25 0.50 DML-IVQR                                                                 -0.156 0.311 0.486
+ 500 0.25 0.25 Oracle-GMM                                                               -0.264 0.579 0.831
+ 500 0.25 0.25 Full-GMM                                                                 -0.502 0.844 1.088
+ 500 0.25 0.25 DML-IVQR                                                                 -0.576 0.801 1.092
+ 500 0.25 0.10 Oracle-GMM                                                               -0.312 0.833 1.071
+ 500 0.25 0.10 Full-GMM                                                                 -0.549 1.006 1.241
+ 500 0.25 0.10 DML-IVQR                                                                 -0.601 0.987 1.245
+ 500 0.50 1.00 Oracle-GMM                                                               -0.010 0.075 0.102
+ 500 0.50 1.00 Full-GMM                                                                  0.009 0.131 0.169
+ 500 0.50 1.00 DML-IVQR                                                                  0.062 0.100 0.131
+ 500 0.50 0.50 Oracle-GMM                                                               -0.007 0.164 0.228
+ 500 0.50 0.50 Full-GMM                                                                  0.011 0.303 0.400
+ 500 0.50 0.50 DML-IVQR                                                                  0.010 0.183 0.247
+ 500 0.50 0.25 Oracle-GMM                                                               -0.033 0.442 0.634
+ 500 0.50 0.25 Full-GMM                                                                  0.008 0.640 0.827
+ 500 0.50 0.25 DML-IVQR                                                                 -0.199 0.499 0.715
+ 500 0.50 0.10 Oracle-GMM                                                               -0.060 0.818 1.027
+ 500 0.50 0.10 Full-GMM                                                                  0.036 0.949 1.129
+ 500 0.50 0.10 DML-IVQR                                                                 -0.268 0.848 1.046
+ 500 0.75 1.00 Oracle-GMM                                                                0.034 0.097 0.126
+ 500 0.75 1.00 Full-GMM                                                                  0.231 0.266 0.327
+ 500 0.75 1.00 DML-IVQR                                                                  0.125 0.144 0.175
+                                                                                       Continued on next page
+
+
+
+                                                      30
+

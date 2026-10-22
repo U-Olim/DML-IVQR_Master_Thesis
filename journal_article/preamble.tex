@@ -1,0 +1,28 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=25mm]{geometry}
+\usepackage{newtxtext,newtxmath}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{amsmath,mathtools}
+\usepackage{graphicx,booktabs,ragged2e,etoolbox,placeins,needspace}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs,siunitx}
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear,maxcitenames=2,maxbibnames=99,doi=true,isbn=false,url=false]{biblatex}
+\addbibresource{references.bib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\SetTblrInner[booktabs]{width=\textwidth,row{1}={font=\bfseries},hline{1,Z}={0.8pt},hline{2}={0.4pt}}
+\SetTblrStyle{remark-text}{font=\footnotesize}
+\SetTblrStyle{remark-tag}{font=\footnotesize\itshape}
+\newenvironment{tablenotes}[1][Note]{\par\medskip\begingroup\footnotesize\noindent\textit{#1:} }{\par\endgroup}
+\newenvironment{figurenotes}[1][Note]{\par\medskip\begingroup\footnotesize\noindent\textit{#1:} }{\par\endgroup}
+\newlength{\baselinedist}\setlength{\baselinedist}{\baselineskip}
+\setlength{\emergencystretch}{2em}
+\setcounter{topnumber}{3}\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{.95}\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.75}
+\raggedbottom

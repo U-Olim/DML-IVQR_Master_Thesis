@@ -1,0 +1,191 @@
+\section{Monte Carlo Design}
+\label{chap:monte-carlo-design}
+\subsection{Baseline and controlled relevance extension}
+\label{sec:monte-carlo-design}
+The baseline follows the executable high-dimensional design of \textcite{chen_huang_tien_2021}, with independent observations and 100 controls. The outcome and assignment disturbances satisfy
+\begin{equation}
+  \begin{pmatrix}
+    u_i \\
+    \epsilon_i
+  \end{pmatrix}
+  \sim
+  \mathcal{N}\!\left(
+    \begin{pmatrix} 0 \\ 0 \end{pmatrix},
+    \begin{pmatrix} 1 & 0.3 \\ 0.3 & 1 \end{pmatrix}
+  \right).
+  \label{eq:dgp-disturbances}
+\end{equation}
+
+\begin{equation}
+  x_{ji}\overset{\mathrm{ind}}{\sim}\mathcal{N}(0,1),
+  \quad j=1,\ldots,100,
+  \qquad
+  z_{1i},z_{2i},v_{1i},v_{2i}
+  \overset{\mathrm{ind}}{\sim}\mathcal{N}(0,1).
+  \label{eq:dgp-primitives}
+\end{equation}
+
+\begin{equation}
+  X_{ji}=\Phi(x_{ji}),
+  \qquad j=1,\ldots,100,
+  \label{eq:dgp-controls}
+\end{equation}
+The remaining primitives are mutually independent and independent of $(u_i,\epsilon_i)$. The controls $X_{ji}=\Phi(x_{ji})$ are independent Uniform$(0,1)$ variables. The observed instruments are
+\begin{equation}
+  Z_{1i}=z_{1i}+v_{1i}+X_{2i}+X_{3i}+X_{4i},
+  \label{eq:dgp-instrument1}
+\end{equation}
+
+\begin{equation}
+  Z_{2i}=z_{2i}+v_{2i}+X_{7i}+X_{8i}+X_{9i}+X_{10i}.
+  \label{eq:dgp-instrument2}
+\end{equation}
+The released code uses transformed $X$ controls in these equations, although the source paper displays corresponding terms as lowercase $x$. We retain the executable construction. The baseline treatment and outcome are
+\begin{equation}
+  D_i=\Phi(z_{1i}+z_{2i}+\epsilon_i).
+  \label{eq:dgp-treatment-baseline}
+\end{equation}
+
+\begin{equation}
+  Y_i=1+D_i+5\sum_{j=1}^{7}X_{ji}+D_i u_i.
+  \label{eq:dgp-outcome}
+\end{equation}
+The correlation of $u_i$ with $\epsilon_i$ generates endogeneity through the treatment index and the interaction $D_i u_i$. Seven controls enter the outcome directly, and the union of outcome and instrument controls is the ten-control oracle set. At fixed $d\in(0,1)$,
+\begin{equation}
+  Y_i(d)=1+5\sum_{j=1}^{7}X_{ji}+d(1+u_i).
+  \label{eq:dgp-potential-outcome}
+\end{equation}
+
+\begin{equation}
+  Q_{Y_i(d)\mid X_i}(\tau)
+  =1+5\sum_{j=1}^{7}X_{ji}
+  +d\left[1+\Phi^{-1}(\tau)\right].
+  \label{eq:dgp-structural-quantile}
+\end{equation}
+
+\begin{equation}
+  \alpha_0(\tau)=1+\Phi^{-1}(\tau).
+  \label{eq:dgp-alpha-true}
+\end{equation}
+The five structural effects are approximately $-0.282$, $0.326$, $1.000$, $1.674$, and $2.282$ in increasing quantile order.
+
+\label{sec:instrument-relevance-extension}
+The original design fixes relevance. To reduce the excluded signal without simultaneously changing treatment dispersion, introduce $w_i\sim\mathcal N(0,1)$ independently of all baseline variables and set
+\begin{equation}
+  d_i^*(\kappa)
+  =\kappa(z_{1i}+z_{2i})
+  +\sqrt{2(1-\kappa^2)}\,w_i
+  +\epsilon_i,
+  \label{eq:dgp-kappa-index}
+\end{equation}
+
+\begin{equation}
+  D_i(\kappa)=\Phi\!\left(d_i^*(\kappa)\right).
+  \label{eq:dgp-treatment-kappa}
+\end{equation}
+
+\begin{equation}
+  \operatorname{Var}\!\left[d_i^*(\kappa)\right]
+  =2\kappa^2+2(1-\kappa^2)+1=3.
+  \label{eq:dgp-kappa-variance}
+\end{equation}
+
+\begin{equation}
+  \operatorname{Cov}\!\left(Z_{1i},d_i^*(\kappa)\right)
+  =\operatorname{Cov}\!\left(Z_{2i},d_i^*(\kappa)\right)
+  =\kappa.
+  \label{eq:dgp-kappa-relevance}
+\end{equation}
+
+\begin{equation}
+  \operatorname{Cov}\!\left(u_i,d_i^*(\kappa)\right)
+  =\operatorname{Cov}(u_i,\epsilon_i)=0.3.
+  \label{eq:dgp-kappa-endogeneity}
+\end{equation}
+Joint normality implies $d_i^*(\kappa)\sim\mathcal N(0,3)$ and an invariant joint distribution of $(u_i,d_i^*(\kappa))$, hence of $(u_i,D_i(\kappa))$. The construction preserves the marginal treatment distribution, the relationship generating endogeneity, the outcome equation, structural effects, controls, and instrument construction. It deliberately changes treatment--instrument relationships. Appendix~\ref{app:kappa-derivation} derives the compensating coefficient and these invariances. At $\kappa=1$ the baseline is recovered; the conceptual endpoint $\kappa=0$ removes the primitive excluded signal. The smallest simulated value is positive, so it is not a formal non-identification experiment. The parameter orders designed relevance and is neither an $F$-statistic nor a universal measure of quantile-specific identification.
+
+\subsection{Design dimensions and performance measures}
+\label{sec:performance-measures}
+\begin{equation}
+  \begin{aligned}
+    n&\in\{500,1000\},
+    &\tau&\in\{0.10,0.25,0.50,0.75,0.90\},\\
+    \kappa&\in\{1,0.50,0.25,0.10\},
+    &R&=500.
+  \end{aligned}
+  \label{eq:simulation-design}
+\end{equation}
+The 40 designs yield 120 estimator--design cells. Within each replication, primitive draws are reused across relevance settings and estimators use the same observed sample. This common-random-number design improves comparison but does not eliminate Monte Carlo uncertainty. Inference uses a 95\% level. A separate 100-replication calibration reports nested OLS $F$-statistics and partial $R^2$ for adding both instruments to a regression of treatment on an intercept and the ten oracle controls; these are descriptive diagnostics without an IVQR threshold.
+
+For replication $r$, point accuracy is summarized by
+\begin{equation}
+  \begin{aligned}
+    \operatorname{Bias}(\tau)
+      &=\frac{1}{R}\sum_{r=1}^{R}\left[\alpha_0(\tau)-\widehat{\alpha}_r(\tau)\right], \\
+    \operatorname{MAE}(\tau)
+      &=\frac{1}{R}\sum_{r=1}^{R}\left|\widehat{\alpha}_r(\tau)-\alpha_0(\tau)\right|, \\
+    \operatorname{RMSE}(\tau)
+      &=\left\{\frac{1}{R}\sum_{r=1}^{R}\left[\widehat{\alpha}_r(\tau)-\alpha_0(\tau)\right]^2\right\}^{1/2}.
+  \end{aligned}
+  \label{eq:performance-point}
+\end{equation}
+MAE and RMSE denote mean absolute error and root mean squared error. The preserved bias convention is truth minus estimate: positive bias indicates underestimation. Coverage and power are evaluated directly at the unrounded true value and specified false candidates, independently of grid membership:
+\begin{equation}
+  C_r(\tau)
+    =\mathbf{1}\!\left\{W_{n,r}\!\left(\alpha_0(\tau)\right)\leq c_{0.95}\right\},
+  \qquad
+  \widehat{\operatorname{Coverage}}(\tau)
+    =\frac{1}{R}\sum_{r=1}^{R}C_r(\tau).
+  \label{eq:performance-coverage}
+\end{equation}
+
+\begin{equation}
+  \widehat{\operatorname{Size}}(\tau)
+    =\frac{1}{R}\sum_{r=1}^{R}
+      \mathbf{1}\!\left\{W_{n,r}\!\left(\alpha_0(\tau)\right)>c_{0.95}\right\}
+    =1-\widehat{\operatorname{Coverage}}(\tau).
+  \label{eq:performance-size}
+\end{equation}
+
+\begin{equation}
+  a_{\Delta}(\tau)=\alpha_0(\tau)+\Delta,
+  \qquad
+  \Delta\in\{-1.00,-0.50,-0.25,0.25,0.50,1.00\}.
+  \label{eq:performance-alternatives}
+\end{equation}
+
+\begin{equation}
+  \widehat{\operatorname{Power}}(\Delta,\tau)
+    =\frac{1}{R}\sum_{r=1}^{R}
+      \mathbf{1}\!\left\{W_{n,r}\!\left(a_{\Delta}(\tau)\right)>c_{0.95}\right\}.
+  \label{eq:performance-power}
+\end{equation}
+For DML, direct truth and stored-profile evaluations can use different pivotal draws even at the same candidate. Reported coverage is the repeated-sample acceptance frequency of the direct test, rather than membership reconstructed from a stored grid profile. Raw power uses the common nominal cutoff without size adjustment.
+
+The cutoff and common primary grid are
+\begin{equation}
+  c_{0.95}=\chi^2_{2,0.95}=5.991464547\ldots.
+  \label{eq:wn-critical-value}
+\end{equation}
+
+\begin{equation}
+  \begin{aligned}
+    A_0&=[-1,3],
+    &h&=0.1,\\
+    G_0&=\{a_j=-1+(j-1)h:j=1,\ldots,41\},\\
+       &=\{-1,-0.9,\ldots,2.9,3\}.
+  \end{aligned}
+  \label{eq:primary-grid}
+\end{equation}
+The four-unit domain and 0.1 resolution retain the original executable grid for all designs. All five true effects lie strictly inside it. Grid point estimates include discretization, endpoint, and first-tie effects; the grid is a computational domain, not an asserted theoretical parameter space.
+
+Let $I_r(a_j)=\mathbf1\{W_{n,r}(a_j)\le c_{0.95}\}$. The accepted-set measure is
+\begin{equation}
+  M_r(A_0)
+  =\sum_{j=1}^{40}\frac{a_{j+1}-a_j}{2}
+    \left[I_r(a_j)+I_r(a_{j+1})\right].
+  \label{eq:accepted-measure}
+\end{equation}
+This trapezoidal sum of binary acceptance indicators ranges from zero to four. Adjacent intervals contribute 0, 0.05, or 0.10; the calculation totals separated accepted components without solving for exact critical-value crossings. It is neither the span between extreme accepted values nor unrestricted confidence-region length. Full-grid acceptance requires acceptance at all 41 points; either-boundary acceptance requires acceptance at at least one endpoint. Neither event establishes acceptance between all points or outside the domain.
+
+Appendix~\ref{app:numerical-domain-diagnostics} examines $A_1=[-3,5]$ and $A_2=[-5,7]$ at spacing 0.1 in a separate 100-replication diagnostic with $n=1000$, all quantiles and estimators, and $\kappa\in\{1,0.25,0.10\}$. It reuses saved samples and interior profiles while adding candidates. Coverage and power remain separate direct evaluations. This bounded diagnostic assesses numerical localization over investigated ranges only.

@@ -1,0 +1,119 @@
+{
+  "protected_files": {
+    "checked": 165,
+    "changed_or_missing": []
+  },
+  "bibliography_identical": true,
+  "table_rows": {
+    "tables/appendix_coverage_audit_summary.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    },
+    "tables/appendix_kappa_illustration.tex": {
+      "rows": 4,
+      "identical_to_original": true
+    },
+    "tables/figure_accepted_measure_main.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    },
+    "tables/figure_coverage_main.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    },
+    "tables/figure_full_domain_acceptance.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    },
+    "tables/figure_power_main.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    },
+    "tables/table_main_performance.tex": {
+      "rows": 36,
+      "identical_to_original": true
+    },
+    "tables/table_strength_calibration.tex": {
+      "rows": 8,
+      "identical_to_original": true
+    },
+    "tables/generated/appendix_coverage.tex": {
+      "rows": 120,
+      "identical_to_original": true
+    },
+    "tables/generated/appendix_cr_informativeness.tex": {
+      "rows": 240,
+      "identical_to_original": true
+    },
+    "tables/generated/appendix_grid_diagnostic.tex": {
+      "rows": 225,
+      "identical_to_original": true
+    },
+    "tables/generated/appendix_point_performance.tex": {
+      "rows": 120,
+      "identical_to_original": true
+    },
+    "tables/generated/appendix_power.tex": {
+      "rows": 720,
+      "identical_to_original": true
+    },
+    "tables/generated/figure_grid_domain.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    },
+    "tables/generated/figure_rmse.tex": {
+      "rows": 0,
+      "identical_to_original": true
+    }
+  },
+  "figure_hashes": {
+    "figures/grid_domain_expansion.png": true,
+    "figures/generated/accepted_measure_n1000.png": true,
+    "figures/generated/accepted_measure_n500.png": true,
+    "figures/generated/coverage_heatmap.pdf": true,
+    "figures/generated/full_domain_acceptance_heatmap.pdf": true,
+    "figures/generated/power_median_combined.pdf": true,
+    "figures/generated/rmse_n1000.png": true,
+    "figures/generated/rmse_n500.png": true
+  },
+  "citations": {
+    "original": 18,
+    "article": 18,
+    "removed_keys": []
+  },
+  "undefined_source_references": [],
+  "thesis_self_references": [],
+  "whitespace_word_counts_including_TeX": {
+    "original_main_sections": 12293,
+    "article_main_sections": 5369
+  },
+  "archived_input_hashes": {
+    "thesis_extension/config/extension_config.R": true,
+    "thesis_extension/src/dgp_kappa.R": true,
+    "thesis_extension/diagnostics/coverage_audit/coverage_audit_functions.R": true,
+    "thesis_extension/diagnostics/grid_sensitivity/grid_sensitivity_config.R": true,
+    "thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_config.txt": true,
+    "thesis_extension/diagnostics/coverage_audit/output/coverage_audit_all_cells.csv": true,
+    "thesis_extension/final/output/n500/results.csv": true,
+    "thesis_extension/final/output/n1000/results.csv": true,
+    "thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_summary.csv": true,
+    "thesis_extension/final/output/n500/summary.csv": true,
+    "thesis_extension/final/output/n1000/summary.csv": true,
+    "thesis_extension/final/output/n500/profiles.csv": true,
+    "thesis_extension/final/output/n1000/profiles.csv": true,
+    "thesis_extension/final/output/n500/power.csv": true,
+    "thesis_extension/final/output/n500/power_summary.csv": true,
+    "thesis_extension/final/output/n1000/power.csv": true,
+    "thesis_extension/final/output/n1000/power_summary.csv": true
+  },
+  "point_accuracy_recheck": {
+    "MAE_strictly_increasing_sequences": 30,
+    "RMSE_strictly_increasing_sequences": 30
+  },
+  "coverage_recheck": {
+    "cells": 120,
+    "below": 53,
+    "above": 1
+  },
+  "pass": true
+}

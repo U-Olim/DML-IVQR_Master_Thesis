@@ -1,0 +1,43 @@
+% Compile from journal_article/: pdflatex main; biber main; pdflatex main; pdflatex main
+\input{preamble}
+\title{High-Dimensional Instrumental Variable Quantile Regression under Weak Instruments: A Monte Carlo Study}
+% Shared affiliation and individual contact details; no corresponding author.
+\author{\begin{minipage}{\dimexpr\textwidth-2\tabcolsep\relax}\centering
+\normalsize OLIMJON UMIDJON UGLI UMURZOKOV\textsuperscript{a}\\
+\small ORCID: \href{https://orcid.org/0009-0008-0090-7100}{0009-0008-0090-7100}\\
+Email: \href{mailto:olimumurzokov022@gmail.com}{olimumurzokov022@gmail.com}\\[0.7em]
+\normalsize UMIDJON UMIRZAKOVICH KOSTAEV\textsuperscript\\
+\small ORCID: \href{https://orcid.org/0009-0000-0205-5142}{0009-0000-0205-5142}\\
+Email: \href{mailto:umidjonkostaev2025@gmail.com}{umidjonkostaev2025@gmail.com}\\[0.7em]
+\end{minipage}}
+\date{}
+\hypersetup{pdftitle={High-Dimensional IVQR under Weak Instruments},pdfauthor={UMIDJON UMIRZAKOVICH KOSTAEV; OLIMJON UMIDJON UGLI UMURZOKOV}}
+\begin{document}
+\maketitle
+\begin{abstract}
+We examine how weakening instrument relevance affects high-dimensional instrumental variable quantile regression (IVQR). A controlled extension of the Monte Carlo design of Chen, Huang, and Tien (2021) reduces the excluded signal while adding independent noise to preserve the marginal treatment distribution and the relationship generating endogeneity. Oracle-GMM, Full-GMM, and double/debiased machine learning IVQR (DML-IVQR) are compared across four relevance settings, five quantiles, and sample sizes of 500 and 1000, using 500 replications per design. As relevance declines, point-estimation errors increase, finite-domain accepted sets expand, and power generally falls, including for the oracle benchmark. Coverage can approach its nominal level while inference becomes uninformative; substantial undercoverage also occurs in several strong-relevance cells. DML-IVQR often improves point accuracy relative to Full-GMM, with exceptions. The evidence concerns a preserved executable implementation with an asymptotic chi-square cutoff, implementation-specific residualization and density proxies, and no cross-fitting. Orthogonalization and regularized nuisance estimation can mitigate high-dimensional estimation difficulties, but cannot replace identifying information lost as instrument relevance deteriorates.
+\end{abstract}
+\noindent\textbf{Keywords:} instrumental variable quantile regression; double machine learning; weak instruments; Monte Carlo simulation; confidence-set informativeness
+\input{sections/01_introduction}
+\input{sections/02_framework}
+\input{sections/03_design}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+\FloatBarrier
+\printbibliography[title={References}]
+\clearpage
+\appendix
+\section*{Online supplementary material}
+\noindent Appendices A--D provide numerical-domain diagnostics, the controlled-design derivation, the coverage audit, and implementation notes. They are included here to keep all cross-references resolvable in a single review PDF.
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\renewcommand{\theHequation}{\thesection.\arabic{equation}}
+\renewcommand{\theHtable}{\thesection.\arabic{table}}
+\renewcommand{\theHfigure}{\thesection.\arabic{figure}}
+\input{supplementary/A_numerical_domain}
+\input{supplementary/B_kappa_derivation}
+\input{supplementary/C_coverage_audit}
+\input{supplementary/D_implementation}
+\end{document}
