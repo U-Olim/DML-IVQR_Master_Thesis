@@ -1,0 +1,112 @@
+args<-commandArgs(trailingOnly=TRUE)
+stopifnot(length(args)==3L)
+out<-normalizePath(args[1],winslash="/",mustWork=TRUE)
+phase<-args[2];idx<-as.integer(args[3]);stopifnot(phase%in%c("validation","pilot"))
+source("thesis_extension/environment/check_author_environment.R")
+assert_author_environment("thesis_extension",write_outputs=FALSE)
+source("thesis_extension/src/dgp_kappa.R")
+source("thesis_extension/src/author_bc_dml_wrapper.R")
+source("journal_validation/stage2b/diagnostics.R")
+RNGkind("L'Ecuyer-CMRG","Inversion")
+stream_at<-function(seed,index) {
+ set.seed(seed);state<-.Random.seed
+ if(index>1L)for(i in seq_len(index-1L))state<-parallel::nextRNGStream(state)
+ state
+}
+data_state<-stream_at(if(phase=="pilot")2026102901L else 2026102903L,idx)
+penalty_state<-stream_at(if(phase=="pilot")2026102902L else 2026102904L,idx)
+folder<-file.path(out,sprintf("%s_%03d",phase,idx));stopifnot(!dir.exists(folder))
+dir.create(folder)
+writeLines(capture.output(sessionInfo()),file.path(folder,"sessionInfo.txt"))
+saveRDS(list(data=data_state,penalty=penalty_state),file.path(folder,"rng_states.rds"))
+writeLines(c(state_text(data_state),state_text(penalty_state)),file.path(folder,"rng_states.txt"))
+warnings<-character()
+tryCatch(withCallingHandlers({
+ set_stream(data_state);dat<-make_kappa_dataset(generate_kappa_primitives(1000L),1)
+ saveRDS(dat,file.path(folder,"sample.rds"));X<-dat$X;Xt<-cbind(1,X);tau<-.9;n<-nrow(X)
+ ystar<-drop(dat$y-alpha_true(tau)*dat$D)
+ set_stream(penalty_state);lambda<-lambda_BC_author(X,R=1000,tau=tau,c=2,alpha=.1)
+ after_lambda<-.Random.seed
+ lp<-list(P11=lambda,P01=c(0,lambda[-1]),P10=c(lambda[1],rep(0,ncol(X))),P00=rep(0,ncol(X)+1L))
+ fits<-lapply(lp,function(l)quantreg::rq(ystar~X,tau=tau,method="lasso",lambda=l))
+ stopifnot(identical(.Random.seed,after_lambda))
+ beta<-lapply(fits,function(f)as.numeric(f$coefficients))
+ errors<-lapply(beta,function(b)drop(ystar-Xt%*%b))
+ f<-dnorm(errors$P11,mean(errors$P11),var(errors$P11))
+ stopifnot(all(is.finite(f)),all(f>0))
+ w<-sqrt(diag(f));psi<-matrix(0,nrow=2,ncol=n);projection_coefficients<-list()
+ for(j in 1:2) {
+  fit<-hdm::rlasso(w%*%dat$Z[,j]~w%*%X,post=FALSE)
+  projection_coefficients[[j]]<-as.numeric(fit$coefficients)
+  psi[j,]<-drop(dat$Z[,j]-Xt%*%matrix(fit$coefficients,ncol=1))
+ }
+ stopifnot(identical(.Random.seed,after_lambda))
+ truth<-true_beta(ncol(X));beta$KNOWN<-truth
+ errors$KNOWN<-drop(ystar-Xt%*%truth)
+ analytic<-dat$D*(dat$primitives$u-qnorm(tau))
+ stopifnot(max(abs(errors$KNOWN-analytic))<1e-11,
+  identical(errors$KNOWN<=0,dat$primitives$u<=qnorm(tau)),all(dat$D>0))
+ ordinary<-quantreg::rq(ystar~X,tau=tau) # reference only; same lasso solver remains used for P00
+ rho<-function(e)sum(e*(tau-as.numeric(e<0)))
+ obj00<-rho(errors$P00);objqr<-rho(residuals(ordinary))
+ ordinary_prediction<-drop(Xt%*%ordinary$coefficients)
+ prediction_difference<-max(abs(drop(Xt%*%beta$P00)-ordinary_prediction))
+ objective_difference<-abs(obj00-objqr)
+ stopifnot(objective_difference/(1+abs(objqr))<1e-7)
+ # Nonunique coefficients are not required to coincide. Save fitted/objective comparisons for review.
+ set_stream(penalty_state)
+ canonical<-author_bc_candidate(dat$y,dat$D,X,dat$Z,tau,alpha_true(tau),TRUE)
+ stopifnot(identical(canonical$lambda,lambda),identical(after_lambda,.Random.seed),
+  max(abs(canonical$beta-beta$P11))<1e-11,max(abs(canonical$psi-psi))<1e-11,
+  max(abs(canonical$e-errors$P11))<1e-11)
+ evaluations<-coefficients<-observations<-list();details<-list()
+ truth_rank<-dat$primitives$u<=qnorm(tau)
+ for(arm in names(beta)) {
+  e<-errors[[arm]];b<-beta[[arm]];s<-tau-as.numeric(e<=0)
+  stat<-score_statistic(e,psi,tau);pen<-if(arm=="KNOWN")rep(0,length(b))else lp[[arm]]
+  err<-b-truth;S<-stat$second_moment;g<-stat$moment
+  objective<-rho(e)+sum(pen*abs(b))/2
+  evaluations[[arm]]<-data.frame(phase=phase,replication=idx,arm=arm,n=n,tau=tau,kappa=1,
+   W=stat$W,accepted=stat$W<=qchisq(.95,2),failed=FALSE,mean_rank_score=mean(s),
+   intercept=b[1],intercept_error=err[1],slope_l2_error=sqrt(sum(err[-1]^2)),
+   coefficient_l2_error=sqrt(sum(err^2)),prediction_RMS=sqrt(mean((Xt%*%err)^2)),
+   selected_slopes=sum(abs(b[-1])>1e-7),rank_disagreements=sum((e<=0)!=truth_rank),
+   raw_Z1=mean(dat$Z[,1]*s),raw_Z2=mean(dat$Z[,2]*s),
+   score_sum_1=g[1]*n,score_sum_2=g[2]*n,
+   second_moment_11=S[1,1],second_moment_12=S[1,2],second_moment_22=S[2,2],
+   condition=stat$condition,objective=objective,exact_zero_residuals=sum(e==0),
+   near_zero_residuals=sum(abs(e)<=1e-7),data_hash=hash_object(dat),
+   density_hash=hash_object(f),projection_hash=hash_object(psi),
+   original_penalty_hash=hash_object(lambda),arm_penalty_hash=hash_object(pen),
+   stringsAsFactors=FALSE)
+  coefficients[[arm]]<-data.frame(arm=arm,coordinate=0:ncol(X),coefficient=b,
+   truth=truth,penalty=pen,selected=abs(b)>1e-7)
+  observations[[arm]]<-data.frame(arm=arm,i=1:n,residual=e,score=s,
+   psi1=psi[1,],psi2=psi[2,],true_rank=as.integer(truth_rank),
+   ordinary_prediction=ordinary_prediction)
+  details[[arm]]<-list(beta=b,e=e,penalty=pen,statistic=stat)
+ }
+ stopifnot(abs(evaluations$P11$W-canonical$W)<1e-11)
+ write.csv(Xt,file.path(folder,"design.csv"),row.names=FALSE)
+ write.csv(do.call(rbind,evaluations),file.path(folder,"evaluations.csv"),row.names=FALSE)
+ write.csv(do.call(rbind,coefficients),file.path(folder,"coefficients.csv"),row.names=FALSE)
+ write.csv(do.call(rbind,observations),file.path(folder,"observations.csv"),row.names=FALSE)
+ write.csv(data.frame(i=1:n,ystar=ystar,density=f,D=dat$D,Z1=dat$Z[,1],Z2=dat$Z[,2]),
+  file.path(folder,"data_diagnostics.csv"),row.names=FALSE)
+ saveRDS(list(dat=dat,lambda=lambda,f=f,psi=psi,arms=details,
+  projection_coefficients=projection_coefficients,ordinary=ordinary,
+  data_state=data_state,penalty_state=penalty_state,after_lambda=after_lambda),file.path(folder,"details.rds"))
+ checks<-data.frame(canonical_W_difference=abs(evaluations$P11$W-canonical$W),
+  canonical_beta_difference=max(abs(canonical$beta-beta$P11)),
+  canonical_psi_difference=max(abs(canonical$psi-psi)),
+  ordinary_objective=objqr,p00_objective=obj00,objective_difference=objective_difference,
+  p00_ordinary_fitted_max_difference=prediction_difference,
+  weighted_design_condition=kappa(crossprod(sqrt(f)*X)),
+  density_min=min(f),density_max=max(f),known_residual_difference=max(abs(errors$KNOWN-analytic)))
+ write.csv(checks,file.path(folder,"r_validation.csv"),row.names=FALSE)
+ writeLines(capture.output(quantreg::rq.fit.lasso),file.path(folder,"historical_rq_fit_lasso.txt"))
+ writeLines(warnings,file.path(folder,"warnings.txt"))
+ writeLines("COMPUTATION_COMPLETE",file.path(folder,"computation_complete.txt"))
+ cat("COMPUTATION_COMPLETE",phase,idx,"canonical W",evaluations$P11$W,"\n")
+},warning=function(w){warnings<<-c(warnings,conditionMessage(w));invokeRestart("muffleWarning")}),
+ error=function(e){writeLines(c(conditionMessage(e),warnings),file.path(folder,"FAILURE.txt"));stop(e)})
