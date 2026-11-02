@@ -1,0 +1,11 @@
+{
+  "source": "journal_validation\\stage2g\\deterministic_implementation\\verify_v1.py",
+  "source_sha256": "3c937729dea0ed49f417345aa792eeb954bdc2f8685c394da7a61b5a9faacd25",
+  "adapted_sha256": "a27f711b760a0448f3cc24685728a724501d4b28a333cb298ecfe7da1f46f404",
+  "changes": [
+    "Read n from each fixed diagnostic metadata; replace n=1000 reshape dimensions",
+    "Replace old-panel penalty comparison with checksum locked immediately after native calibration",
+    "Set input/output roots at execution; do not call old main"
+  ],
+  "unchanged": "direct rational KKT, uniqueness, Gram witness, psi rounding, determinant and W interval verification"
+}

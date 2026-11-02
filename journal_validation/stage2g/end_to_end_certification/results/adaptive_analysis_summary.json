@@ -1,0 +1,13 @@
+{
+  "primary_instrument_fits": 48,
+  "outer_updates": 138,
+  "minimum_outer_stopping_margin": 2.1143451764304907e-06,
+  "minimum_signed_selection_gap": 3.3712807970626146e-05,
+  "max_penalty_reconstruction_error": 1.4210854715202004e-14,
+  "max_initializer_condition": 6.455973337329455,
+  "inner_sweeps_recorded": 2241,
+  "coordinate_updates_reconstructed": 224100,
+  "minimum_native_soft_threshold_distance": 0.00014879253388500047,
+  "max_longdouble_coordinate_update_difference": 6.661338147750939e-16,
+  "scope": "Numerical trace reconstruction only; not a full adaptive branch certificate"
+}

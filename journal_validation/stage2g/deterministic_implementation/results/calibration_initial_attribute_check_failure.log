@@ -1,0 +1,4 @@
+During startup - Warning message:
+Setting LC_CTYPE=C.UTF-8 failed 
+Error: identical(captured$last_penalty, getbin(file.path(reference,  .... is not TRUE
+Execution halted

@@ -1,0 +1,28 @@
+{
+  "version": "2G-D.1",
+  "policy": "B: historical deterministic adaptive calibration followed by high-accuracy final fixed-penalty solve",
+  "outcome_LP": {
+    "method": "highs-ipm",
+    "primal_feasibility_tolerance": 1e-10,
+    "dual_feasibility_tolerance": 1e-10,
+    "ipm_optimality_tolerance": 1e-12,
+    "presolve": true,
+    "threads": 1,
+    "parallel": false,
+    "random_seed": 0
+  },
+  "basis_proposal_threshold": 1e-7,
+  "basis_proposal_threshold_scope": "proposal only; exact primal, dual, gap, signs and uniqueness must all pass",
+  "instrument": {
+    "initialization": "zero coefficients",
+    "coordinate_order": "ascending original column index",
+    "KKT_absolute_target": 1e-10,
+    "max_sweeps": 10000,
+    "active_set_polish": true,
+    "exact_support_verification": true
+  },
+  "failure_policy": "OUTCOME_UNRESOLVED / INSTRUMENT_UNRESOLVED / INFERENCE_UNRESOLVED; retain denominator, never infer acceptance",
+  "threads": {"OPENBLAS_NUM_THREADS": "1", "OMP_NUM_THREADS": "1", "MKL_NUM_THREADS": "1"},
+  "no_new_datasets": true,
+  "no_new_penalty_simulation": true
+}

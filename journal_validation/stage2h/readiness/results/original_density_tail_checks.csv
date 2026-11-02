@@ -1,0 +1,9 @@
+kappa,left_truncation,original_negative_tail_inverse_D_integral,scope
+1.0,-4,73.06712959545892,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+1.0,-6,8297.037507763462,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+1.0,-8,6453280.418090495,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+1.0,-10,34014454616.826614,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+0.1,-4,181.08517230153194,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+0.1,-6,122054.3586970158,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+0.1,-8,1160183435.6551683,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate
+0.1,-10,152653829450602.47,finite truncation illustrates the analytically proved divergent tail; not itself a divergence certificate

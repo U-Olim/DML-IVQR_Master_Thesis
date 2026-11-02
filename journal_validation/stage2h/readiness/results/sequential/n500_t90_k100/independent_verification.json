@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "direct_rational_outcome_and_sign_checks": true,
+  "exact_instrument_checks": 2,
+  "W_interval_width": 4.302685186424297e-12
+}

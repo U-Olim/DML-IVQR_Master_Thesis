@@ -1,0 +1,12 @@
+{
+  "master_seed": 2026110201,
+  "primitive_samples": 2,
+  "diagnostic_cells": 12,
+  "candidates_per_cell": 1,
+  "pairing": "same original primitives across tau/kappa within n; separate n streams; separate tau penalty substreams shared across kappa",
+  "DGP": "unchanged make_kappa_dataset, p100 s7 rho.3",
+  "statistical_Monte_Carlo": false,
+  "bounded_DGP_implemented": false,
+  "candidate": "original alpha_true(tau); no alternative candidates or replacements",
+  "frozen_v1_config_sha256": "4d60f37c3c567a93b9cf0264e48024ba445fdeabecd31058ad58f9d0edd21e1f"
+}

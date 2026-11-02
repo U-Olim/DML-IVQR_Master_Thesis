@@ -1,0 +1,9 @@
+{
+  "id": "pilot_014_minus",
+  "status": "PASS",
+  "outcome_unique_and_signs_exact": true,
+  "fixed_instrument_optima_verified": 2,
+  "score_nonsingularity_over_fixed_objective_regions": true,
+  "W_interval_width": 2.1875337066117884e-11,
+  "seconds": 6.583462699898519
+}

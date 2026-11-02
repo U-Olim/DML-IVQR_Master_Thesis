@@ -1,0 +1,17 @@
+{
+  "scope": "journal_validation/stage2h/readiness/ only",
+  "diagnostic_samples": "Two original-DGP primitive samples, one per n; shared across the 12 tau/kappa cells as prespecified.",
+  "original_penalty_calibration": "Original lambda_BC_author with R=1000,c=2,alpha=.1, independent tau substreams and preserved before/after states; same inputs reused across all numerical executions.",
+  "initial_smoke_check": "The same n500_t10_k100 input passed once before formal cohorts. Its local output folder was replayed by the sequential cohort. It is not a new sample or part of cohort timings.",
+  "measured_candidate_executions": 36,
+  "development_or_numerical_failures": "None in the readiness cohorts; all 12 fixed settings retained.",
+  "memory_dependency": "psutil was unavailable; Windows OS process APIs provide working-set measurements without installing dependencies.",
+  "memory_scope": "Per-process OS high-water marks plus 50 ms sampled aggregate live descendant RSS; shared pages counted per process.",
+  "warnings": "R startup locale warning and SciPy option-forwarding warning retained in logs. They do not alter the original settings or constitute estimator failure.",
+  "supplemental_checks": "Original primitive/data/penalty/RNG reconstruction and independent tau/score/cutoff/penalty wiring checks passed after the timed cohorts; their time is not included in the cohort budget.",
+  "bounded_DGP_implemented": false,
+  "bounded_DGP_samples_or_outcomes_generated": false,
+  "Stage2H_Monte_Carlo_executed": false,
+  "manuscript_or_historical_files_modified": false,
+  "commit_or_push": false
+}

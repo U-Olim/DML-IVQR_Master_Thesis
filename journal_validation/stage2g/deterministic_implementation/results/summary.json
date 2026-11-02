@@ -1,0 +1,21 @@
+{
+  "cases": 24,
+  "passed": 24,
+  "unresolved": 0,
+  "Policy_C_decision_disagreements": 0,
+  "historical_decision_disagreements": 5,
+  "certified_rank_disagreements_from_C": 0,
+  "raw_LP_sign_disagreements": 316,
+  "max_LP_true_gap": 8.575019750761738e-13,
+  "max_LP_fitted_error": 3.686711004436118e-13,
+  "max_abs_W_change_from_C": 4.8313931984012015e-06,
+  "max_W_interval_width": 1.2811796068490366e-10,
+  "mean_point_pipeline_seconds": 0.5787337874927714,
+  "mean_qualified_pipeline_proxy_seconds": 3.449235399990187,
+  "p95_qualified_pipeline_proxy_seconds": 3.812753609978361,
+  "independent_audit_seconds": 180.2930880000349,
+  "independent_audit_mean_seconds": 7.512212000001455,
+  "mean_retained_candidate_payload_bytes": 6310468.625,
+  "n500_directly_benchmarked": false,
+  "readiness": "CONDITIONAL"
+}

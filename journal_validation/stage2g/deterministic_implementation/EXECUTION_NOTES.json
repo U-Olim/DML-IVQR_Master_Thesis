@@ -1,0 +1,23 @@
+{
+  "scope": "journal_validation/stage2g/deterministic_implementation/ only",
+  "development_issues": [
+    {
+      "issue": "Initial R penalty identity assertion compared a matrix with a binary vector, including attributes.",
+      "resolution": "Compare as.numeric penalty values byte-for-byte; calibration rerun succeeded. No penalty or estimator convention changed.",
+      "retained_log": "results/calibration_initial_attribute_check_failure.log"
+    },
+    {
+      "issue": "During dimension generalization a psi loop variable shadowed the control count in the coefficient-to-psi row norm bound.",
+      "detection": "Independent verifier rejected the insufficient row norm; affected development certificate outputs were not accepted.",
+      "resolution": "Renamed the scalar loop variable; regenerated all instrument and inference certificates and reran the independent verifier.",
+      "retained_records": "results/instrument_dimension_shadowing_failure.log, results/verify_dimension_shadowing_failure.log and per-candidate development_dimension_shadowing_UNRESOLVED.json"
+    }
+  ],
+  "LP_warning": "SciPy explicitly forwards threads=1, parallel=False and random_seed=0 to its bundled HiGHS; the forwarding warning is recorded per candidate, not hidden.",
+  "R_startup_warning": "Setting LC_CTYPE=C.UTF-8 failed; direct R process exit codes are captured separately.",
+  "final_status_source": "results/independent_verification.json and results/three_path_comparison.csv; superseded development failure files are not current candidate statuses.",
+  "new_datasets_or_Monte_Carlo": false,
+  "historical_or_manuscript_edits": false,
+  "Stage2H_started": false,
+  "commit_push_merge": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "pilot_005_truth",
+  "status": "PASS",
+  "outcome_unique_and_signs_exact": true,
+  "fixed_instrument_optima_verified": 2,
+  "score_nonsingularity_over_fixed_objective_regions": true,
+  "W_interval_width": 3.999569195807245e-11,
+  "seconds": 6.515329699963331
+}

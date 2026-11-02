@@ -1,0 +1,803 @@
+{
+  "version": "2G-D.1",
+  "objective": "||yc-Xc b||^2 + sum lambda_j |b_j|; fixed original last-used lambda",
+  "beta": [
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "9410980229868944233155159471377009483078834380191974891956461753061822645073939764098080427168681921314317775414482566158302973089440065073839093199605277233229388907170067134321585443254761192790533886206958342988654290899363634142018347832054491681895669673382930501122765844",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.8169437522271434,
+      "outward_lower": 0.8169437522271434,
+      "outward_upper": 0.8169437522271435
+    },
+    {
+      "numerator": "7341878537893272465712541200986267981286552123291205396417168500721633695301799691793288909751399872619034027000290953766229696743056731351056974449663526324939144528681900068065598341166501940666820764767404711531212069722595885425603772341398770211555349453405262221912020808",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.6373301882099469,
+      "outward_lower": 0.6373301882099469,
+      "outward_upper": 0.637330188209947
+    },
+    {
+      "numerator": "10805544078088682611041879693141230584025843434897324270806502086448883612466320511040016132858761352468941872114386446940626926638702601464800281213770213624364017762636722211806919362021552357359256223461395365080196557985702740669409642643306767527673998545489123883662954000",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.9380023662139272,
+      "outward_lower": 0.9380023662139271,
+      "outward_upper": 0.9380023662139272
+    },
+    {
+      "numerator": "11508599208850437933014051543679783557057868557737767568023998123891013551024614650780202873722080551864852030136884829756838085048027455457729972831864748609730687920316104619004411842255702919614514222071164980324100856809781105214194790424378867632770015728160482781315348168",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.9990328308964623,
+      "outward_lower": 0.9990328308964623,
+      "outward_upper": 0.9990328308964624
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "932827052684329577872596287642757174688458146277679345833150745123136546413266821737417292807549991875829376124096065437609344551987664312054472125926641347682580590826224864265181611571334998588934110526180416164538435464192544220969677237673744926078780610994773922798761092",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.08097639289266001,
+      "outward_lower": 0.08097639289266001,
+      "outward_upper": 0.08097639289266002
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "2256822358044433602010316716097394617210230100905444587000206876273864128706922474207059387833044256930501713451390104469596771382866245609940448853469828669785976781997086191338853336115105645690583934321438317451681002918891529640018719621930606462197706581158899850458133588",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.19590912745086114,
+      "outward_lower": 0.19590912745086111,
+      "outward_upper": 0.19590912745086114
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "-220567848255153535607069800787691661936438297108148689639248783128678079214640889590128782770085530755112470408291236947689051750457218775443167682748142722054630242091447294736088191718916417707150976621327234970714706282136440105536875285885276415259019795455425141466513116",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": -0.01914694550120648,
+      "outward_lower": -0.019146945501206485,
+      "outward_upper": -0.01914694550120648
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "1954096194408686019787348208321715702430705983432807533512274847823354270046069243462426203320111070070041450034867290843318246798503899551128715001454532959907073967561871639288978643423040991904674787446179342736201657874365633602675175878067253919737673096188894549392230932",
+      "denominator": "11519740746180907741638068581367981206917389677636055304882158414511091373066813628513493782414315805498365555023132929895729388914699118592413916967337609447473424829966030798458507604319203302517048051730703325345585378609005560118415631300791782479829089469222420459047852261",
+      "float": 0.16963022323714355,
+      "outward_lower": 0.16963022323714355,
+      "outward_upper": 0.16963022323714358
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    },
+    {
+      "numerator": "0",
+      "denominator": "1",
+      "float": 0.0,
+      "outward_lower": 0.0,
+      "outward_upper": 0.0
+    }
+  ],
+  "intercept": {
+    "numerator": "624994238635310041857858884471502095172205186487143570630763410803158498734096646937130542835343470467533195688419012095216775051393084179973617545449188220815982557663996451756196570754434812623393707953413533816953424089930971230797908445410207027457113162524208623795377096069532031429911",
+    "denominator": "51880300131905055647259659626695197170338677537253454118824107860784682659049321012807649345057667213512018011385751884123674682803825040985364446125725615671443707106498668732411341568494310815522793313684828435448056616427409219823344836958847914115241574598986479091394106108186099718291456",
+    "float": 0.012046850867212978,
+    "outward_lower": 0.012046850867212978,
+    "outward_upper": 0.01204685086721298
+  },
+  "active": [
+    6,
+    7,
+    8,
+    9,
+    50,
+    81,
+    85,
+    90
+  ],
+  "optimal_primal": {
+    "numerator": "172423239969397832732563439147238275513714633515537755572443406620878639626285985504379707583018938026723024274854389289281432504773391186364543889665492002637179093124328789141349527975935579512122220934903668399040205394019604076935246626869226393588710195323469220506371838985127388061126521623447248379314535",
+    "denominator": "233648100341917103090083142164018564072080787391269733246840121577645521416597172074330929051109687208009339148031502563600304053404934744035032994415793063674056071580131861487413611469124045546171385957417020168989835551637125419132666219927913249073035307166928724236671889736270491074540723520115023282176",
+    "float": 737.9612319427218,
+    "outward_lower": 737.9612319427217,
+    "outward_upper": 737.9612319427218
+  },
+  "optimal_dual": {
+    "numerator": "172423239969397832732563439147238275513714633515537755572443406620878639626285985504379707583018938026723024274854389289281432504773391186364543889665492002637179093124328789141349527975935579512122220934903668399040205394019604076935246626869226393588710195323469220506371838985127388061126521623447248379314535",
+    "denominator": "233648100341917103090083142164018564072080787391269733246840121577645521416597172074330929051109687208009339148031502563600304053404934744035032994415793063674056071580131861487413611469124045546171385957417020168989835551637125419132666219927913249073035307166928724236671889736270491074540723520115023282176",
+    "float": 737.9612319427218,
+    "outward_lower": 737.9612319427217,
+    "outward_upper": 737.9612319427218
+  },
+  "returned_primal": {
+    "numerator": "4973848863900140965226722466525444630002821904634615458873070095043847",
+    "denominator": "6739986666787659948666753771754907668409286105635143120275902562304",
+    "float": 737.9612319427218,
+    "outward_lower": 737.9612319427217,
+    "outward_upper": 737.9612319427218
+  },
+  "returned_true_gap": {
+    "numerator": "61998779587569056518408025112624914233522541598201031563728971504128768845116119272702436290064449855648557527384342630502255594791201640473974477154897047016909444741684422249904940629819814349949678680139704692323139261419054395999968760262060418802009135560157953720737100139506389885571889929271691204425851785027",
+    "denominator": "77642899034109847007207920818939982619901685978176303647918923521091446894444788237622198509431625530487821635066049773120658228555910388837035170773235716386014930874853150423723355228155503767301753121815098348161756944402761783011734724679605917562486743156537695747924586808995002510387330816416674012529377893385347670486728658957939769344",
+    "float": 7.985119097669439e-28,
+    "outward_lower": 7.985119097669438e-28,
+    "outward_upper": 7.985119097669439e-28
+  },
+  "Gram_witness_sha256": "87c23dc91e9a35570554250d13aa332b09ea4b15a53362308a8e528ae458be0b",
+  "inverse_residual_bound": {
+    "numerator": "1607809201743734105103230338036212249149",
+    "denominator": "191561942608236107294793378393788647952342390272950272",
+    "float": 8.393155654262024e-15,
+    "outward_lower": 8.393155654262022e-15,
+    "outward_upper": 8.393155654262024e-15
+  },
+  "inverse_norm_bound": {
+    "numerator": "428050841530611553051",
+    "denominator": "2361183241434822606848",
+    "float": 0.18128658293817868,
+    "outward_lower": 0.18128658293817868,
+    "outward_upper": 0.1812865829381787
+  },
+  "gram_min_eigenvalue_lower_bound": {
+    "numerator": "191561942608234499485591634659683544722004354060701123",
+    "denominator": "34727609996446620221742310628394139704126027033739264",
+    "float": 5.516128021128877,
+    "outward_lower": 5.516128021128877,
+    "outward_upper": 5.5161280211288775
+  },
+  "coefficient_L2_radius": {
+    "numerator": "867",
+    "denominator": "72057594037927936",
+    "float": 1.2032042029375134e-14,
+    "outward_lower": 1.2032042029375134e-14,
+    "outward_upper": 1.2032042029375134e-14
+  },
+  "psi_mapping_row_norm_bound": {
+    "numerator": "10",
+    "denominator": "1",
+    "float": 10.0,
+    "outward_lower": 10.0,
+    "outward_upper": 10.0
+  },
+  "psi_uniform_radius": {
+    "numerator": "157553595575714440289",
+    "denominator": "1298074214633706907132624082305024",
+    "float": 1.213748750260579e-13,
+    "outward_lower": 1.2137487502605788e-13,
+    "outward_upper": 1.213748750260579e-13
+  },
+  "psi_rounding_envelope": {
+    "numerator": "1368760498505639009",
+    "denominator": "1298074214633706907132624082305024",
+    "float": 1.0544547323065641e-15,
+    "outward_lower": 1.0544547323065641e-15,
+    "outward_upper": 1.0544547323065643e-15
+  },
+  "coefficient_max_error": 3.90711353281139e-15,
+  "scope": "Final fixed-penalty objective, exact exported arrays; no exhaustive adaptive-branch certificate"
+}

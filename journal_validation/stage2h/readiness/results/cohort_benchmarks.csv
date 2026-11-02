@@ -1,0 +1,4 @@
+mode,workers,cases,wall_seconds,sampled_tree_peak_RSS_MiB,sample_interval_seconds
+sequential,1,12,136.49343619996216,364.015625,0.05
+repeat,1,12,142.0365552000003,363.484375,0.05
+parallel,2,12,74.79292540007737,577.859375,0.05

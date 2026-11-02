@@ -1,0 +1,10 @@
+{
+  "status": "PASS_WITH_EXPLICIT_UNRESOLVED_COMPONENTS",
+  "arithmetic_rational_tests": 10000,
+  "real_density_high_precision_containments": 24000,
+  "primary_candidates": 24,
+  "native_paths_reproduced": 72,
+  "end_to_end_certified_decisions": 0,
+  "unresolved_primary_candidates": 24,
+  "audit_scope": "Separate rational arithmetic tests, exact score reconstruction, independent 130-digit density containment; no full adaptive proof or external reviewer"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "directory": "journal_validation\\stage2g\\full_path_validation",
+    "files": 3764
+  },
+  {
+    "directory": "journal_validation\\stage2g\\end_to_end_certification",
+    "files": 962
+  }
+]

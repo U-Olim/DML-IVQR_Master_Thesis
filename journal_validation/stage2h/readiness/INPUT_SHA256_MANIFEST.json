@@ -1,0 +1,787 @@
+{
+  "journal_validation/stage2h/readiness/inputs/cutoff.bin": {
+    "sha256": "1dcb25ee8a5129950f0f8e29c728a01a46fa57e7c5b8d1ea4c6d026ce11848f4",
+    "bytes": 8,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/preparation.csv": {
+    "sha256": "87900073f8d1d76a9dcaba26e6200237111755d960248aeba6aaa618df307a9b",
+    "bytes": 3310,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/primitives_n1000.rds": {
+    "sha256": "622c29093404b8318e45064cb9d5853cb82d0bc740470e5cc36ac892575be83b",
+    "bytes": 1576816,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/primitives_n500.rds": {
+    "sha256": "2c98d85401c6e3b8486a4af19a9a79efa62f8779646be11979f4e68c7190605a",
+    "bytes": 788668,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/R_sessionInfo.txt": {
+    "sha256": "36ff880d2a2b28f0a731c868041df907bdea1e273a64274ade22bc426e7e24bf",
+    "bytes": 685,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/D.bin": {
+    "sha256": "925ed3497a58dc5b7ae9dc3707924870b3add02c8eaa5aa3e1727a0354431387",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/lambda.bin": {
+    "sha256": "a6a09951545d7d8f6eb01706a544f7852d40f43b0f1d510127edff8786763e95",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/metadata.json": {
+    "sha256": "3b281fdcd210f3c6d9607842d3f08b919394620fb535ec8e525c6f6c93288531",
+    "bytes": 127,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/parameters.bin": {
+    "sha256": "8eb5e24ee20dcd7a0c386deafbfd9d5d4a3615b1587b64ce59b681b277a0ddc6",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/penalty_rng_states.txt": {
+    "sha256": "efe32ad4f7bb592382554969660d66b803985ba05ab98e43d0d6f880d81360e9",
+    "bytes": 139,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/response.bin": {
+    "sha256": "b28d21d6876ae9d93d3a8be832f821602094a94d52641276e896a8dc732c0189",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/task.rds": {
+    "sha256": "531e4bb16296ea0178c93bed1b5ffe215c561ca1d852fb10d8b8a18afdaadaec",
+    "bytes": 2453897,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/X_column_major.bin": {
+    "sha256": "557778f5bd1fc281174d2a2f972c88eb3f65c809995f173d46c513b5a16b5764",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/X_row_major.bin": {
+    "sha256": "c9837e2eafc040ab7fd3427272c9c5be7a1504f0272a3f250018288c39db583e",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/Y.bin": {
+    "sha256": "d32cfb49eb925b499976ab451bd50134fe98f72cce44df7e2bbb4e3dd6de2dbd",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k010/Z_row_major.bin": {
+    "sha256": "706e4d74d87d78679eaacd88b5c2d831c66254b74f035fa16b97fa901804028b",
+    "bytes": 16000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/D.bin": {
+    "sha256": "5f6efc5b11b57b04988ba1997b1f51d497302af4c884998f7fd1f57b59796887",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/lambda.bin": {
+    "sha256": "a6a09951545d7d8f6eb01706a544f7852d40f43b0f1d510127edff8786763e95",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/metadata.json": {
+    "sha256": "b36f868dca52b59988b217fa9009ced288b36aeae4b7a40afc63b9da88f52c71",
+    "bytes": 127,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/parameters.bin": {
+    "sha256": "1b6a2af4b7096aa02ed35cdfe94c6a218b0d9d93858a99a6b8c45aaecac2f09d",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/penalty_rng_states.txt": {
+    "sha256": "efe32ad4f7bb592382554969660d66b803985ba05ab98e43d0d6f880d81360e9",
+    "bytes": 139,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/response.bin": {
+    "sha256": "e35746b8dbe731c8e8847e4a286b50008e38821c09fe5414c108d6974029b8b1",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/task.rds": {
+    "sha256": "e4688d179a822693c03bcfc5ae6ea7004b5ab6f654701717f513d8b17c382619",
+    "bytes": 2453891,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/X_column_major.bin": {
+    "sha256": "557778f5bd1fc281174d2a2f972c88eb3f65c809995f173d46c513b5a16b5764",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/X_row_major.bin": {
+    "sha256": "c9837e2eafc040ab7fd3427272c9c5be7a1504f0272a3f250018288c39db583e",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/Y.bin": {
+    "sha256": "786ad9efba3e703bb6101ad56f866a1a52ac14849266e6f85bfe1bd5c24d052e",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t10_k100/Z_row_major.bin": {
+    "sha256": "706e4d74d87d78679eaacd88b5c2d831c66254b74f035fa16b97fa901804028b",
+    "bytes": 16000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/D.bin": {
+    "sha256": "925ed3497a58dc5b7ae9dc3707924870b3add02c8eaa5aa3e1727a0354431387",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/lambda.bin": {
+    "sha256": "b9b0c80ae2dc7f836b4588e46b6c4aca01bcb5eb9b4976b6ac5e607cab51cc15",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/metadata.json": {
+    "sha256": "0774d3bdf7c2146b6e238c767bf90e7ec2624629423d99d80e27f2c8a05e9d9b",
+    "bytes": 127,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/parameters.bin": {
+    "sha256": "42ea90b1f99047754c77fb972e297de7b062a84f383e271d1f58c74b2aeb2f83",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/penalty_rng_states.txt": {
+    "sha256": "c0a255fca5743ebc5552f4c66c29d8df697c2b1706fa7e0cfae7509ab6c35abc",
+    "bytes": 143,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/response.bin": {
+    "sha256": "ed46aa1bbb5d2cb9a7373bf8a2ce6c16580005e068eb4073bff0543615cd43a0",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/task.rds": {
+    "sha256": "67fefb88e4b9700d45a9b0b75da5686bf46fa68914e7e3e423122edd4c37fb28",
+    "bytes": 2453896,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/X_column_major.bin": {
+    "sha256": "557778f5bd1fc281174d2a2f972c88eb3f65c809995f173d46c513b5a16b5764",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/X_row_major.bin": {
+    "sha256": "c9837e2eafc040ab7fd3427272c9c5be7a1504f0272a3f250018288c39db583e",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/Y.bin": {
+    "sha256": "d32cfb49eb925b499976ab451bd50134fe98f72cce44df7e2bbb4e3dd6de2dbd",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k010/Z_row_major.bin": {
+    "sha256": "706e4d74d87d78679eaacd88b5c2d831c66254b74f035fa16b97fa901804028b",
+    "bytes": 16000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/D.bin": {
+    "sha256": "5f6efc5b11b57b04988ba1997b1f51d497302af4c884998f7fd1f57b59796887",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/lambda.bin": {
+    "sha256": "b9b0c80ae2dc7f836b4588e46b6c4aca01bcb5eb9b4976b6ac5e607cab51cc15",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/metadata.json": {
+    "sha256": "192638bc71e0eeabf1b673f0a576fa1555bbcdb0b509fb7ed43d94557c9fbcf4",
+    "bytes": 127,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/parameters.bin": {
+    "sha256": "74bcfda8698f0f558b70f711872f55a13241f3f523a347cc3340792fff1723b6",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/penalty_rng_states.txt": {
+    "sha256": "c0a255fca5743ebc5552f4c66c29d8df697c2b1706fa7e0cfae7509ab6c35abc",
+    "bytes": 143,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/response.bin": {
+    "sha256": "fafdaa05a574d5f771a91c44fd5d94161c52079cf7d391418439cfa36abb0e6a",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/task.rds": {
+    "sha256": "2d938ec93804cc01d691c9fb1632bcec120e2b10a6ed6618dc77022c740b9b93",
+    "bytes": 2453874,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/X_column_major.bin": {
+    "sha256": "557778f5bd1fc281174d2a2f972c88eb3f65c809995f173d46c513b5a16b5764",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/X_row_major.bin": {
+    "sha256": "c9837e2eafc040ab7fd3427272c9c5be7a1504f0272a3f250018288c39db583e",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/Y.bin": {
+    "sha256": "786ad9efba3e703bb6101ad56f866a1a52ac14849266e6f85bfe1bd5c24d052e",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t50_k100/Z_row_major.bin": {
+    "sha256": "706e4d74d87d78679eaacd88b5c2d831c66254b74f035fa16b97fa901804028b",
+    "bytes": 16000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/D.bin": {
+    "sha256": "925ed3497a58dc5b7ae9dc3707924870b3add02c8eaa5aa3e1727a0354431387",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/lambda.bin": {
+    "sha256": "41fcadf7cad935332955d1129a7df94d60be3244f866077b703bff3e38dcb805",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/metadata.json": {
+    "sha256": "84e70ab9f75c366af3e57d29653eb3ffb451cfa72a8b53c65de3b0906f4df752",
+    "bytes": 127,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/parameters.bin": {
+    "sha256": "931a85911ba7748c064e248a9410efb8feb02ea48c181b85d9ca86b730de3e62",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/penalty_rng_states.txt": {
+    "sha256": "0f8759924b3a6c11edaf5f49cfafc6976aa95b0e97387b6e2768d3b29994f223",
+    "bytes": 144,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/response.bin": {
+    "sha256": "6fece50ac69ca11e71c5c06371e163c2ee66bb94596ea439c900ad4f17702090",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/task.rds": {
+    "sha256": "05bd45d8e630453a0ee4c84fa77423db0d45d1d1a664f6ac2c3233447ae13fd9",
+    "bytes": 2453906,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/X_column_major.bin": {
+    "sha256": "557778f5bd1fc281174d2a2f972c88eb3f65c809995f173d46c513b5a16b5764",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/X_row_major.bin": {
+    "sha256": "c9837e2eafc040ab7fd3427272c9c5be7a1504f0272a3f250018288c39db583e",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/Y.bin": {
+    "sha256": "d32cfb49eb925b499976ab451bd50134fe98f72cce44df7e2bbb4e3dd6de2dbd",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k010/Z_row_major.bin": {
+    "sha256": "706e4d74d87d78679eaacd88b5c2d831c66254b74f035fa16b97fa901804028b",
+    "bytes": 16000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/D.bin": {
+    "sha256": "5f6efc5b11b57b04988ba1997b1f51d497302af4c884998f7fd1f57b59796887",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/lambda.bin": {
+    "sha256": "41fcadf7cad935332955d1129a7df94d60be3244f866077b703bff3e38dcb805",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/metadata.json": {
+    "sha256": "efb29ff4e3f9cd2096eda610edff293bc9cde8155eaed850badc96eb108ff97c",
+    "bytes": 127,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/parameters.bin": {
+    "sha256": "27dafa9f519126b4526c75a17d96abed1c6150dfd9001fbc61111edae1784b28",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/penalty_rng_states.txt": {
+    "sha256": "0f8759924b3a6c11edaf5f49cfafc6976aa95b0e97387b6e2768d3b29994f223",
+    "bytes": 144,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/response.bin": {
+    "sha256": "8ad821e58870d492d87e8e37ade302a973147c19c947e5b46a4fd1a1d94dae69",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/task.rds": {
+    "sha256": "35f0ed2dda93304f7d42baa08ffef8bbcb2a73bbd7a75768ed3960eaef853e06",
+    "bytes": 2453901,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/X_column_major.bin": {
+    "sha256": "557778f5bd1fc281174d2a2f972c88eb3f65c809995f173d46c513b5a16b5764",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/X_row_major.bin": {
+    "sha256": "c9837e2eafc040ab7fd3427272c9c5be7a1504f0272a3f250018288c39db583e",
+    "bytes": 808000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/Y.bin": {
+    "sha256": "786ad9efba3e703bb6101ad56f866a1a52ac14849266e6f85bfe1bd5c24d052e",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n1000_t90_k100/Z_row_major.bin": {
+    "sha256": "706e4d74d87d78679eaacd88b5c2d831c66254b74f035fa16b97fa901804028b",
+    "bytes": 16000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/D.bin": {
+    "sha256": "ffef18d592cf7676f2f3529366355489b96959f89cef985d0576521c9a0a9360",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/lambda.bin": {
+    "sha256": "f734d2044fd18af3589745d4cc44124c7148802f2e7dc6461945108f1bf1388b",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/metadata.json": {
+    "sha256": "95e40fb9bf69c277eacea98624987c2b579ef4ea76e4383061d9983f135f67c2",
+    "bytes": 125,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/parameters.bin": {
+    "sha256": "8eb5e24ee20dcd7a0c386deafbfd9d5d4a3615b1587b64ce59b681b277a0ddc6",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/penalty_rng_states.txt": {
+    "sha256": "b640857bdc88150ee993de7810498476fb125c9d8c98d0f5abc8c1bea1ff4b68",
+    "bytes": 139,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/response.bin": {
+    "sha256": "033608953f96eb8e086f3cabdda818ee1beb4049fc107e6d857922f3c3f596fc",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/task.rds": {
+    "sha256": "48fbfc95a366235280f196a347df69350ec2a4fc75dd96e65f60309252056aad",
+    "bytes": 1227854,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/X_column_major.bin": {
+    "sha256": "3e7a543ac447ea90c07eb46e55664ef0b91281b23edd3b123c5091c905b6f04f",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/X_row_major.bin": {
+    "sha256": "e683cb3f755446b249c5a231904bad40f1b01171d93093d85e637e6879b20721",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/Y.bin": {
+    "sha256": "c012db8e9934b21594df9af5e23d6d316741c8616645ba77d1a813ddbd8eb9b1",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k010/Z_row_major.bin": {
+    "sha256": "fbf9fef0b52ddef426bdabd211d842cf4edc5c44dcbf40b76b4b4d7245ba6789",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/D.bin": {
+    "sha256": "8a232d4e7038fa6990a66cf4fa41d353e204b38751de9bb249e1e1e368db4eea",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/lambda.bin": {
+    "sha256": "f734d2044fd18af3589745d4cc44124c7148802f2e7dc6461945108f1bf1388b",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/metadata.json": {
+    "sha256": "4eb5b0e15c590d3a3f5548e7fbf4214b3debdbb0ab86ea2b8db9bd4c518e491f",
+    "bytes": 125,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/parameters.bin": {
+    "sha256": "1b6a2af4b7096aa02ed35cdfe94c6a218b0d9d93858a99a6b8c45aaecac2f09d",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/penalty_rng_states.txt": {
+    "sha256": "b640857bdc88150ee993de7810498476fb125c9d8c98d0f5abc8c1bea1ff4b68",
+    "bytes": 139,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/response.bin": {
+    "sha256": "1d1ff8fce0487113c79a9b4fd42073a820c101e21bbb59358e537bfe81252121",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/task.rds": {
+    "sha256": "06321e55dca9e791eb50368686bed844d887a987ee9a025f2815ce189a27858f",
+    "bytes": 1227873,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/X_column_major.bin": {
+    "sha256": "3e7a543ac447ea90c07eb46e55664ef0b91281b23edd3b123c5091c905b6f04f",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/X_row_major.bin": {
+    "sha256": "e683cb3f755446b249c5a231904bad40f1b01171d93093d85e637e6879b20721",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/Y.bin": {
+    "sha256": "7839ba45f92bf2df6d87b67c983429c76d4d86cc3ce0974c1a80d4d5367d4ece",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t10_k100/Z_row_major.bin": {
+    "sha256": "fbf9fef0b52ddef426bdabd211d842cf4edc5c44dcbf40b76b4b4d7245ba6789",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/D.bin": {
+    "sha256": "ffef18d592cf7676f2f3529366355489b96959f89cef985d0576521c9a0a9360",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/lambda.bin": {
+    "sha256": "79c03b6a38eb80dcab778c6451f4559695f6553cbca435e8e1af0b63edcdd125",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/metadata.json": {
+    "sha256": "dc3d79c2028b3b8576bbb9ff6edcf138001713959d2850b880bde34b5fedc882",
+    "bytes": 125,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/parameters.bin": {
+    "sha256": "42ea90b1f99047754c77fb972e297de7b062a84f383e271d1f58c74b2aeb2f83",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/penalty_rng_states.txt": {
+    "sha256": "a22eb88dcb772959ff58fa9017fe01b8a11dbfa32377ccd40e5b031a11789861",
+    "bytes": 143,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/response.bin": {
+    "sha256": "8b5def5635517b7977d6720f9a975f7e243eb4261664c981e38fdab2e87755cf",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/task.rds": {
+    "sha256": "317fbba3fb9a326fbcf9664830d9330b32ed06a1ecee6f6cfe7659fe1d79efd1",
+    "bytes": 1227857,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/X_column_major.bin": {
+    "sha256": "3e7a543ac447ea90c07eb46e55664ef0b91281b23edd3b123c5091c905b6f04f",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/X_row_major.bin": {
+    "sha256": "e683cb3f755446b249c5a231904bad40f1b01171d93093d85e637e6879b20721",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/Y.bin": {
+    "sha256": "c012db8e9934b21594df9af5e23d6d316741c8616645ba77d1a813ddbd8eb9b1",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k010/Z_row_major.bin": {
+    "sha256": "fbf9fef0b52ddef426bdabd211d842cf4edc5c44dcbf40b76b4b4d7245ba6789",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/D.bin": {
+    "sha256": "8a232d4e7038fa6990a66cf4fa41d353e204b38751de9bb249e1e1e368db4eea",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/lambda.bin": {
+    "sha256": "79c03b6a38eb80dcab778c6451f4559695f6553cbca435e8e1af0b63edcdd125",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/metadata.json": {
+    "sha256": "48b846120d0bd2c3191b225fae1c9765786681a6cc750f0dfd04faf21216113e",
+    "bytes": 125,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/parameters.bin": {
+    "sha256": "74bcfda8698f0f558b70f711872f55a13241f3f523a347cc3340792fff1723b6",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/penalty_rng_states.txt": {
+    "sha256": "a22eb88dcb772959ff58fa9017fe01b8a11dbfa32377ccd40e5b031a11789861",
+    "bytes": 143,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/response.bin": {
+    "sha256": "2ba47011e7427512e62e0544112f48cc12108b4b1e4c190aa97788bc14bd4563",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/task.rds": {
+    "sha256": "e9f7c4d21cb693ca7391ee70b905b19524e509e506dfea271280b54c4a7d23da",
+    "bytes": 1227858,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/X_column_major.bin": {
+    "sha256": "3e7a543ac447ea90c07eb46e55664ef0b91281b23edd3b123c5091c905b6f04f",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/X_row_major.bin": {
+    "sha256": "e683cb3f755446b249c5a231904bad40f1b01171d93093d85e637e6879b20721",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/Y.bin": {
+    "sha256": "7839ba45f92bf2df6d87b67c983429c76d4d86cc3ce0974c1a80d4d5367d4ece",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t50_k100/Z_row_major.bin": {
+    "sha256": "fbf9fef0b52ddef426bdabd211d842cf4edc5c44dcbf40b76b4b4d7245ba6789",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/D.bin": {
+    "sha256": "ffef18d592cf7676f2f3529366355489b96959f89cef985d0576521c9a0a9360",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/lambda.bin": {
+    "sha256": "992c37e8e98532a6c61b86c3383a840208cf82f368b3d1596677719178952434",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/metadata.json": {
+    "sha256": "b9e7daaee7f78768ed5f92dc81c888464c09ef5d3c4b74d3c41ef759910a3381",
+    "bytes": 125,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/parameters.bin": {
+    "sha256": "931a85911ba7748c064e248a9410efb8feb02ea48c181b85d9ca86b730de3e62",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/penalty_rng_states.txt": {
+    "sha256": "0b77b3b8d1d1e3fbbb4544fb56b123695867e5cd457c9c7a179f6381338d0e00",
+    "bytes": 142,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/response.bin": {
+    "sha256": "6002e306f7da01ed5a3b776f0b2096ef1b7c3eaf5ded7d14af46d89f41baf53f",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/task.rds": {
+    "sha256": "4e023460abbc4d2180e2434c1a4c7a07212caf7552da6d808718b8818833a6f7",
+    "bytes": 1227850,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/X_column_major.bin": {
+    "sha256": "3e7a543ac447ea90c07eb46e55664ef0b91281b23edd3b123c5091c905b6f04f",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/X_row_major.bin": {
+    "sha256": "e683cb3f755446b249c5a231904bad40f1b01171d93093d85e637e6879b20721",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/Y.bin": {
+    "sha256": "c012db8e9934b21594df9af5e23d6d316741c8616645ba77d1a813ddbd8eb9b1",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k010/Z_row_major.bin": {
+    "sha256": "fbf9fef0b52ddef426bdabd211d842cf4edc5c44dcbf40b76b4b4d7245ba6789",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/D.bin": {
+    "sha256": "8a232d4e7038fa6990a66cf4fa41d353e204b38751de9bb249e1e1e368db4eea",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/lambda.bin": {
+    "sha256": "992c37e8e98532a6c61b86c3383a840208cf82f368b3d1596677719178952434",
+    "bytes": 808,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/metadata.json": {
+    "sha256": "b81db81390a1d0d70defa8f55bd6b89c6b3dec11970f7c99b862857c2c48bae4",
+    "bytes": 125,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/parameters.bin": {
+    "sha256": "27dafa9f519126b4526c75a17d96abed1c6150dfd9001fbc61111edae1784b28",
+    "bytes": 24,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/penalty_rng_states.txt": {
+    "sha256": "0b77b3b8d1d1e3fbbb4544fb56b123695867e5cd457c9c7a179f6381338d0e00",
+    "bytes": 142,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/response.bin": {
+    "sha256": "5cd226f55f799ac4fae4bedbc5b8f2c76ba4450ce669e8ab97cf3d5b55dde48f",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/task.rds": {
+    "sha256": "81c12581089e7888d9e092f8311d4549704f33bef1b72da91f79b9a4ec6b0e83",
+    "bytes": 1227869,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/X_column_major.bin": {
+    "sha256": "3e7a543ac447ea90c07eb46e55664ef0b91281b23edd3b123c5091c905b6f04f",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/X_row_major.bin": {
+    "sha256": "e683cb3f755446b249c5a231904bad40f1b01171d93093d85e637e6879b20721",
+    "bytes": 404000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/Y.bin": {
+    "sha256": "7839ba45f92bf2df6d87b67c983429c76d4d86cc3ce0974c1a80d4d5367d4ece",
+    "bytes": 4000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "journal_validation/stage2h/readiness/inputs/n500_t90_k100/Z_row_major.bin": {
+    "sha256": "fbf9fef0b52ddef426bdabd211d842cf4edc5c44dcbf40b76b4b4d7245ba6789",
+    "bytes": 8000,
+    "category": "new original-DGP diagnostic observations, penalties, parameters and RNG records"
+  },
+  "thesis_extension/src/dgp_kappa.R": {
+    "sha256": "2747623cd5991af2cc5f28301e40f27b8b817d25bb1e6261bcfd46fc25fbd226",
+    "bytes": 1183,
+    "category": "unchanged original statistical conventions and environment"
+  },
+  "thesis_extension/src/author_bc_dml_wrapper.R": {
+    "sha256": "9e51ece839e3abc73e165ee0f7b354d080e0d9e105f979e4c5dd11a5f6173577",
+    "bytes": 2535,
+    "category": "unchanged original statistical conventions and environment"
+  },
+  "thesis_extension/environment/check_author_environment.R": {
+    "sha256": "2233d2682414476ffc0150872717f960b1160947401007db6cfeffef1e30dcd2",
+    "bytes": 4619,
+    "category": "unchanged original statistical conventions and environment"
+  },
+  "journal_validation/stage2b/diagnostics.R": {
+    "sha256": "5538fbc0a3e2beef41f8cbc04dfaa0456c29c5904da6fa8c1f11bf35cae9386d",
+    "bytes": 12788,
+    "category": "unchanged original statistical conventions and environment"
+  },
+  "journal_validation/stage2e/output/paired_20261029T093009Z/cutoff.bin": {
+    "sha256": "1dcb25ee8a5129950f0f8e29c728a01a46fa57e7c5b8d1ea4c6d026ce11848f4",
+    "bytes": 8,
+    "category": "unchanged original statistical conventions and environment"
+  },
+  "journal_validation/stage2g/deterministic_implementation/common_v1.py": {
+    "sha256": "dc5add4f813a42a4f7b2182b88395d70c013075423a964e58d6ea8b1ea1fb752",
+    "bytes": 1818,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/compare_v1.py": {
+    "sha256": "7fefba1bbe95b0c8dc3b5cb180813240c4e8f94edf2c3a75a0a7efb7785b131d",
+    "bytes": 6621,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/finalize_v1.py": {
+    "sha256": "69b0fe8cc1922d4a060c6d2634b02cfdabbf47529949afefb926f9c9f68a2a30",
+    "bytes": 23806,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/instrument_v1.py": {
+    "sha256": "6a18659d3f06cecfd88e390c96237ee353c6ba30c0a0ed35966e38c985d8c0ce",
+    "bytes": 10372,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/outcome_exact_v1.py": {
+    "sha256": "42fce0d99507289c33ff4650548c11c0fadb83b4b7b1379a5df0e22dbe8614ba",
+    "bytes": 3134,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/outcome_v1.py": {
+    "sha256": "3d194cf79f675c9168c3349ee8b0cc5c73db456425e744f056373c4b2039f987",
+    "bytes": 4587,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/run_v1.py": {
+    "sha256": "569b91e845ad4318043e9b7b25bbedb0d4bf85247442c415d5bfa93fa778ce92",
+    "bytes": 2388,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/verify_v1.py": {
+    "sha256": "3c937729dea0ed49f417345aa792eeb954bdc2f8685c394da7a61b5a9faacd25",
+    "bytes": 7093,
+    "category": "unchanged version 2G-D.1 numerical implementation"
+  },
+  "journal_validation/stage2g/deterministic_implementation/CONFIG_v1.json": {
+    "sha256": "4d60f37c3c567a93b9cf0264e48024ba445fdeabecd31058ad58f9d0edd21e1f",
+    "bytes": 1092,
+    "category": "unchanged numerical settings"
+  },
+  "journal_validation/stage2f/analyze.py": {
+    "sha256": "4f7de74916b8d0b5ac1182482e6f6b3340b644e44ba8dfdf66e9f20489305608",
+    "bytes": 14371,
+    "category": "shared read-only exact arithmetic or verification utility"
+  },
+  "journal_validation/stage2f/verify.py": {
+    "sha256": "532761829af26658dba24b28e936d509e6fba16df5422871fef56c53177a313e",
+    "bytes": 7550,
+    "category": "shared read-only exact arithmetic or verification utility"
+  },
+  "journal_validation/stage2c/certification/exact_bounds.py": {
+    "sha256": "32f50929ed8a5686588ac9b067f13a8d31f90fa80ed056f892900308ca49e1d5",
+    "bytes": 6106,
+    "category": "shared read-only exact arithmetic or verification utility"
+  },
+  "journal_validation/stage2g/full_path_validation/audit.py": {
+    "sha256": "39f564cde51e563036ae672eef68be5ea41c1e13c981670b4a17c9ff8a07f15c",
+    "bytes": 11941,
+    "category": "shared read-only exact arithmetic or verification utility"
+  },
+  "journal_validation/stage2g/full_path_validation/common.py": {
+    "sha256": "49e3fca7c590764b8b4957d7b6770a3f6e36642f25895883cdf8fdfb6596d417",
+    "bytes": 1412,
+    "category": "shared read-only exact arithmetic or verification utility"
+  },
+  "journal_validation/stage2g/full_path_validation/verify_certificates.py": {
+    "sha256": "43e165bbae62f5da95b4f5d9a4ad08768ce0a1880e88a0505623d53fba662c97",
+    "bytes": 8439,
+    "category": "shared read-only exact arithmetic or verification utility"
+  }
+}

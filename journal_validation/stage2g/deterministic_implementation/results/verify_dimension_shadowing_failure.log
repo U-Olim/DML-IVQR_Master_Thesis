@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\stage2g\deterministic_implementation\verify_v1.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\stage2g\deterministic_implementation\verify_v1.py", line 88, in main
+    X=verify_outcome(id);width=verify_instruments(id,X)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\stage2g\deterministic_implementation\verify_v1.py", line 66, in verify_instruments
+    rownorm=val(c['psi_mapping_row_norm_bound']);assert rownorm*rownorm>=100
+                                                        ^^^^^^^^^^^^^^^^^^^^
+AssertionError

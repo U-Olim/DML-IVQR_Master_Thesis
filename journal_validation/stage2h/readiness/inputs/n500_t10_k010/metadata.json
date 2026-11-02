@@ -1,0 +1,8 @@
+{
+  "id": "n500_t10_k010",
+  "n": 500,
+  "tau": 0.1,
+  "kappa": 0.1,
+  "candidate": "truth",
+  "diagnostic_index": 1
+}

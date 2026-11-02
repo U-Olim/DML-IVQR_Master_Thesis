@@ -1,0 +1,12 @@
+{
+  "id": "pilot_005_plus",
+  "instrument": 1,
+  "call": 1,
+  "status": "A_FIXED_INPUT_SHOOTING_CERTIFIED",
+  "coordinates_certified": 900,
+  "sweeps": 9,
+  "native_containment_until_stop": true,
+  "max_coefficient_width_at_stop": 1.8266859844184857e-08,
+  "full_adaptive_status": "UNRESOLVED_DENSITY_CENTERING_QR_AND_PENALTY_INPUTS",
+  "first_uncertain_branch": null
+}

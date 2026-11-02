@@ -1,0 +1,62 @@
+[
+  {
+    "step": "outcome",
+    "returncode": 0,
+    "seconds": 25.66775379993487
+  },
+  {
+    "step": "calibration",
+    "returncode": 1,
+    "seconds": 2.0877930000424385
+  },
+  {
+    "step": "calibration",
+    "returncode": 0,
+    "seconds": 12.501269300002605
+  },
+  {
+    "step": "instrument",
+    "returncode": 0,
+    "seconds": 60.70897390006576
+  },
+  {
+    "step": "outcome",
+    "returncode": 0,
+    "seconds": 25.559664100059308
+  },
+  {
+    "step": "calibration",
+    "returncode": 0,
+    "seconds": 12.419858800014481
+  },
+  {
+    "step": "instrument",
+    "returncode": 0,
+    "seconds": 37.534799800021574
+  },
+  {
+    "step": "verify",
+    "returncode": 1,
+    "seconds": 3.752567099989392
+  },
+  {
+    "step": "instrument",
+    "returncode": 0,
+    "seconds": 63.39725120004732
+  },
+  {
+    "step": "verify",
+    "returncode": 0,
+    "seconds": 180.55220080004074
+  },
+  {
+    "step": "compare",
+    "returncode": 0,
+    "seconds": 0.5890490000601858
+  },
+  {
+    "step": "compare",
+    "returncode": 0,
+    "seconds": 0.34841369988862425
+  }
+]

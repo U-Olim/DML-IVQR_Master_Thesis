@@ -1,0 +1,22 @@
+[
+  {
+    "script": "native_replay",
+    "returncode": 0,
+    "seconds": 22.563880300032906
+  },
+  {
+    "script": "density_bounds",
+    "returncode": 0,
+    "seconds": 6.585121699958108
+  },
+  {
+    "script": "branch_bounds",
+    "returncode": 0,
+    "seconds": 6.900125200045295
+  },
+  {
+    "script": "independent_verify",
+    "returncode": 0,
+    "seconds": 5.648361900006421
+  }
+]

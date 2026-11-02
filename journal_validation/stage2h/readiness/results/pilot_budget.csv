@@ -1,0 +1,3 @@
+planning_factor,replications_per_cell,cells,arms,candidates_per_profile,total_candidate_evaluations,serial_hours,two_worker_hours_using_observed_speedup,retained_storage_GiB,provisioned_memory_GiB,limitations
+1.0,20,12,2,3,1440,4.601015788332249,2.521172007987058,9.344875775277615,2.0,Bounded arm and off-truth costs not measured; original-input duplication charged conservatively; planning factor is not a mathematical bound
+2.0,20,12,2,3,1440,9.202031576664497,5.042344015974116,18.68975155055523,2.0,Bounded arm and off-truth costs not measured; original-input duplication charged conservatively; planning factor is not a mathematical bound

@@ -1,0 +1,68 @@
+{
+  "id": "n500_t90_k100",
+  "mode": "parallel",
+  "n": 500,
+  "tau": 0.9,
+  "kappa": 1.0,
+  "candidate_alpha": 2.281551565544601,
+  "status": "PASS",
+  "outcome_solve_seconds": 0.12359620002098382,
+  "outcome_certificate_seconds": 0.11013129993807524,
+  "certified_residual_signs": 500,
+  "exact_zero_residuals": 21,
+  "raw_LP_sign_disagreements": 11,
+  "LP_equality_max_error": 3.552713678800501e-14,
+  "outcome_exact_gap": 0,
+  "LP_warnings": [
+    "Unrecognized options detected: {'threads': 1, 'parallel': False, 'random_seed': 0}. These will be passed to HiGHS verbatim."
+  ],
+  "calibration_process_seconds": 1.7082415000768378,
+  "instrument_solve_seconds": 0.028994600055739284,
+  "instrument_certificate_seconds": 1.2434040999505669,
+  "inference_certificate_seconds": 0.4447935000061989,
+  "W": 0.3214655652074967,
+  "accepted": true,
+  "cutoff": 5.99146454710798,
+  "native_C_W": 0.32146528879077874,
+  "W_lower": 0.321465565205346,
+  "W_upper": 0.3214655652096487,
+  "W_reconstruction_error": 6.661338147750939e-16,
+  "W_consistent_with_exact_reference": true,
+  "max_instrument_objective_gap": 5.135509410425304e-28,
+  "max_instrument_KKT": 2.4868995751603507e-14,
+  "S_condition": 1.3580025338629012,
+  "candidate_with_certificates_before_independent_audit_seconds": 3.6910638000117615,
+  "independent_audit_seconds": 4.199238699977286,
+  "fingerprints": {
+    "LP_beta.bin": "02e6b368d410fd9eed17b146228f42ee721e4dbce92c030b5eba5ae1409380d6",
+    "outcome_certificate.json": "ce6d53c099fd2cd800aba3d1659b53923e6d73c4a77695818656b097872d988a",
+    "outcome_residual.bin": "5548b0bfdc7044d0390eaa2ed0b13a6c7e723abe3f16adbff89e8a480e1590ca",
+    "rank.bin": "96ee71f4792253c8c8419198c814cd7c8733e9b7805a78079951161e49260900",
+    "density.bin": "6e28877cd51e4813f452863f9418e4909517d4e9e2669c40765a1505300bdedf",
+    "instrument_coefficients.bin": "25f0a6696b0967d6f87e7bb4c08748bcc8f213ffaa4ab089bd7df86134e1b0a8",
+    "psi.bin": "50be40f8ab99952ce476544ca6f5af4719c7d3e796b14c766694e6ae3f5a95c6",
+    "score.bin": "dfe371f65bc5e7bbee18be15f2437c93122cfb66b60757c9b52ac8457f40c0a4",
+    "second_moment.bin": "c945847aa2c86393e8a8bd6d3e9d661486d2550a2b6db4e22c91bf80af4408e0",
+    "W.bin": "d27da70f4fd359dff1da260be33a09befa5533388aee8e0925f2305900148741",
+    "decision_bounds.json": "5bd77193a8005ecffc4fe038bb0c0fdfce7750eee8d5a87191fdaba957302434",
+    "instrument_1_last_penalty.bin": "e27eff0185677f55baab532880408c1adef933e63b202f7611cb07747cc804ed",
+    "instrument_2_last_penalty.bin": "6f65ad085593f986755f420a9ef716702315f78f6e3a53f16f6c41c42ad6dc21"
+  },
+  "total_candidate_seconds": 7.913798599969596,
+  "memory": {
+    "sampled_tree_peak_RSS_bytes": 266838016,
+    "sampling_seconds": 0.05,
+    "samples": 42,
+    "observed_OS_peak_working_set_by_PID": {
+      "10564": 106082304,
+      "20912": 193048576
+    },
+    "scope": "sum of sampled live-process RSS, shared pages counted per process; OS process peaks are separate high-water measures"
+  },
+  "own_OS_memory": {
+    "rss": 89649152,
+    "OS_peak_working_set": 106082304,
+    "private_commit": 104058880
+  },
+  "payload_bytes_before_result_json": 2504257
+}

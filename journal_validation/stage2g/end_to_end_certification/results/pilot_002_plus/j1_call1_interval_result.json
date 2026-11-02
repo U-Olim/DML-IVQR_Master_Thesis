@@ -1,0 +1,19 @@
+{
+  "id": "pilot_002_plus",
+  "instrument": 1,
+  "call": 1,
+  "status": "C_FIXED_INPUT_SHOOTING_UNRESOLVED",
+  "coordinates_certified": 773,
+  "sweeps": 18,
+  "native_containment_until_stop": true,
+  "max_coefficient_width_at_stop": 5.6163564678968214e-05,
+  "full_adaptive_status": "UNRESOLVED_DENSITY_CENTERING_QR_AND_PENALTY_INPUTS",
+  "first_uncertain_branch": {
+    "kind": "SOFT_THRESHOLD_BRANCH",
+    "sweep": 8,
+    "coordinate": 74,
+    "S0_lower": 19.18230726953856,
+    "S0_upper": 19.187253081125757,
+    "lambda": 19.182722966595023
+  }
+}

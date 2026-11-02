@@ -1,0 +1,19 @@
+{
+  "id": "pilot_001_truth",
+  "instrument": 2,
+  "call": 3,
+  "status": "C_FIXED_INPUT_SHOOTING_UNRESOLVED",
+  "coordinates_certified": 651,
+  "sweeps": 30,
+  "native_containment_until_stop": true,
+  "max_coefficient_width_at_stop": 0.00843939901522766,
+  "full_adaptive_status": "UNRESOLVED_DENSITY_CENTERING_QR_AND_PENALTY_INPUTS",
+  "first_uncertain_branch": {
+    "kind": "SOFT_THRESHOLD_BRANCH",
+    "sweep": 7,
+    "coordinate": 52,
+    "S0_lower": -25.064666554344416,
+    "S0_upper": -23.95584471773459,
+    "lambda": 24.26610815693892
+  }
+}

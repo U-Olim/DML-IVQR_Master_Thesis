@@ -1,0 +1,9 @@
+{
+  "source_sha256": "43e165bbae62f5da95b4f5d9a4ad08768ce0a1880e88a0505623d53fba662c97",
+  "executed_program_sha256": "a717cc8802789ddeca3ee696dc81fc8548ac8d929d8b2e2369dd845ef9dc1dd1",
+  "primary_cases": 24,
+  "instrument_objectives": 48,
+  "seconds": 148.99861030001193,
+  "scope": "FIXED_EXPORTED_INPUTS_ONLY; not a full adaptive certificate",
+  "status": "PASS"
+}

@@ -1,0 +1,13 @@
+id,n,tau,kappa,sample_cov_D_Q1,sample_cov_D_Q2,partial_first_stage_R2,conventional_first_stage_F,residual_df,interpretation
+n500_t10_k100,500,0.1,1.0,0.2145104353185002,0.20088064560126345,0.3255874341289679,95.83022165538826,397,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n500_t10_k010,500,0.1,0.1,-0.01331461565305892,0.032559295108214883,0.003396884963947381,0.6765799295330946,397,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n500_t50_k100,500,0.5,1.0,0.2145104353185002,0.20088064560126345,0.3255874341289679,95.83022165538826,397,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n500_t50_k010,500,0.5,0.1,-0.01331461565305892,0.032559295108214883,0.003396884963947381,0.6765799295330946,397,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n500_t90_k100,500,0.9,1.0,0.2145104353185002,0.20088064560126345,0.3255874341289679,95.83022165538826,397,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n500_t90_k010,500,0.9,0.1,-0.01331461565305892,0.032559295108214883,0.003396884963947381,0.6765799295330946,397,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n1000_t10_k100,1000,0.1,1.0,0.21085897393350136,0.18512258257476857,0.2836309068442166,177.57391117928657,897,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n1000_t10_k010,1000,0.1,0.1,0.03046602983749335,-0.0010937511435167983,0.0031068083802993566,1.397746087823442,897,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n1000_t50_k100,1000,0.5,1.0,0.21085897393350136,0.18512258257476857,0.2836309068442166,177.57391117928657,897,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n1000_t50_k010,1000,0.5,0.1,0.03046602983749335,-0.0010937511435167983,0.0031068083802993566,1.397746087823442,897,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n1000_t90_k100,1000,0.9,1.0,0.21085897393350136,0.18512258257476857,0.2836309068442166,177.57391117928657,897,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"
+n1000_t90_k010,1000,0.9,0.1,0.03046602983749335,-0.0010937511435167983,0.0031068083802993566,1.397746087823442,897,"original DGP one diagnostic sample per n; diagnostic only, no weak-IV or population-rate proof"

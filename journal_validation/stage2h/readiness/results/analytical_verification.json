@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scalar_density_cases": 18,
+  "delta": 0.05,
+  "structural_effects": {
+    "0.1": -0.28155156554460037,
+    "0.5": 1.0,
+    "0.9": 2.2815515655446004
+  },
+  "common_mixed_density_lower": 0.184735086244723,
+  "common_mixed_density_upper": 7.978845608028654,
+  "full_conditioning_uniform_lower_bound": 0,
+  "treatment_mean": 0.5000000000000001,
+  "treatment_variance": 0.10932835025414059,
+  "original_linear_R2_k1": 0.29478974027496774,
+  "bounded_linear_R2_k1": 0.29478974027496774,
+  "bounded_linear_R2_k01": 0.0029478974027496775,
+  "covariance_D_Q_k1": 0.17952402618064472,
+  "scope": "Quadrature verifies identities; analytic proofs are in BOUNDED_DGP_DERIVATION.md; no bounded data or outcome generated",
+  "quadrature_tail_note": "standard-normal integration truncated to +/-12; bounded integrands make omitted mass negligible at the reported tolerance; not a mathematical interval certificate"
+}
