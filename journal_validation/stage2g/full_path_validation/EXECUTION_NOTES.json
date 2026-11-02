@@ -1,0 +1,20 @@
+{
+  "new_material_scope": "journal_validation/stage2g/full_path_validation/",
+  "initial_branch": "journal-validation",
+  "initial_HEAD": "50412fe7b6858b86eebb8874a820bf7651eb83cf",
+  "initial_working_tree": "Only the earlier Stage 2G directory was untracked; its files were preserved.",
+  "first_native_launch": {
+    "method": "PowerShell stdout/stderr redirection to results/native_paths.log",
+    "shell_reported_exit": 1,
+    "direct_R_exit_code": "Not captured by this first launch",
+    "observed_outputs": "All 72 SUCCESS records, all binaries, RDS fits, repeated-fit checks and RNG checks completed.",
+    "startup_warning": "Setting LC_CTYPE=C.UTF-8 failed",
+    "followup": "run_r.py verify captured direct R return code 0 and verified 72 new native paths plus 48 archived baseline paths.",
+    "reproduction": "Use run_r.py native to capture the R process return code directly on fresh runs."
+  },
+  "verification_export_extension": "The initial successful native verifier was extended to export all adaptive coefficient/penalty traces, initializer residuals and options. It was rerun successfully within the new scope.",
+  "certificate_validation": "72 direct independent rational audits passed. A final inexpensive check additionally confirms that the stored native binary64 W values themselves lie inside the certified fixed-input decision intervals; that assertion is included in the verifier for future runs.",
+  "historical_mutations": false,
+  "new_data_or_Monte_Carlo": false,
+  "commit_or_push": false
+}

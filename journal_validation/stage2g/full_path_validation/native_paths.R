@@ -1,0 +1,77 @@
+args<-commandArgs(trailingOnly=TRUE)
+out<-normalizePath('journal_validation/stage2g/full_path_validation/results',winslash='/',mustWork=TRUE)
+source('thesis_extension/environment/check_author_environment.R')
+assert_author_environment('thesis_extension',write_outputs=FALSE)
+source('journal_validation/stage2b/diagnostics.R')
+source_path<-'journal_validation/stage2e/output/paired_20261029T093009Z'
+put<-function(x,p){stopifnot(!file.exists(p));con<-file(p,'wb');writeBin(as.double(x),con,size=8,endian='little');close(con)}
+getbin<-function(p,n){con<-file(p,'rb');x<-readBin(con,'double',n=n,size=8,endian='little');close(con);stopifnot(length(x)==n);x}
+tasks<-read.csv(file.path(out,'tasks.csv'),stringsAsFactors=FALSE)
+writeLines(capture.output(sessionInfo()),file.path(out,'R_sessionInfo.txt'))
+RNGkind("L'Ecuyer-CMRG","Inversion")
+rows<-list()
+for(k in seq_len(nrow(tasks))) {
+ id<-tasks$id[k];variant<-tasks$variant[k];folder<-file.path(out,id,variant)
+ warnings<-character();start<-proc.time()[3]
+ tryCatch(withCallingHandlers({
+  task<-readRDS(file.path(source_path,id,'historical_task.rds'));dat<-task$dat
+  e<-getbin(file.path(folder,'outcome_residual.bin'),1000L);rank<-getbin(file.path(folder,'rank.bin'),1000L)
+  stopifnot(all(rank%in%c(0,1)),identical(as.numeric(e<=0),rank))
+  f<-dnorm(e,mean(e),var(e));stopifnot(all(is.finite(f)),all(f>0))
+  w<-sqrt(diag(f));Xw<-w%*%dat$X
+  psi<-matrix(0,2,1000);coefs<-matrix(0,101,2);fits<-traces<-vector('list',2)
+  set_stream(task$post_penalty_state);before<-.Random.seed
+  for(j in 1:2) {
+   fit<-hdm::rlasso(w%*%dat$Z[,j]~w%*%dat$X,post=FALSE)
+   yw<-drop(w%*%dat$Z[,j]);captured<-capture_adaptive(Xw,yw,fit)
+   coefs[,j]<-as.numeric(fit$coefficients)
+   psi[j,]<-drop(dat$Z[,j]-cbind(1,dat$X)%*%matrix(fit$coefficients,ncol=1))
+   xc<-scale(Xw,colMeans(Xw),FALSE);yc<-yw-mean(yw)
+   b<-coefs[-1,j];r<-drop(yc-xc%*%b)
+   prefix<-paste0('instrument_',j,'_')
+   put(as.vector(t(xc)),file.path(folder,paste0(prefix,'centered_X.bin')))
+   put(yc,file.path(folder,paste0(prefix,'centered_y.bin')))
+   put(c(mean(yw),colMeans(Xw)),file.path(folder,paste0(prefix,'centering.bin')))
+   put(captured$last_penalty,file.path(folder,paste0(prefix,'last_penalty.bin')))
+   put(captured$reported_next_penalty,file.path(folder,paste0(prefix,'next_penalty.bin')))
+   put(r,file.path(folder,paste0(prefix,'centered_residual.bin')))
+   put(fit$residuals,file.path(folder,paste0(prefix,'reported_residual.bin')))
+   put(sum(r*r)+sum(captured$last_penalty*abs(b)),file.path(folder,paste0(prefix,'objective.bin')))
+   fits[[j]]<-fit;traces[[j]]<-captured
+  }
+  stopifnot(identical(before,.Random.seed))
+  set_stream(task$post_penalty_state)
+  repeated<-matrix(0,101,2)
+  for(j in 1:2)repeated[,j]<-as.numeric(hdm::rlasso(w%*%dat$Z[,j]~w%*%dat$X,post=FALSE)$coefficients)
+  repeat_identical<-identical(repeated,coefs);stopifnot(repeat_identical,identical(before,.Random.seed))
+  s<-.9-rank;obs<-s*t(psi);g<-colSums(obs);S<-crossprod(obs);inv<-solve(S)
+  W<-drop(t(g)%*%inv%*%g);cutoff<-getbin(file.path(source_path,'cutoff.bin'),1L)
+  put(f,file.path(folder,'density.bin'));put(c(mean(e),var(e)),file.path(folder,'density_parameters.bin'))
+  put(psi,file.path(folder,'psi.bin'));put(as.vector(t(coefs)),file.path(folder,'instrument_coefficients.bin'))
+  put(s,file.path(folder,'score.bin'));put(as.vector(t(obs)),file.path(folder,'observation_scores.bin'))
+  put(g,file.path(folder,'score_sum.bin'));put(as.vector(t(S)),file.path(folder,'second_moment.bin'))
+  put(as.vector(t(inv)),file.path(folder,'inverse.bin'));put(W,file.path(folder,'W.bin'))
+  if(variant=='C')put(as.vector(t(dat$Z)),file.path(folder,'Z_row_major.bin'))
+  saveRDS(list(fits=fits,traces=traces,rng_before=before,rng_after=.Random.seed,repeated_coefficients=repeated),file.path(folder,'downstream_details.rds'))
+  writeLines(c(state_text(before),state_text(.Random.seed)),file.path(folder,'rng_states.txt'))
+  trace_rows<-do.call(rbind,lapply(1:2,function(j)do.call(rbind,lapply(seq_along(traces[[j]]$trace),function(t){
+   a<-traces[[j]]$trace[[t]]
+   data.frame(instrument=j,adaptive_step=t,shooting_iterations=a$iterations,
+    lambda_min=min(a$lambda),lambda_max=max(a$lambda),active_slopes=sum(a$coefficients!=0),
+    x_hash=a$x_hash,y_hash=a$y_hash,stringsAsFactors=FALSE)
+  }))))
+  write.csv(trace_rows,file.path(folder,'adaptive_trace.csv'),row.names=FALSE)
+  rows[[k]]<-data.frame(id=id,variant=variant,status='SUCCESS',W=W,accepted=W<=cutoff,
+   repeat_identical=repeat_identical,rng_unchanged=identical(before,.Random.seed),
+   density_min=min(f),density_max=max(f),S_condition=kappa(S),
+   inverse_residual=max(abs(S%*%inv-diag(2))),warnings=length(warnings),seconds=proc.time()[3]-start,stringsAsFactors=FALSE)
+  cat('COMPLETE',id,variant,'W',W,'seconds',proc.time()[3]-start,'\n');flush.console()
+ },warning=function(w){warnings<<-c(warnings,conditionMessage(w));invokeRestart('muffleWarning')}),error=function(err){
+  writeLines(conditionMessage(err),file.path(folder,'FAILURE.txt'))
+  rows[[k]]<<-data.frame(id=id,variant=variant,status='FAILED',error=conditionMessage(err),stringsAsFactors=FALSE)
+  cat('FAILED',id,variant,conditionMessage(err),'\n');flush.console()
+ })
+ writeLines(warnings,file.path(folder,'warnings.txt'))
+}
+cols<-unique(unlist(lapply(rows,names)));rows<-lapply(rows,function(r){for(n in setdiff(cols,names(r)))r[[n]]<-NA;r[,cols]})
+write.csv(do.call(rbind,rows),file.path(out,'native_summary.csv'),row.names=FALSE)

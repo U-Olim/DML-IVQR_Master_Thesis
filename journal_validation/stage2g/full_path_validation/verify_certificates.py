@@ -1,0 +1,102 @@
+"""Independent direct rational verification of outcome and instrument certificates.
+
+No optimizer, active-basis reconstruction, or audit.py function is called.
+"""
+from common import *
+import time
+
+def direct_stat(psi,score):
+ z=[tuple(a*s for a in row) for row,s in zip(psi,score)]
+ g0=sum((a for a,b in z),F(0));g1=sum((b for a,b in z),F(0))
+ s00=sum((a*a for a,b in z),F(0));s01=sum((a*b for a,b in z),F(0));s11=sum((b*b for a,b in z),F(0))
+ determinant=s00*s11-s01*s01;assert determinant>0
+ return (s11*g0*g0-2*s01*g0*g1+s00*g1*g1)/determinant,[g0,g1,s00,s01,s11]
+
+def make_interval(lo,hi):assert lo<=hi;return (lo,hi)
+def plus(x,y):return x[0]+y[0],x[1]+y[1]
+def times(x,y):
+ products=[a*b for a in x for b in y];return min(products),max(products)
+def squared(x):return (F(0) if x[0]<=0<=x[1] else min(x[0]*x[0],x[1]*x[1]),max(x[0]*x[0],x[1]*x[1]))
+def minus(x,y):return x[0]-y[1],x[1]-y[0]
+
+def main():
+ start=time.perf_counter();tasks=list(csv.DictReader((OUT/'tasks.csv').open()));records=[]
+ cutoff=F(float(readbin(E/'cutoff.bin')[0]));tau=F(float(.9))
+ for task in tasks:
+  id=task['id'];variant=task['variant'];folder=OUT/id/variant;t0=time.perf_counter()
+  c=json.loads((folder/'outcome_certificate.json').read_text());opt=json.loads((G/'results'/id/'exact_optimum.json').read_text())
+  src=E/id;Xf=readbin(src/'X_row_major.bin',(1000,101));X=[[F(float(v)) for v in row] for row in Xf]
+  y=[F(float(v)) for v in readbin(src/'response.bin')];lam=[F(float(v)) for v in readbin(src/'lambda.bin')]
+  source=opt if variant=='C' else c;b=[F(int(v),int(source['beta_denominator'])) for v in source['beta_numerators']]
+  support=[j for j,v in enumerate(b) if v]
+  e=[a-sum((row[j]*b[j] for j in support),F(0)) for row,a in zip(X,y)]
+  assert e==[F(int(v),int(c['residual_denominator'])) for v in c['residual_numerators']]
+  P=sum(((tau if v>=0 else tau-1)*v for v in e),F(0))+sum(l*abs(v)/2 for l,v in zip(lam,b))
+  assert P==val(c['primal']) and P-val(opt['primal'])==val(c['gap'])
+  if variant!='C':assert 0<val(c['gap'])<=val(c['epsilon'])
+  er=readbin(folder/'outcome_residual.bin');rank=readbin(folder/'rank.bin');s=readbin(folder/'score.bin');psi=readbin(folder/'psi.bin',(1000,2))
+  assert all(float(a)==r and (a<=0)==bool(k) for a,r,k in zip(e,er,rank))
+  assert np.array_equal(s,.9-rank)
+  psir=[[F(float(v)) for v in row] for row in psi];sr=[F(float(v)) for v in s]
+  W,moments=direct_stat(psir,sr);inf=json.loads((folder/'inference_validation.json').read_text())['exact_conditional_inference']
+  assert W==val(inf['W']) and (W<=cutoff)==inf['accepted']
+  for k,v in zip(['score_sum_1','score_sum_2','S11','S12','S22'],moments):assert v==val(inf[k])
+  Sf=readbin(folder/'second_moment.bin',(2,2));gf=readbin(folder/'score_sum.bin');Wf=readbin(folder/'W.bin')[0]
+  assert np.max(abs(gf-np.array([float(v) for v in moments[:2]])))<1e-10
+  assert max(abs(F(float(Sf[0,0]))-moments[2]),abs(F(float(Sf[0,1]))-moments[3]),abs(F(float(Sf[1,1]))-moments[4]))<F(1,10**9)
+  assert abs(float(W)-Wf)<1e-10*(1+abs(Wf))
+  f=readbin(folder/'density.bin');w=np.sqrt(f);Zf=readbin(OUT/id/'C/Z_row_major.bin',(1000,2));coeff=readbin(folder/'instrument_coefficients.bin',(101,2))
+  reference=[];radii=[];instrument_checks=[]
+  for j in [1,2]:
+   prefix=f'instrument_{j}_';cert=json.loads((folder/(prefix+'certificate.json')).read_text())
+   xf=readbin(folder/(prefix+'centered_X.bin'),(1000,100));yf=readbin(folder/(prefix+'centered_y.bin'));cent=readbin(folder/(prefix+'centering.bin'))
+   expected_x=w[:,None]*Xf[:,1:];expected_y=w*Zf[:,j-1]
+   transform_error=max(float(np.max(abs(xf-(expected_x-cent[1:])))),float(np.max(abs(yf-(expected_y-cent[0])))))
+   centering_error=max(float(np.max(abs(np.mean(expected_x,axis=0)-cent[1:]))),abs(float(np.mean(expected_y))-cent[0]))
+   assert transform_error<1e-13 and centering_error<1e-13
+   XR=[[F(float(v)) for v in row] for row in xf];yr=[F(float(v)) for v in yf];lr=[F(float(v)) for v in readbin(folder/(prefix+'last_penalty.bin'))]
+   br=[val(v) for v in cert['beta']];active=[k for k,v in enumerate(br) if v]
+   re=[v-sum((row[k]*br[k] for k in active),F(0)) for row,v in zip(XR,yr)]
+   grad=[2*sum((row[k]*v for row,v in zip(XR,re)),F(0)) for k in range(100)]
+   assert all(grad[k]==lr[k]*(1 if br[k]>0 else -1) if br[k] else abs(grad[k])<=lr[k] for k in range(100))
+   primal=sum(v*v for v in re)+sum(l*abs(v) for l,v in zip(lr,br));dual=2*sum(v*r for v,r in zip(yr,re))-sum(r*r for r in re)
+   assert primal==dual==val(cert['optimal_primal'])==val(cert['optimal_dual'])
+   native=[F(float(v)) for v in coeff[1:,j-1]];native_support=[k for k,v in enumerate(native) if v]
+   rn=[v-sum((row[k]*native[k] for k in native_support),F(0)) for row,v in zip(XR,yr)]
+   pn=sum(v*v for v in rn)+sum(l*abs(v) for l,v in zip(lr,native))
+   assert pn==val(cert['native_primal']) and pn-primal==val(cert['native_true_gap'])>=0
+   # Verify inverse-Gram witness exactly; invertibility also proves strict convexity.
+   xi,ex=dyadic(xf);Ri=readbin(folder/(prefix+'inverse_gram_witness.bin'),(100,100));ri,ee=dyadic(Ri)
+   gram=xi.T@xi;den=1<<(ee+2*ex);matrix=np.eye(100,dtype=object)*den-ri@gram
+   norm=max(max(sum(abs(int(v)) for v in row) for row in matrix),max(sum(abs(int(v)) for v in row) for row in matrix.T))
+   eta=F(norm,den);nr=F(max(sum(abs(int(v)) for v in row) for row in ri),1<<ee)
+   assert eta<1 and eta==val(cert['approximate_inverse_residual_bound']) and nr==val(cert['approximate_inverse_norm_bound'])
+   lower=(1-eta)/nr;assert lower==val(cert['gram_min_eigenvalue_lower_bound'])>0
+   radius=val(cert['coefficient_L2_radius_for_native_objective_sublevel']);assert radius*radius*lower>=pn-primal
+   means=[F(float(v)) for v in cent];intercept=means[0]-sum(a*v for a,v in zip(means[1:],br));assert intercept==val(cert['intercept'])
+   ref=[F(float(z))-intercept-sum((row[k+1]*br[k] for k in active),F(0)) for row,z in zip(X,Zf[:,j-1])]
+   native_exact=[F(float(z))-F(float(coeff[0,j-1]))-sum((row[k+1]*native[k] for k in native_support),F(0)) for row,z in zip(X,Zf[:,j-1])]
+   psi_error=max(abs(F(float(v))-r) for v,r in zip(psi[:,j-1],native_exact))
+   assert psi_error<=F(1,10**12)*(1+max(abs(F(float(v))) for v in psi[:,j-1]))
+   center_error=abs(F(float(coeff[0,j-1]))-(means[0]-sum(a*v for a,v in zip(means[1:],native))))
+   assert psi_error+center_error==val(cert['floating_psi_and_intercept_envelope'])
+   assert np.all((Xf[:,1:]>=0)&(Xf[:,1:]<=1)) and all(0<=v<=1 for v in means[1:])
+   rad=10*radius+psi_error+center_error;assert rad==val(cert['psi_uniform_radius'])
+   reference.append(ref);radii.append(rad)
+   instrument_checks.append({'instrument':j,'exact_optimum_verified':True,'unique_by_positive_Gram_bound':True,'transform_error':transform_error,'centering_error':centering_error,'native_psi_arithmetic_error':float(psi_error)})
+  refpsi=list(zip(*reference));rw,_=direct_stat(refpsi,sr);refrecord=json.loads((folder/'fixed_penalty_reference_inference.json').read_text());assert rw==val(refrecord['W'])
+  # Independent natural interval evaluation for both final-penalty sublevels.
+  sums=[(F(0),F(0)) for _ in range(5)]
+  for row,score in zip(refpsi,sr):
+   a=times(make_interval(row[0]-radii[0],row[0]+radii[0]),(score,score));b=times(make_interval(row[1]-radii[1],row[1]+radii[1]),(score,score))
+   for k,v in enumerate([a,b,squared(a),times(a,b),squared(b)]):sums[k]=plus(sums[k],v)
+  g0,g1,s00,s01,s11=sums;det=minus(times(s00,s11),squared(s01));assert det[0]>0
+  numerator=plus(minus(times(s11,squared(g0)),times((F(2),F(2)),times(s01,times(g0,g1)))),times(s00,squared(g1)))
+  lo=max(F(0),numerator[0]/det[1]);hi=max(F(0),numerator[1]/det[0]);bound=json.loads((folder/'decision_bounds.json').read_text())
+  assert lo==val(bound['lower']) and hi==val(bound['upper']) and lo<=W<=hi and lo<=rw<=hi and lo<=F(float(Wf))<=hi
+  status='ACCEPT_CERTIFIED' if hi<=cutoff else 'REJECT_CERTIFIED' if lo>cutoff else 'UNRESOLVED';assert status==bound['status']
+  result={'id':id,'variant':variant,'status':'PASS','exact_outcome_gap':float(val(c['gap'])),'instruments':instrument_checks,'fixed_penalty_decision_bound':status,'seconds':time.perf_counter()-t0}
+  dump(folder/'independent_verification.json',result);records.append(result)
+  print('VERIFIED',id,variant,status,'seconds',result['seconds'],flush=True)
+ dump(OUT/'independent_verification.json',{'status':'PASS','paths':len(records),'seconds':time.perf_counter()-start,'records':records})
+if __name__=='__main__':main()

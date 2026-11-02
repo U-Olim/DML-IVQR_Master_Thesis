@@ -1,0 +1,8 @@
+{
+  "id": "pilot_004_truth",
+  "exact_unique": true,
+  "failure": null,
+  "ties": 34,
+  "seconds": 0.530366100021638,
+  "positive_budget_noninvariance_witness": true
+}

@@ -1,0 +1,3 @@
+During startup - Warning message:
+Setting LC_CTYPE=C.UTF-8 failed 
+VERIFIED 72 new native paths and 48 saved baseline paths

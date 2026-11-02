@@ -1,0 +1,26 @@
+{
+  "id": "pilot_004_minus",
+  "variant": "minimum_e8",
+  "status": "PASS",
+  "exact_outcome_gap": 2.630992775476225e-11,
+  "instruments": [
+    {
+      "instrument": 1,
+      "exact_optimum_verified": true,
+      "unique_by_positive_Gram_bound": true,
+      "transform_error": 0.0,
+      "centering_error": 1.0547118733938987e-15,
+      "native_psi_arithmetic_error": 7.695180676407634e-16
+    },
+    {
+      "instrument": 2,
+      "exact_optimum_verified": true,
+      "unique_by_positive_Gram_bound": true,
+      "transform_error": 0.0,
+      "centering_error": 1.0547118733938987e-15,
+      "native_psi_arithmetic_error": 1.1921424139207512e-15
+    }
+  ],
+  "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+  "seconds": 6.802587399957702
+}

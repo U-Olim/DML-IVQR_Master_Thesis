@@ -1,0 +1,26 @@
+{
+  "id": "pilot_006_truth",
+  "variant": "minimum_e20",
+  "status": "PASS",
+  "exact_outcome_gap": 2.2133078126959427e-23,
+  "instruments": [
+    {
+      "instrument": 1,
+      "exact_optimum_verified": true,
+      "unique_by_positive_Gram_bound": true,
+      "transform_error": 0.0,
+      "centering_error": 7.771561172376096e-16,
+      "native_psi_arithmetic_error": 1.08549830542058e-15
+    },
+    {
+      "instrument": 2,
+      "exact_optimum_verified": true,
+      "unique_by_positive_Gram_bound": true,
+      "transform_error": 0.0,
+      "centering_error": 7.771561172376096e-16,
+      "native_psi_arithmetic_error": 8.585983666248352e-16
+    }
+  ],
+  "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+  "seconds": 6.130568200023845
+}

@@ -1,0 +1,12 @@
+{
+  "seconds": 21.255317900096998,
+  "cases": 24,
+  "exact_unique": 24,
+  "cutoff": {
+    "numerator": "6745789375439759",
+    "denominator": "1125899906842624",
+    "float": 5.99146454710798,
+    "outward_lower": 5.99146454710798,
+    "outward_upper": 5.99146454710798
+  }
+}

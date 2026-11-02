@@ -1,0 +1,19 @@
+{
+  "cases": 24,
+  "paths": 72,
+  "native_failures_or_partial_audits": 0,
+  "AB_decision_changes": 2,
+  "AC_decision_changes": 5,
+  "BC_decision_changes": 5,
+  "near_pairs": 24,
+  "opposite_pairs": 24,
+  "all_fixed_penalty_decision_bounds_conclusive": true,
+  "density_max_relative_error": 9.318681212578012e-15,
+  "max_instrument_true_gap": 2.9444542652249084e-10,
+  "max_instrument_coefficient_error": 1.5236256633775608e-06,
+  "max_W_reconstruction_error": 8.526512829121202e-14,
+  "max_S_condition": 1.51101391052889,
+  "max_inverse_residual": 2.420758008144254e-16,
+  "max_reference_W_change": 5.430227744795957e-06,
+  "reference_decision_changes": 0
+}

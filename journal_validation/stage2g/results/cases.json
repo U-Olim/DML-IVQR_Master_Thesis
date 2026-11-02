@@ -1,0 +1,194 @@
+[
+  {
+    "id": "pilot_002_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 29,
+    "seconds": 0.5211964000482112,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_006_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 33,
+    "seconds": 0.6904858000343665,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_001_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 27,
+    "seconds": 0.48315830004867166,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_001_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 25,
+    "seconds": 0.3650624000001699,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_001_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 32,
+    "seconds": 0.5015375999500975,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_002_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 32,
+    "seconds": 0.4872005000943318,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_002_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 30,
+    "seconds": 0.45278930000495166,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_003_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 37,
+    "seconds": 0.633032999932766,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_003_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 28,
+    "seconds": 0.4099013999802992,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_003_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 36,
+    "seconds": 0.6272721000714228,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_004_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 28,
+    "seconds": 0.3988027999876067,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_004_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 35,
+    "seconds": 0.559491700027138,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_004_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 34,
+    "seconds": 0.530366100021638,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_005_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 28,
+    "seconds": 0.4133390999631956,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_005_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 35,
+    "seconds": 0.587489900062792,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_005_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 27,
+    "seconds": 0.39772020000964403,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_006_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 29,
+    "seconds": 0.4373256000690162,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_006_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 35,
+    "seconds": 0.5750980000011623,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_007_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 31,
+    "seconds": 0.4705646999645978,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_007_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 26,
+    "seconds": 0.39742340007796884,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_007_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 30,
+    "seconds": 0.453008099924773,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_014_minus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 39,
+    "seconds": 0.6747438999591395,
+    "positive_budget_noninvariance_witness": true
+  },
+  {
+    "id": "pilot_014_plus",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 28,
+    "seconds": 0.4085088000865653,
+    "positive_budget_noninvariance_witness": false
+  },
+  {
+    "id": "pilot_014_truth",
+    "exact_unique": true,
+    "failure": null,
+    "ties": 37,
+    "seconds": 0.6180792000377551,
+    "positive_budget_noninvariance_witness": true
+  }
+]

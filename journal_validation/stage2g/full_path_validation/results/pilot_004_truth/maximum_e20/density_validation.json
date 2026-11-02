@@ -1,0 +1,9 @@
+{
+  "precision_digits": 80,
+  "method": "Decimal exp and sqrt; 84-digit pi constant; independent unrounded mean/variance of exported residuals",
+  "relative_error_max": 4.637173252051185e-15,
+  "mean_error": 1.222343095432595e-18,
+  "variance_error": 5.29623481307357e-17,
+  "passed": true,
+  "rigorous_interval_certificate": false
+}

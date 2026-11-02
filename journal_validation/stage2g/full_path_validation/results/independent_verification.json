@@ -1,0 +1,1879 @@
+{
+  "status": "PASS",
+  "paths": 72,
+  "seconds": 488.9669619000051,
+  "records": [
+    {
+      "id": "pilot_002_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.385835997390444e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 9.640507282194585e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 5.492528200033121
+    },
+    {
+      "id": "pilot_002_minus",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.625535781749444e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 1.1102230246251565e-15,
+          "native_psi_arithmetic_error": 7.47195891773109e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 1.1102230246251565e-15,
+          "native_psi_arithmetic_error": 1.227237511504234e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.061563599971123
+    },
+    {
+      "id": "pilot_002_minus",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.6255357817494443e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.385835997390444e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 9.640507282194585e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.190121199935675
+    },
+    {
+      "id": "pilot_002_minus",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 1.7854732085911802e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 5.551115123125783e-16,
+          "native_psi_arithmetic_error": 9.103110304070453e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 5.551115123125783e-16,
+          "native_psi_arithmetic_error": 8.145065435001291e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.235815100022592
+    },
+    {
+      "id": "pilot_002_minus",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 1.7854732085911803e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.385835997390444e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 9.640507282194585e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.104502199916169
+    },
+    {
+      "id": "pilot_006_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 1.08549830542058e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 8.585983666248352e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 5.182468799990602
+    },
+    {
+      "id": "pilot_006_truth",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.2133078126959427e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 1.1102230246251565e-15,
+          "native_psi_arithmetic_error": 6.228997442347217e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 1.1102230246251565e-15,
+          "native_psi_arithmetic_error": 7.850959389859548e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.003139200038277
+    },
+    {
+      "id": "pilot_006_truth",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.2133078126959427e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 1.08549830542058e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 8.585983666248352e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.130568200023845
+    },
+    {
+      "id": "pilot_006_truth",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.95629067256225e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.968643730106157e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.008386719541304e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 5.978882199968211
+    },
+    {
+      "id": "pilot_006_truth",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.95629067256225e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 1.08549830542058e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 8.585983666248352e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 5.985356800025329
+    },
+    {
+      "id": "pilot_001_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 6.929648706195878e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 1.541398794171445e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.624062299961224
+    },
+    {
+      "id": "pilot_001_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.106226635438361e-16,
+          "native_psi_arithmetic_error": 1.0189586769901035e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.106226635438361e-16,
+          "native_psi_arithmetic_error": 1.2457014650349255e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.235372200026177
+    },
+    {
+      "id": "pilot_001_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 7.318471461174606e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 1.814573027577172e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.834202100057155
+    },
+    {
+      "id": "pilot_002_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 7.013646030163342e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 9.495416933726996e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.986098499968648
+    },
+    {
+      "id": "pilot_002_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 5.919805297228615e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 9.873933692553067e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.343113899929449
+    },
+    {
+      "id": "pilot_002_truth",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 1.3811347821156629e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 9.828034168132294e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 1.073939394120648e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.853454599971883
+    },
+    {
+      "id": "pilot_002_truth",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 1.381134782115663e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 5.919805297228615e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 9.873933692553067e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.8452166999923065
+    },
+    {
+      "id": "pilot_002_truth",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 1.6920165085127868e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 4.440892098500626e-16,
+          "centering_error": 6.106226635438361e-16,
+          "native_psi_arithmetic_error": 7.336430130683957e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 6.106226635438361e-16,
+          "native_psi_arithmetic_error": 1.2122813987623285e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.7997883999487385
+    },
+    {
+      "id": "pilot_002_truth",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 1.6920165085127867e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 5.919805297228615e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 9.873933692553067e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.735427100094967
+    },
+    {
+      "id": "pilot_003_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 8.019758959933238e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0458456314769802e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 5.713080999907106
+    },
+    {
+      "id": "pilot_003_minus",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.651952535953882e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 1.0547118733938987e-15,
+          "native_psi_arithmetic_error": 9.039761593728872e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 1.0547118733938987e-15,
+          "native_psi_arithmetic_error": 1.0790169563159769e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.674728799960576
+    },
+    {
+      "id": "pilot_003_minus",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.6519525359538816e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 8.019758959933238e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0458456314769802e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.679500399972312
+    },
+    {
+      "id": "pilot_003_minus",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.642769218793002e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 8.995245755976801e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 1.0054037584231986e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.651634500012733
+    },
+    {
+      "id": "pilot_003_minus",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.642769218793002e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 8.019758959933238e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0458456314769802e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.698854999965988
+    },
+    {
+      "id": "pilot_003_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.0153315372833865e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 8.881784197001252e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.028541297112526e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.135900699999183
+    },
+    {
+      "id": "pilot_003_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.430700021236102e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.795738220170727e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.22403319994919
+    },
+    {
+      "id": "pilot_003_truth",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 3.625384680475919e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 1.003966286095405e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 9.75342672691379e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.337704600067809
+    },
+    {
+      "id": "pilot_003_truth",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 3.625384680475919e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.430700021236102e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.795738220170727e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.151540099992417
+    },
+    {
+      "id": "pilot_003_truth",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 3.1839762884213683e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 8.803011494861383e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.1104945008329985e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.267642699996941
+    },
+    {
+      "id": "pilot_003_truth",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 3.183976288421368e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.430700021236102e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.795738220170727e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.061853999970481
+    },
+    {
+      "id": "pilot_004_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 9.389734783910142e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.0489592257049542e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.283590200007893
+    },
+    {
+      "id": "pilot_004_minus",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.630992775476225e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 1.0547118733938987e-15,
+          "native_psi_arithmetic_error": 7.695180676407634e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 1.0547118733938987e-15,
+          "native_psi_arithmetic_error": 1.1921424139207512e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.802587399957702
+    },
+    {
+      "id": "pilot_004_minus",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.630992775476225e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 9.389734783910142e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.0489592257049542e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.599038999993354
+    },
+    {
+      "id": "pilot_004_minus",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 3.14690009509754e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 6.095732321506795e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.1085381337258398e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.840210600057617
+    },
+    {
+      "id": "pilot_004_minus",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 3.14690009509754e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 9.389734783910142e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.0489592257049542e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.727517900057137
+    },
+    {
+      "id": "pilot_004_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 9.406518558474948e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 1.2029383478679217e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.388577599893324
+    },
+    {
+      "id": "pilot_004_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.70247074968079e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0991696339823704e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.207748399931006
+    },
+    {
+      "id": "pilot_004_truth",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 1.3848452050721971e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.106226635438361e-16,
+          "native_psi_arithmetic_error": 9.968115412526015e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.106226635438361e-16,
+          "native_psi_arithmetic_error": 1.2095673044603495e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.751669200020842
+    },
+    {
+      "id": "pilot_004_truth",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 1.3848452050721973e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.70247074968079e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0991696339823704e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.791946899960749
+    },
+    {
+      "id": "pilot_004_truth",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 1.1818415443204374e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.1087587262330063e-15
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.4191937191555788e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.986659799935296
+    },
+    {
+      "id": "pilot_004_truth",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 1.1818415443204374e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.70247074968079e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0991696339823704e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 8.116083300090395
+    },
+    {
+      "id": "pilot_005_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 6.333416226480559e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 1.0461128854229894e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 5.585514300037175
+    },
+    {
+      "id": "pilot_005_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 6.579013305688648e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 1.3720339569463273e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.772519600111991
+    },
+    {
+      "id": "pilot_005_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 9.302381718324056e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 1.2345694362964818e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.513991599902511
+    },
+    {
+      "id": "pilot_006_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 5.60525208132447e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 8.881784197001252e-16,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 1.0010820950953243e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 5.951021600048989
+    },
+    {
+      "id": "pilot_006_minus",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.610588403949762e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.854619863058433e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 9.114276652422601e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.815337499952875
+    },
+    {
+      "id": "pilot_006_minus",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.610588403949762e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 5.60525208132447e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 8.881784197001252e-16,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 1.0010820950953243e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.3401902000186965
+    },
+    {
+      "id": "pilot_006_minus",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 1.9997779094752446e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.125953646834178e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.0615853308250848e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.786881200037897
+    },
+    {
+      "id": "pilot_006_minus",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 1.9997779094752448e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 5.60525208132447e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 8.881784197001252e-16,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 1.0010820950953243e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 7.367361500044353
+    },
+    {
+      "id": "pilot_006_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 8.480697715349093e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 8.666047193512158e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.401882800040767
+    },
+    {
+      "id": "pilot_007_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 6.454539429240379e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 8.76548283660314e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.558237099903636
+    },
+    {
+      "id": "pilot_007_minus",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 4.890366795797711e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 6.523535075808287e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.43689570931383e-16,
+          "native_psi_arithmetic_error": 9.007338916917044e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.139722199994139
+    },
+    {
+      "id": "pilot_007_minus",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 4.890366795797711e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 6.454539429240379e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 8.76548283660314e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.950642699957825
+    },
+    {
+      "id": "pilot_007_minus",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.3291352845704757e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 7.202057140996856e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 8.21490414905555e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.618198800017126
+    },
+    {
+      "id": "pilot_007_minus",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.3291352845704756e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 6.454539429240379e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 6.661338147750939e-16,
+          "native_psi_arithmetic_error": 8.76548283660314e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.310342099983245
+    },
+    {
+      "id": "pilot_007_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.147993706058249e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 5.551115123125783e-17,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.011266744037463e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 5.699989099986851
+    },
+    {
+      "id": "pilot_007_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 6.571030493718021e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.962438092871201e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 5.498016300029121
+    },
+    {
+      "id": "pilot_007_truth",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.6557636740921005e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 7.083728064928726e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 8.091837252996215e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.46473889995832
+    },
+    {
+      "id": "pilot_007_truth",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.6557636740921006e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 6.571030493718021e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.962438092871201e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.279767400003038
+    },
+    {
+      "id": "pilot_007_truth",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 3.1241198923153293e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 7.561205920976914e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.14892351511842e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.1978690000250936
+    },
+    {
+      "id": "pilot_007_truth",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 3.124119892315329e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 6.571030493718021e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 1.1102230246251565e-16,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 9.962438092871201e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 5.9682380999438465
+    },
+    {
+      "id": "pilot_014_minus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 6.239612766877336e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 8.240861621433582e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 5.614677799982019
+    },
+    {
+      "id": "pilot_014_minus",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.530341034290772e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 7.554362977304029e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 9.059736927083097e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.576984499930404
+    },
+    {
+      "id": "pilot_014_minus",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.530341034290772e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 6.239612766877336e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 8.240861621433582e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 7.459823100012727
+    },
+    {
+      "id": "pilot_014_minus",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 2.6034505482462643e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.992007221626409e-16,
+          "native_psi_arithmetic_error": 6.605260755895116e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 9.992007221626409e-16,
+          "native_psi_arithmetic_error": 8.703453932524994e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.757051299908198
+    },
+    {
+      "id": "pilot_014_minus",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 2.6034505482462643e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 6.239612766877336e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 7.216449660063518e-16,
+          "native_psi_arithmetic_error": 8.240861621433582e-16
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.706949400017038
+    },
+    {
+      "id": "pilot_014_plus",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 2.220446049250313e-16,
+          "centering_error": 5.551115123125783e-16,
+          "native_psi_arithmetic_error": 6.5201457191733095e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 4.440892098500626e-16,
+          "centering_error": 5.551115123125783e-16,
+          "native_psi_arithmetic_error": 1.2275992818672525e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 6.426561100059189
+    },
+    {
+      "id": "pilot_014_truth",
+      "variant": "C",
+      "status": "PASS",
+      "exact_outcome_gap": 0.0,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.561981401086548e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 1.3411652591328734e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 6.904349899967201
+    },
+    {
+      "id": "pilot_014_truth",
+      "variant": "minimum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 3.3230562803989e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 6.065578869421386e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 7.771561172376096e-16,
+          "native_psi_arithmetic_error": 1.0969549348245156e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 9.518120800028555
+    },
+    {
+      "id": "pilot_014_truth",
+      "variant": "minimum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 3.3230562803989e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.561981401086548e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 1.3411652591328734e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "ACCEPT_CERTIFIED",
+      "seconds": 10.167119499994442
+    },
+    {
+      "id": "pilot_014_truth",
+      "variant": "maximum_e8",
+      "status": "PASS",
+      "exact_outcome_gap": 3.8827858184129126e-11,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 8.286145464030393e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.326672684688674e-16,
+          "native_psi_arithmetic_error": 1.2935516149216925e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 8.143195100012235
+    },
+    {
+      "id": "pilot_014_truth",
+      "variant": "maximum_e20",
+      "status": "PASS",
+      "exact_outcome_gap": 3.8827858184129124e-23,
+      "instruments": [
+        {
+          "instrument": 1,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 7.561981401086548e-16
+        },
+        {
+          "instrument": 2,
+          "exact_optimum_verified": true,
+          "unique_by_positive_Gram_bound": true,
+          "transform_error": 0.0,
+          "centering_error": 8.881784197001252e-16,
+          "native_psi_arithmetic_error": 1.3411652591328734e-15
+        }
+      ],
+      "fixed_penalty_decision_bound": "REJECT_CERTIFIED",
+      "seconds": 8.677797100041062
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "cases": [
+    {
+      "id": "pilot_002_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_006_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_001_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_001_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_001_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_002_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_002_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_003_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_003_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_003_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_004_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_004_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_004_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_005_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_005_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_005_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_006_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_006_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_007_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_007_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_007_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_014_minus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    },
+    {
+      "id": "pilot_014_plus",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": false
+    },
+    {
+      "id": "pilot_014_truth",
+      "status": "PASS",
+      "unique_exact_optimum": true,
+      "inference_records": 6,
+      "local_pattern_realizability_proof": "nonsingular tied/active basis, nonzero nontie residuals, finite Lipschitz loss",
+      "positive_budget_noninvariance_witness": true
+    }
+  ],
+  "seconds": 55.19924780004658,
+  "status": "PASS"
+}

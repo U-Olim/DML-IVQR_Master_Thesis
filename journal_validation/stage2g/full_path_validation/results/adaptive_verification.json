@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "fits": 144,
+  "scope": "Independent floating initialization/penalty/update/stopping cross-check; not an interval proof over perturbed weights"
+}

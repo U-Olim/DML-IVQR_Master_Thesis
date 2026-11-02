@@ -1,0 +1,14 @@
+[
+  {
+    "root": "journal_validation\\stage2g",
+    "files": 162
+  },
+  {
+    "root": "journal_validation\\stage2e\\output\\paired_20261029T093009Z",
+    "files": 859
+  },
+  {
+    "root": "journal_validation\\stage2f\\output\\exact_face_20261029T102755Z",
+    "files": 50
+  }
+]

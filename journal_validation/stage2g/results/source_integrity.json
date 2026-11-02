@@ -1,0 +1,10 @@
+[
+  {
+    "manifest": "journal_validation\\stage2e\\output\\paired_20261029T093009Z\\SHA256_MANIFEST.json",
+    "verified": 859
+  },
+  {
+    "manifest": "journal_validation\\stage2f\\output\\exact_face_20261029T102755Z\\SHA256_MANIFEST.json",
+    "verified": 50
+  }
+]

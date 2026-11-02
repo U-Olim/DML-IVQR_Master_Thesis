@@ -1,0 +1,8 @@
+{
+  "id": "pilot_007_minus",
+  "exact_unique": true,
+  "failure": null,
+  "ties": 31,
+  "seconds": 0.4705646999645978,
+  "positive_budget_noninvariance_witness": true
+}

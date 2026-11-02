@@ -1,0 +1,9 @@
+{
+  "command": [
+    "C:\\Program Files\\R\\R-3.4.3\\bin\\x64\\Rscript.exe",
+    "--vanilla",
+    "C:\\Users\\User\\DML-IVQR_Master_Thesis\\journal_validation\\stage2g\\full_path_validation\\verify_native.R"
+  ],
+  "returncode": 0,
+  "seconds": 5.058880200027488
+}
