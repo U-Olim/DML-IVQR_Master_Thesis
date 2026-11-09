@@ -1,0 +1,32 @@
+args<-commandArgs(trailingOnly=TRUE);stopifnot(length(args)==2)
+id<-args[1];folder<-args[2]
+source('thesis_extension/environment/check_author_environment.R')
+invisible(capture.output(assert_author_environment('thesis_extension',write_outputs=FALSE)))
+source('journal_validation/stage2b/diagnostics.R')
+task<-readRDS(file.path(Sys.getenv('STAGE2H_RUN'),'inputs',id,'task.rds'))
+n<-nrow(task$dat$X);dat<-task$dat
+getbin<-function(p,n){c<-file(p,'rb');on.exit(close(c));readBin(c,'double',n,size=8,endian='little')}
+put<-function(x,p){c<-file(p,'wb');on.exit(close(c));writeBin(as.double(x),c,size=8,endian='little')}
+e<-getbin(file.path(folder,'outcome_residual.bin'),n);rank<-getbin(file.path(folder,'rank.bin'),n)
+start<-proc.time()[3];f<-dnorm(e,mean(e),var(e));stopifnot(all(is.finite(f)),all(f>0))
+w<-sqrt(diag(f));Xw<-w%*%dat$X;put(f,file.path(folder,'density.bin'))
+put(as.vector(t(dat$Z)),file.path(folder,'Z_row_major.bin'))
+RNGkind("L'Ecuyer-CMRG","Inversion");set_stream(task$post_penalty_state);before<-.Random.seed
+coefs<-matrix(0,101,2);fits<-traces<-list();native_seconds<-capture_seconds<-0
+for(j in 1:2) {
+ yw<-drop(w%*%dat$Z[,j]);t<-proc.time()[3]
+ fit<-hdm::rlasso(w%*%dat$Z[,j]~w%*%dat$X,post=FALSE);native_seconds<-native_seconds+proc.time()[3]-t
+ t<-proc.time()[3];captured<-capture_adaptive(Xw,yw,fit);capture_seconds<-capture_seconds+proc.time()[3]-t
+ prefix<-file.path(folder,paste0('instrument_',j,'_'))
+ put(as.vector(t(scale(Xw,colMeans(Xw),FALSE))),paste0(prefix,'centered_X.bin'))
+ put(yw-mean(yw),paste0(prefix,'centered_y.bin'));put(c(mean(yw),colMeans(Xw)),paste0(prefix,'centering.bin'))
+ put(captured$last_penalty,paste0(prefix,'last_penalty.bin'));put(captured$reported_next_penalty,paste0(prefix,'next_penalty.bin'))
+ coefs[,j]<-as.numeric(fit$coefficients);fits[[j]]<-fit;traces[[j]]<-captured
+}
+stopifnot(identical(before,.Random.seed))
+nativepsi<-dat$Z-cbind(1,dat$X)%*%coefs;s<-task$tau-rank;z<-nativepsi*s;g<-colSums(z);S<-crossprod(z)
+put(as.vector(t(coefs)),file.path(folder,'native_coefficients.bin'));put(as.vector(t(nativepsi)),file.path(folder,'native_psi.bin'))
+put(drop(t(g)%*%solve(S,g)),file.path(folder,'native_W.bin'))
+saveRDS(list(fits=fits,traces=traces,before=before,after=.Random.seed),file.path(folder,'calibration_details.rds'))
+write.csv(data.frame(native_seconds=native_seconds,trace_capture_seconds=capture_seconds,total_internal_seconds=proc.time()[3]-start,
+ rng_unchanged=TRUE,density_min=min(f),density_max=max(f)),file.path(folder,'calibration_timing.csv'),row.names=FALSE)

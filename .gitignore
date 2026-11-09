@@ -43,3 +43,7 @@ thesis/*.synctex.gz
 
 thesis/*.fdb_latexmk
 thesis/*.fls
+
+# Generated pilot datasets and execution artifacts (kept locally)
+/journal_validation/stage2h/pilot/runs/
+/journal_validation/stage2h/pilot/SHA256_MANIFEST.json

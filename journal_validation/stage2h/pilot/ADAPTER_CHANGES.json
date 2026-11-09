@@ -1,0 +1,30 @@
+{
+  "base": "Stage 2H-0 audited dimension adapter",
+  "changes": [
+    "Input/output roots point to immutable pilot run via STAGE2H_RUN",
+    "Explicit component status and independent audit attempts for failed candidates",
+    "No numerical objectives, tolerances, calibration or certificate arithmetic changed"
+  ],
+  "sources": {
+    "common_h0.py": {
+      "historical_sha256": "d75c7781c92b32a0aa963233bc36940fb4e3de156708b674213e6f4ecb64048e",
+      "pilot_sha256": "1c46ff0e220eb55040467ebd968e9a12dabdc070789f9bba46ac2fefbd22eb3a"
+    },
+    "candidate_h0.py": {
+      "historical_sha256": "39e45dc9f7d287b5034c6e5b7b5d3314ca6ae7751d49f1f9b09c6603c36a9816",
+      "pilot_sha256": "2d924b275b50df752130becc708b1de8ee832474b0ab00404cec56e2c5c11ee4"
+    },
+    "calibrate_original.R": {
+      "historical_sha256": "c4a862202e938a814e33f7464bf5841626eb953a6980390099fe7f0d3bb4cd33",
+      "pilot_sha256": "ebdb0c1a9cdc2ae8117fb5836a1018f39a019746e2d5901965bbfaa5f5083e95"
+    },
+    "win_memory.py": {
+      "historical_sha256": "8748f29eb7d96148bc4b96d798e4fa354f5b1dca51e810656b5a3ec3fa994383",
+      "pilot_sha256": "01fefb93378e73a9a56f71f29e2bd748ef43690ab8fdbcca67831de0081fa5e6"
+    },
+    "independent_auditor_source.py.txt": {
+      "historical_sha256": "a27f711b760a0448f3cc24685728a724501d4b28a333cb298ecfe7da1f46f404",
+      "pilot_sha256": "a27f711b760a0448f3cc24685728a724501d4b28a333cb298ecfe7da1f46f404"
+    }
+  }
+}
