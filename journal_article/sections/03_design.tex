@@ -129,7 +129,7 @@ For replication $r$, point accuracy is summarized by
   \end{aligned}
   \label{eq:performance-point}
 \end{equation}
-MAE and RMSE denote mean absolute error and root mean squared error. The preserved bias convention is truth minus estimate: positive bias indicates underestimation. Coverage and power are evaluated directly at the unrounded true value and specified false candidates, independently of grid membership:
+MAE and RMSE denote mean absolute error and root mean squared error. The preserved bias convention is truth minus estimate: positive bias indicates underestimation. The quantity historically labeled coverage is direct-at-truth candidate-test acceptance, used here as a test-inversion coverage diagnostic. Power is evaluated at specified false candidates. Both use direct evaluations, independently of grid membership; the computed quantities retain their original definitions:
 \begin{equation}
   C_r(\tau)
     =\mathbf{1}\!\left\{W_{n,r}\!\left(\alpha_0(\tau)\right)\leq c_{0.95}\right\},
@@ -160,7 +160,7 @@ MAE and RMSE denote mean absolute error and root mean squared error. The preserv
       \mathbf{1}\!\left\{W_{n,r}\!\left(a_{\Delta}(\tau)\right)>c_{0.95}\right\}.
   \label{eq:performance-power}
 \end{equation}
-For DML, direct truth and stored-profile evaluations can use different pivotal draws even at the same candidate. Reported coverage is the repeated-sample acceptance frequency of the direct test, rather than membership reconstructed from a stored grid profile. Raw power uses the common nominal cutoff without size adjustment.
+For DML, fresh pivotal draws are generated for each penalty call, so a direct-truth evaluation and a stored-profile evaluation can use different draws even at the same candidate. Reported coverage is the repeated-sample acceptance frequency of the direct test, not literal membership coverage of the stored finite-grid set $\mathcal C^{\mathrm{grid}}_{e,0.95}(\tau)$. Except at the median, the unrounded structural truths do not belong to $G_0$; even at an on-grid truth, the separate DML computations need not give the same acceptance decision. Conceptual unrestricted inversion requires a fully specified candidate-test rule, including its randomization, and is not reconstructed from these separately recorded evaluations. Raw power uses the common nominal cutoff without size adjustment.
 
 The cutoff and common primary grid are
 \begin{equation}

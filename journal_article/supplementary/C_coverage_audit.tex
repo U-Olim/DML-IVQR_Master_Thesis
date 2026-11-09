@@ -4,7 +4,7 @@
 
 \subsection{Direct-at-Truth Coverage Audit}
 
-Coverage is evaluated directly at the exact true structural effect $\alpha_0(\tau)$, independently of whether that value lies on the finite candidate grid. The forensic audit checked 60,000 direct truth evaluations: 500 replications for each of 120 sample-size, quantile, instrument-strength, and estimator cells.
+The reported coverage diagnostic is direct candidate-test acceptance at the exact true structural effect $\alpha_0(\tau)$, independently of whether that value lies on the finite candidate grid. It is not literal membership coverage of the stored grid accepted set defined in Section~\ref{sec:implementation}; fresh pivotal draws can also distinguish the DML direct and stored-grid evaluations at the same candidate. The forensic audit checked 60,000 direct truth evaluations: 500 replications for each of 120 sample-size, quantile, instrument-strength, and estimator cells.
 
 Wilson 95\% Monte Carlo intervals exclude nominal $0.95$ coverage in 54 of the 120 cells. The audit finds no missing or nonfinite true-parameter $W$ statistics. The large coverage distortions reported in the main text are therefore neither plotting-grid artifacts nor consequences of missing-value handling. The frozen audit report and supporting diagnostics remain preserved in the repository. Wilson intervals are pointwise Monte Carlo uncertainty intervals, without simultaneous or multiplicity-adjusted significance claims. An individual rate's Monte Carlo standard error is not a standard error for a difference between correlated simulation results.
 

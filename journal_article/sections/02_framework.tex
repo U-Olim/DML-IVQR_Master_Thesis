@@ -80,7 +80,7 @@ For candidate $a$, define $\widetilde X_i=(1,X_i')'$, $\rho_\tau(v)=v[\tau-\math
     =Z_i-d_0(a)-\Gamma(a)X_i.
     \label{eq:profile-residualized-instrument}
 \end{equation}
-Here $f_{\epsilon(a)}(0\mid X_i,Z_i)$ is the conditional residual density at zero. With $\eta=(c,\beta',\operatorname{vec}(\delta)')'$, let $\eta(a)$ collect the candidate-specific profile and $\eta_0=\eta(\alpha_0(\tau))$. The theoretical score is
+Here $f_{\epsilon(a)}(0\mid X_i,Z_i)$ is the conditional residual density at zero. With $\eta=(c,\beta',\operatorname{vec}(\delta)')'$, let $\eta(a)$ collect the candidate-specific profile and $\eta_0=\eta(\alpha_0(\tau))$. The ideal score below is a theoretical reference:
 \begin{equation}
     \begin{aligned}
         g_{\tau}(W_i;a,\eta)
@@ -132,6 +132,8 @@ The quantile-Lasso objective is an unscaled sum of check losses plus one half of
 
 Nuisances and scores use the same observations, with no sample splitting or cross-fitting. Fresh pivotal draws are generated at each penalty call, introducing algorithmic randomness across candidate evaluations. Appendix~\ref{app:reproducibility} records the penalty formulas, residualization rules, and environment details. The estimator comparison encompasses these implementation differences as well as regularization and nuisance dimension; it cannot isolate the effect of regularization alone.
 
+The executed procedures use implementation-specific density proxies, residualization and nuisance estimation, so the ideal orthogonality calculation does not establish orthogonality or an inference theorem for these implementations. The absence of cross-fitting alone is not proof of invalidity; the required same-sample nuisance and generated-score conditions have not been established here.
+
 For estimator $e$, let $\widehat g_{e,i}(a)$ be its score. The common criterion uses the uncentered score second moment:
 \begin{equation}
     \widehat g_{e,n}(a)
@@ -165,9 +167,9 @@ For estimator $e$, let $\widehat g_{e,i}(a)$ be its score. The common criterion 
 \end{equation}
 The Monte Carlo candidate set $\mathcal A$ is the fixed grid specified below; the first exact minimizer is retained, and an incomplete profile receives no point estimate. Direct inversions use neither a generalized inverse nor additional matrix regularization. Failures or non-finite statistics are recorded as numerical failures.
 
-The procedures apply the asymptotic $\chi^2_{d_z}$ reference cutoff to each candidate statistic. At significance level $\gamma$, inversion gives
+The procedures use the asymptotic $\chi^2_{d_z}$ reference cutoff nominally. For the stored candidate evaluations on the finite grid $\mathcal A=G_0$ specified below, inversion at nominal significance level $\gamma$ gives the grid accepted set
 \begin{equation}
-    \mathcal C_{e,1-\gamma}(\tau)
+    \mathcal C^{\mathrm{grid}}_{e,1-\gamma}(\tau)
     =
     \left\{
         a\in\mathcal A:
@@ -175,4 +177,6 @@ The procedures apply the asymptotic $\chi^2_{d_z}$ reference cutoff to each cand
     \right\}.
     \label{eq:robust-confidence-region}
 \end{equation}
-Here $c_{1-\gamma,d_z}$ is the chi-square quantile, with $d_z=2$. The corresponding theoretical candidate tests can accommodate weak identification under their regularity conditions \parencite{chernozhukov_hansen_2008}; finite-sample calibration of these preserved implementations remains an empirical question. This construction differs from exact conditional finite-sample inference \parencite{chernozhukov_hansen_jansson_2009}. Weak-identification robustness does not ensure narrow sets or high power, and a finite numerical domain cannot establish global boundedness.
+This set is defined by the stored grid evaluations, not by separately rerun direct tests. Conceptually, unrestricted test inversion would retain all real candidate values accepted by a fully specified candidate-test rule, including its randomization. That unrestricted set is not computed here. Direct-at-truth test acceptance, defined in Section~\ref{sec:performance-measures}, is a third object; its reported frequency is not literal membership coverage of the stored finite-grid set.
+
+Here $c_{1-\gamma,d_z}$ is the chi-square quantile, with $d_z=2$. Its validity for the preserved implementations under the studied DGP has not been established. The cited theoretical candidate tests can accommodate weak identification under their regularity conditions \parencite{chernozhukov_hansen_2008}, but that robustness does not automatically transfer to the implemented density proxies, residualization and nuisance fits. This construction differs from exact conditional finite-sample inference \parencite{chernozhukov_hansen_jansson_2009}. Weak-identification robustness does not ensure narrow sets or high power, and a finite numerical domain cannot establish global boundedness.
