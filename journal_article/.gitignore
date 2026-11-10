@@ -30,3 +30,9 @@
 /qa/batch4/*.png
 /qa/batch4/*.ppm
 /qa/batch4/*.xml
+
+# Final package: reproducible local sources are staged by the document-only helper.
+/submission/work/
+/submission/qa/
+/submission/named/
+/submission/review/
