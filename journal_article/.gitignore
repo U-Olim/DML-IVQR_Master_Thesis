@@ -9,3 +9,24 @@
 /main.synctex.gz
 /main.fdb_latexmk
 /main.fls
+
+# Batch 4 job-local TeX runtime and rebuildable document intermediates.
+/qa/batch4/runtime/
+/qa/batch4/*.aux
+/qa/batch4/*.bcf
+/qa/batch4/*.blg
+/qa/batch4/*.bbl
+/qa/batch4/*.out
+/qa/batch4/*.run.xml
+/qa/batch4/*.toc
+/qa/batch4/*.fls
+/qa/batch4/*.fdb_latexmk
+
+# Rebuildable Batch 4 PDF/render/log evidence stays local; retain helper and inspection note.
+/qa/batch4/*.txt
+/qa/batch4/*.log
+/qa/batch4/*.json
+/qa/batch4/*.pdf
+/qa/batch4/*.png
+/qa/batch4/*.ppm
+/qa/batch4/*.xml

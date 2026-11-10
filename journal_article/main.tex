@@ -1,21 +1,22 @@
 % Compile from journal_article/: pdflatex main; biber main; pdflatex main; pdflatex main
 \input{preamble}
-\title{High-Dimensional Instrumental Variable Quantile Regression under Weak Instruments: A Monte Carlo Study}
-% Shared affiliation and individual contact details; no corresponding author.
+\title{Controlled Instrument-Relevance Sensitivity in High-Dimensional IVQR: A Monte Carlo Study}
+% Named master; author order, affiliations and corresponding author require confirmation.
 \author{\begin{minipage}{\dimexpr\textwidth-2\tabcolsep\relax}\centering
-\normalsize OLIMJON UMIDJON UGLI UMURZOKOV\textsuperscript{a}\\
+\normalsize OLIMJON UMIDJON UGLI UMURZOKOV\\
 \small ORCID: \href{https://orcid.org/0009-0008-0090-7100}{0009-0008-0090-7100}\\
 Email: \href{mailto:olimumurzokov022@gmail.com}{olimumurzokov022@gmail.com}\\[0.7em]
-\normalsize UMIDJON UMIRZAKOVICH KOSTAEV\textsuperscript\\
+\normalsize UMIDJON UMIRZAKOVICH KOSTAEV\\
 \small ORCID: \href{https://orcid.org/0009-0000-0205-5142}{0009-0000-0205-5142}\\
 Email: \href{mailto:umidjonkostaev2025@gmail.com}{umidjonkostaev2025@gmail.com}\\[0.7em]
 \end{minipage}}
 \date{}
-\hypersetup{pdftitle={High-Dimensional IVQR under Weak Instruments},pdfauthor={UMIDJON UMIRZAKOVICH KOSTAEV; OLIMJON UMIDJON UGLI UMURZOKOV}}
+\hypersetup{pdftitle={Controlled Instrument-Relevance Sensitivity in High-Dimensional IVQR: A Monte Carlo Study},pdfauthor={UMIDJON UMIRZAKOVICH KOSTAEV; OLIMJON UMIDJON UGLI UMURZOKOV}}
 \begin{document}
 \maketitle
+\noindent\textit{\{Monte Carlo simulation assesses instrument-relevance sensitivity in high-dimensional IVQR.\}}\par\medskip
 \begin{abstract}
-We study how weakening instrument relevance changes point accuracy, test calibration and inferential informativeness in high-dimensional instrumental variable quantile regression (IVQR). Extending the fixed-relevance Monte Carlo design of Chen, Huang, and Tien (2021), we scale the excluded signal and add independent compensating noise to preserve the joint distribution of treatment and the outcome disturbance. We compare preserved Oracle-GMM, Full-GMM and double/debiased machine learning IVQR (DML-IVQR) implementations across four relevance settings, five quantiles and sample sizes of 500 and 1000, with 500 replications per design; no new estimator or theorem is proposed. At $n=1000$, $\tau=0.50$ and $\kappa=0.10$, DML-IVQR has direct-at-truth acceptance $0.942$, a median grid-based accepted measure of $3.900$ out of $4$, and rejection probability $0.094$ at the false candidate $\alpha_0(\tau)+0.50$. These distinct measures show that nominal-looking truth acceptance can coexist with little exclusion of false effects; the acceptance frequency is not membership coverage of the stored finite-grid set. Oracle-GMM also deteriorates as relevance weakens. DML--Full RMSE rankings have exceptions, and substantial undercoverage occurs in several strong-relevance cells. Findings concern historical implementations with density proxies, differing residualization, no cross-fitting and numerical sensitivity documented in selected-case audits. Their nominal chi-square inference is not validated, and the comparisons do not isolate the effect of regularization.
+We study how weakening instrument relevance changes point accuracy, test calibration and inferential informativeness in high-dimensional instrumental variable quantile regression (IVQR). Extending the fixed-relevance Monte Carlo design of Chen, Huang, and Tien (2021), we scale the excluded signal and add independent compensating noise, preserving the joint treatment/outcome-disturbance distribution under the stated Gaussian construction. We compare preserved Oracle-GMM, Full-GMM and double/debiased machine learning IVQR (DML-IVQR) implementations across four relevance settings, five quantiles and sample sizes of 500 and 1000, with 500 replications per design. The contribution is a controlled sensitivity experiment, with no new estimator or theorem. At $n=1000$, $\tau=0.50$ and $\kappa=0.10$, DML-IVQR has direct-at-truth acceptance $0.942$, median grid-based accepted measure $3.900$ out of $4$, and rejection probability $0.094$ at the false candidate $\alpha_0(\tau)+0.50$. These different measures show that nominal-looking truth acceptance can coexist with little exclusion of false effects; direct acceptance is not membership coverage of the stored finite-grid set. Oracle-GMM also deteriorates under weaker relevance. DML--Full RMSE rankings have exceptions, and several strong-relevance cells exhibit substantial undercoverage. The comparisons do not isolate regularization. Non-finite mixed-density regularity, density proxies, differing residualization, same-sample fitting without cross-fitting, penalty randomness and selected-case numerical sensitivity limit interpretation; validity of the implemented nominal chi-square inference remains unestablished.
 \end{abstract}
 \noindent\textbf{Keywords:} instrumental variable quantile regression; double machine learning; weak instruments; Monte Carlo simulation; confidence-set informativeness
 \input{sections/01_introduction}
@@ -24,6 +25,8 @@ We study how weakening instrument relevance changes point accuracy, test calibra
 \input{sections/04_results}
 \input{sections/05_discussion}
 \input{sections/06_conclusion}
+\input{sections/submission_declarations}
+\input{sections/data_availability}
 \FloatBarrier
 \printbibliography[title={References}]
 \clearpage

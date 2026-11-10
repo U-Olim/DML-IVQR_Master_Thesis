@@ -32,7 +32,7 @@ The treatment coefficient $\alpha_0(\tau)$ is the target. The intercept and cont
 \end{equation}
 Instrument validity supports this restriction; identification additionally requires variation that distinguishes alternative treatment coefficients.
 
-For candidate $a$, define $\widetilde X_i=(1,X_i')'$, $\rho_\tau(v)=v[\tau-\mathbf1\{v<0\}]$, and the population nuisance profile
+For candidate $a$, define $\widetilde X_i=(1,X_i')'$, $\rho_\tau(v)=v[\tau-\mathbf1\{v<0\}]$, and a population nuisance profile (under the reference conditions, assume uniqueness or a fixed measurable selection from the minimizers)
 \begin{equation}
     \begin{pmatrix}
         c(a)\\
@@ -80,7 +80,7 @@ For candidate $a$, define $\widetilde X_i=(1,X_i')'$, $\rho_\tau(v)=v[\tau-\math
     =Z_i-d_0(a)-\Gamma(a)X_i.
     \label{eq:profile-residualized-instrument}
 \end{equation}
-Here $f_{\epsilon(a)}(0\mid X_i,Z_i)$ is the conditional residual density at zero. With $\eta=(c,\beta',\operatorname{vec}(\delta)')'$, let $\eta(a)$ collect the candidate-specific profile and $\eta_0=\eta(\alpha_0(\tau))$. The ideal score below is a theoretical reference:
+Here $f_{\epsilon(a)}(0\mid X_i,Z_i)$ is the conditional residual density at zero. With $\eta=(c,\beta',\operatorname{vec}(\delta)')'$, let $\eta(a)$ collect the candidate-specific profile and $\eta_0=\eta(\alpha_0(\tau))$. Let $W_i=(Y_i,D_i^{\prime},X_i^{\prime},Z_i^{\prime})^{\prime}$ collect an observation; it is distinct from the scalar candidate statistic $W_{e,n}(a)$ below. The ideal score is a theoretical reference:
 \begin{equation}
     \begin{aligned}
         g_{\tau}(W_i;a,\eta)
@@ -122,7 +122,7 @@ Here $f_{\epsilon(a)}(0\mid X_i,Z_i)$ is the conditional residual density at zer
 \end{equation}
 Under finite density-weighted moments, a nonsingular $J$, and the requisite differentiation conditions, the derivative in the intercept and slopes is $-[M_0-\delta_0J_0]=0$. The residualization derivative vanishes by the quantile moment. Appendix~\ref{app:score-algebra} gives the algebra. These are properties of the ideal construction under its conditions, rather than guarantees for every executable implementation.
 
-This distinction is material for the present DGP. At truth, the outcome residual is $e_\tau=D(u-q_\tau)$, with $q_\tau=\Phi^{-1}(\tau)$ and $D=\Phi(T)$, $T=d^*(\kappa)$. Conditional on $u=q_\tau$, $X$, and observed $Z$, the variance of the normal index is $2.91-\kappa^2>1$ for every investigated setting. The density at zero contains a term proportional to $\operatorname E[1/\Phi(T)\mid u=q_\tau,X,Z]$, which is not finite. The experiment therefore does not establish the ideal density-weight regularity conditions or validate the associated asymptotic theory.
+This distinction is material for the present DGP. At truth, the outcome residual is $e_\tau=D(u-q_\tau)$, with $q_\tau=\Phi^{-1}(\tau)$ and $D=\Phi(T)$, $T=d^*(\kappa)$. Its density conditional on $(X,Z)$ mixes over treatment and equals $\phi(q_\tau)\operatorname E[1/\Phi(T)\mid u=q_\tau,X,Z]$. The conditional normal variance $2.91-\kappa^2>1$ makes this expectation infinite at every investigated setting. Appendix~\ref{app:density-divergence} gives the retained Gaussian conditioning and negative-tail argument; this is not the density conditional on realized treatment. The experiment therefore does not establish the ideal density-weight regularity conditions or validate the associated asymptotic theory.
 
 \subsection{Preserved estimators and inference}
 \label{sec:implementation}
@@ -132,7 +132,7 @@ The quantile-Lasso objective is an unscaled sum of check losses plus one half of
 
 Nuisances and scores use the same observations, with no sample splitting or cross-fitting. Fresh pivotal draws are generated at each penalty call, introducing algorithmic randomness across candidate evaluations. Appendix~\ref{app:reproducibility} records the penalty formulas, residualization rules, and environment details. The estimator comparison encompasses these implementation differences as well as regularization and nuisance dimension; it cannot isolate the effect of regularization alone.
 
-The executed procedures use implementation-specific density proxies, residualization and nuisance estimation, so the ideal orthogonality calculation does not establish orthogonality or an inference theorem for these implementations. The absence of cross-fitting alone is not proof of invalidity; the required same-sample nuisance and generated-score conditions have not been established here.
+These implementation differences prevent automatic transfer of the ideal orthogonality calculation or its inference theory. Absence of cross-fitting alone does not prove invalidity; the same-sample nuisance and generated-score conditions remain unestablished.
 
 For estimator $e$, let $\widehat g_{e,i}(a)$ be its score. The common criterion uses the uncentered score second moment:
 \begin{equation}
