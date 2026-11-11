@@ -1,0 +1,474 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{belloni_chernozhukov_2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d36a7f02195c9b910441b02a96249f50}{%
+           family={Belloni},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{fullhash}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{fullhashraw}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{bibnamehash}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{authorbibnamehash}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{authornamehash}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{authorfullhash}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \strng{authorfullhashraw}{37a5616507fdc1fca6c2bf0cf46c714b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{1}
+      \field{title}{$\ell_1$-Penalized Quantile Regression in High-Dimensional Sparse Models}
+      \field{volume}{39}
+      \field{year}{2011}
+      \field{pages}{82\bibrangedash 130}
+      \range{pages}{49}
+      \verb{doi}
+      \verb 10.1214/10-AOS827
+      \endverb
+    \endentry
+    \entry{belloni_chernozhukov_kato_2019}{article}{}{}
+      \name{author}{3}{ul=3}{%
+        {{un=0,uniquepart=base,hash=d36a7f02195c9b910441b02a96249f50}{%
+           family={Belloni},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14b456424727553f557ab47ed30cc84f}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Kengo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e109f01c30505ea2190f2755b397e733}
+      \strng{fullhash}{e109f01c30505ea2190f2755b397e733}
+      \strng{fullhashraw}{e109f01c30505ea2190f2755b397e733}
+      \strng{bibnamehash}{e109f01c30505ea2190f2755b397e733}
+      \strng{authorbibnamehash}{e109f01c30505ea2190f2755b397e733}
+      \strng{authornamehash}{e109f01c30505ea2190f2755b397e733}
+      \strng{authorfullhash}{e109f01c30505ea2190f2755b397e733}
+      \strng{authorfullhashraw}{e109f01c30505ea2190f2755b397e733}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{526}
+      \field{title}{Valid Post-Selection Inference in High-Dimensional Approximately Sparse Quantile Regression Models}
+      \field{volume}{114}
+      \field{year}{2019}
+      \field{pages}{749\bibrangedash 758}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1080/01621459.2018.1442339
+      \endverb
+    \endentry
+    \entry{chen_huang_tien_2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=37c83a1c04e112be40e482d03d13ac7f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jau-er},
+           giveni={J\bibinithyphendelim e\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40ff3a17dc9a4ff957ae389fd383d2f7}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Chien-Hsun},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed954521dcd71dc6036b2679b195fbad}{%
+           family={Tien},
+           familyi={T\bibinitperiod},
+           given={Jia-Jyun},
+           giveni={J\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1fb6fef43855e1916eb1341d308d0668}
+      \strng{fullhash}{2c84179578f352e0fa6f66b79df1392f}
+      \strng{fullhashraw}{2c84179578f352e0fa6f66b79df1392f}
+      \strng{bibnamehash}{2c84179578f352e0fa6f66b79df1392f}
+      \strng{authorbibnamehash}{2c84179578f352e0fa6f66b79df1392f}
+      \strng{authornamehash}{1fb6fef43855e1916eb1341d308d0668}
+      \strng{authorfullhash}{2c84179578f352e0fa6f66b79df1392f}
+      \strng{authorfullhashraw}{2c84179578f352e0fa6f66b79df1392f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrics}
+      \field{number}{2}
+      \field{title}{Debiased/Double Machine Learning for Instrumental Variable Quantile Regressions}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{15}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/econometrics9020015
+      \endverb
+    \endentry
+    \entry{chernozhukov_et_al_2018}{article}{}{}
+      \name{author}{7}{ul=2}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
+           family={Chetverikov},
+           familyi={C\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
+           family={Demirer},
+           familyi={D\bibinitperiod},
+           given={Mert},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
+           family={Duflo},
+           familyi={D\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
+           family={Newey},
+           familyi={N\bibinitperiod},
+           given={Whitney},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf615cc72310078c444f0c653a1fc5e7}{%
+           family={Robins},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{71ae0ee9c7eaedd51e4cfcb944a5be17}
+      \strng{fullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \strng{fullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \strng{bibnamehash}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \strng{authorbibnamehash}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \strng{authornamehash}{71ae0ee9c7eaedd51e4cfcb944a5be17}
+      \strng{authorfullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \strng{authorfullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Econometrics Journal}
+      \field{number}{1}
+      \field{title}{Double/Debiased Machine Learning for Treatment and Structural Parameters}
+      \field{volume}{21}
+      \field{year}{2018}
+      \field{pages}{C1\bibrangedash C68}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1111/ectj.12097
+      \endverb
+    \endentry
+    \entry{chernozhukov_hansen_2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{fullhash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{fullhashraw}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{bibnamehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authorbibnamehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authornamehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authorfullhash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authorfullhashraw}{a41de6f99c96057909ee43b8b819dae7}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{An {IV} Model of Quantile Treatment Effects}
+      \field{volume}{73}
+      \field{year}{2005}
+      \field{pages}{245\bibrangedash 261}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1468-0262.2005.00570.x
+      \endverb
+    \endentry
+    \entry{chernozhukov_hansen_2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{fullhash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{fullhashraw}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{bibnamehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authorbibnamehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authornamehash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authorfullhash}{a41de6f99c96057909ee43b8b819dae7}
+      \strng{authorfullhashraw}{a41de6f99c96057909ee43b8b819dae7}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{1}
+      \field{title}{Instrumental Variable Quantile Regression: A Robust Inference Approach}
+      \field{volume}{142}
+      \field{year}{2008}
+      \field{pages}{379\bibrangedash 398}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2007.06.005
+      \endverb
+    \endentry
+    \entry{chernozhukov_hansen_jansson_2009}{article}{}{}
+      \name{author}{3}{ul=3}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a43416c2301d36a908b66e48758c3100}{%
+           family={Jansson},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{fullhash}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{fullhashraw}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{bibnamehash}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{authorbibnamehash}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{authornamehash}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{authorfullhash}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \strng{authorfullhashraw}{1ba7561bd92b65b2d9585d851d2f4efd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{2}
+      \field{title}{Finite Sample Inference for Quantile Regression Models}
+      \field{volume}{152}
+      \field{year}{2009}
+      \field{pages}{93\bibrangedash 103}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2009.01.004
+      \endverb
+    \endentry
+    \entry{chernozhukov_hansen_wuthrich_2017}{incollection}{}{}
+      \name{author}{3}{ul=3}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd3e82975b4354cd5bb4c09b14ce1024}{%
+           family={Wüthrich},
+           familyi={W\bibinitperiod},
+           given={Kaspar},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=713ca648cccb03223d755f3f2ff51a5c}{%
+           family={Koenker},
+           familyi={K\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=be10c8d9ed218a03b79ed4d51b938110}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xuming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a39171503c848970cf65a98a67880504}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Limin},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton, FL}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{fullhash}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{fullhashraw}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{bibnamehash}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{authorbibnamehash}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{authornamehash}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{authorfullhash}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{authorfullhashraw}{b5baca3eee2c5bf5aeb1eb64df6ecdad}
+      \strng{editorbibnamehash}{4e816ef63afc48f0e68a4805fce22483}
+      \strng{editornamehash}{630678a1775b8ebd2bfd7868fa12f65f}
+      \strng{editorfullhash}{4e816ef63afc48f0e68a4805fce22483}
+      \strng{editorfullhashraw}{4e816ef63afc48f0e68a4805fce22483}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of Quantile Regression}
+      \field{title}{Instrumental Variable Quantile Regression}
+      \field{year}{2017}
+      \field{pages}{119\bibrangedash 143}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1201/9781315120256
+      \endverb
+    \endentry
+    \entry{koenker_bassett_1978}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=713ca648cccb03223d755f3f2ff51a5c}{%
+           family={Koenker},
+           familyi={K\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dac06568a241fa4240632ea0b1a33cb9}{%
+           family={Bassett},
+           familyi={B\bibinitperiod},
+           given={Gilbert},
+           giveni={G\bibinitperiod},
+           givenun=0,
+           suffix={Jr.},
+           suffixi={J\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{fullhash}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{fullhashraw}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{bibnamehash}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{authorbibnamehash}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{authornamehash}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{authorfullhash}{b3277581d48d7cac6254ea7aa50b750d}
+      \strng{authorfullhashraw}{b3277581d48d7cac6254ea7aa50b750d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Regression Quantiles}
+      \field{volume}{46}
+      \field{year}{1978}
+      \field{pages}{33\bibrangedash 50}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.2307/1913643
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,34 @@
+\subsection{Frozen-evidence map}
+\label{app:evidence-map}
+All paths below are repository-relative. The checked accessible evidence revision is \texttt{15b8b4dc}; it is distinct from both the unresolved historical freeze identifier and the current uncommitted manuscript revision. Full identifiers and access limitations appear in the data and code availability statement. Keys E1--E6 connect the principal findings to saved evidence, including cells omitted from compact main-text displays. This map identifies sources; it does not recompute descriptive comparison counts or rerun historical checks.
+
+\begin{center}
+\small
+\begin{tblr}{colspec={X[3,l] X[2,l] X[1,l]},row{1}={font=\bfseries},hline{1,2,Z}={0.4pt}}
+Finding & Manuscript location & Evidence key \\
+Designed relevance ordering & Section~\ref{sec:results-relevance-calibration} & E1 \\
+Point-error deterioration and qualified estimator rankings & Section~\ref{sec:results-point-accuracy} & E2 \\
+Truth acceptance and false-candidate rejection & Sections~\ref{sec:results-coverage}--\ref{sec:results-power} & E3 \\
+Nominal-looking acceptance with little grid exclusion & Abstract; Section~\ref{chap:results} & E2--E4 \\
+Domain sensitivity and finite numerical scope & Appendix~\ref{app:numerical-domain-diagnostics} & E5 \\
+Selected-case rank and decision sensitivity & Appendix~\ref{app:reproducibility} & E6 \\
+\end{tblr}
+\end{center}
+
+\begingroup\small\raggedright
+\Urlmuskip=0mu plus 1mu\relax
+\begin{description}
+\item[E1: Relevance.] \path{thesis_extension/calibration/instrument_strength_100rep/kappa_strength_summary.csv}; presentation: \path{journal_article/tables/table_strength_calibration.tex}.
+
+\item[E2: Full performance.] \path{thesis_extension/final/output/n500/summary.csv} and \path{thesis_extension/final/output/n1000/summary.csv} contain Bias, MAE, RMSE, historical \texttt{Coverage}/\texttt{Size}, accepted-measure and boundary/full-grid summaries. Replication-level sources are \path{thesis_extension/final/output/n500/results.csv} and \path{thesis_extension/final/output/n1000/results.csv}; stored candidate statistics are \path{thesis_extension/final/output/n500/profiles.csv} and \path{thesis_extension/final/output/n1000/profiles.csv}. Full presentation assets: \path{journal_article/tables/generated/appendix_point_performance.tex}, \path{journal_article/tables/generated/appendix_coverage.tex}, and \path{journal_article/tables/generated/appendix_cr_informativeness.tex}; compact table: \path{journal_article/tables/table_main_performance.tex}. Existing RMSE images are \path{journal_article/figures/generated/rmse_n500.png} and \path{journal_article/figures/generated/rmse_n1000.png}.
+
+\item[E3: Truth testing and power.] Use E2's \texttt{Coverage}, \texttt{Size} and replication \texttt{W\_true} fields for direct-at-truth evaluations. False-candidate summaries are \path{thesis_extension/final/output/n500/power_summary.csv} and \path{thesis_extension/final/output/n1000/power_summary.csv}; replication records are \path{thesis_extension/final/output/n500/power.csv} and \path{thesis_extension/final/output/n1000/power.csv}. Full presentation: \path{journal_article/tables/generated/appendix_power.tex}; figures: \path{journal_article/figures/generated/coverage_heatmap.pdf} and \path{journal_article/figures/generated/power_median_combined.pdf}. The abstract's $0.942/3.900/0.094$ contrast selects E2's \texttt{Coverage}/\texttt{median\_grid\_accepted\_set\_measure} and this power summary's \texttt{power}, respectively, at $n=1000$, $\tau=0.50$, $\kappa=0.10$, estimator \texttt{DML-IVQR-BC}, with $\Delta=0.50$ for power only. These are different summaries, not a joint event or validated grid-set coverage.
+
+\item[E4: Grid informativeness.] In addition to E2's summaries/profiles, \path{thesis_extension/reporting/output/table_cr_informativeness_full.csv} contains all design cells. Existing images are \path{journal_article/figures/generated/accepted_measure_n500.png}, \path{journal_article/figures/generated/accepted_measure_n1000.png}, and \path{journal_article/figures/generated/full_domain_acceptance_heatmap.pdf}. Grid quadrature and all-grid acceptance are distinct diagnostics on the maintained domain.
+
+\item[E5: Domain expansion.] Tracked sources: \path{thesis_extension/diagnostics/grid_sensitivity/output/stage1/stage1_summary.csv}, \path{thesis_extension/diagnostics/grid_sensitivity/output/stage1/stage1_expansion_summary.csv}, \path{thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_summary.csv}, and \path{thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_expansion_summary.csv}. Combined reporting view: \path{thesis_extension/reporting/output/table_grid_domain_diagnostic.csv}; table and figure: \path{journal_article/tables/generated/appendix_grid_diagnostic.tex} and \path{journal_article/figures/grid_domain_expansion.png}. Design, failure and local-only artifact scope are in \path{thesis_extension/diagnostics/grid_sensitivity/GRID_RESULTS_PROVENANCE.md} and \path{thesis_extension/diagnostics/grid_sensitivity/GRID_RESULTS_MANIFEST.csv}. This separate diagnostic uses 100 intended replications; the recorded Stage 1 failure remains excluded from complete-profile summaries, not counted as acceptance. Large profiles and saved primitives are Git-ignored; tracked summaries do not supply full stochastic replay.
+
+\item[E6: Numerical sensitivity.] \path{journal_validation/stage2g/full_path_validation/FULL_PATH_REPORT.md} records the selected 24-problem comparison and five Policy A/C decision differences. \path{journal_validation/stage2g/deterministic_implementation/DETERMINISTIC_IMPLEMENTATION_REPORT.md} and \path{journal_validation/stage2g/deterministic_implementation/IMPLEMENTATION_CONTRACT_v1.md} specify the fixed-objective and input scope of later certificates. Earlier rank-stability evidence is in \path{journal_validation/stage2c/stability/STABILITY_REPORT.md}. These reports are not population error rates or replacements for E2--E5.
+\end{description}
+\endgroup
+The inventories \path{thesis_extension/reporting/EMPIRICAL_RESULTS_MANIFEST.csv} and \path{thesis_extension/reporting/REPORTING_OUTPUT_MANIFEST.csv} retain historical input/output hashes and provenance. An entry in a manifest alone does not establish public availability: local-only exclusions are stated in the data and code availability statement.

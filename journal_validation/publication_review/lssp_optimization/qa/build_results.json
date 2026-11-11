@@ -1,0 +1,44 @@
+[
+  {
+    "document": "main",
+    "step": "latex1",
+    "exit_code": 0,
+    "seconds": 25.23
+  },
+  {
+    "document": "main",
+    "step": "biber",
+    "exit_code": 0,
+    "seconds": 14.34
+  },
+  {
+    "document": "main",
+    "step": "latex2",
+    "exit_code": 0,
+    "seconds": 23.22
+  },
+  {
+    "document": "main",
+    "step": "latex3",
+    "exit_code": 0,
+    "seconds": 15.67
+  },
+  {
+    "document": "technical_supplement",
+    "step": "latex1",
+    "exit_code": 0,
+    "seconds": 21.94
+  },
+  {
+    "document": "technical_supplement",
+    "step": "latex2",
+    "exit_code": 0,
+    "seconds": 16.0
+  },
+  {
+    "document": "technical_supplement",
+    "step": "latex3",
+    "exit_code": 0,
+    "seconds": 39.89
+  }
+]

@@ -1,0 +1,661 @@
+
+Sorry, but: The package database is locked and cannot be accessed.
+
+Another MiKTeX program has exclusevily locked the package database.
+
+Remedy: Close running MiKTeX programs and try again.
+For more information, visit: https://miktex.org/kb/fix-package-database-locked
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+entering extended mode
+
+(C:/Users/User/DML-IVQR_Master_Thesis/journal_validation/publication_review/lss
+p_optimization/source/main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\preamble.tex
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-
+english.tex)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
+f))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxtext.sty
+`newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\l3backend-pdfte
+x.def))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
+.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def)
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex))
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figurever
+sions.sty)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxmath.sty
+`newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
+amsthm NOT loaded
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
+g)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty)
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.st
+y
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.st
+y)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/translations\translation
+s.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.
+sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.st
+y) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+))) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authoryear.
+bbx
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bb
+x))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authoryear.
+cbx)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.
+sty)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+xurl: Set penalties for biblatex
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
+eys.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.st
+y) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitl
+estring.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.st
+y) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.
+sty)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
+check.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqueco
+unter.sty)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdft
+ex.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg)
+)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\t1ntxtlf.fd)
+No file main.aux.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
+se.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
+g))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\trans
+lations-basic-dictionary-english.trsl)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+)
+No file main.bbl.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/01_introduction.tex
+
+LaTeX Warning: Citation 'koenker_bassett_1978' on page 1 undefined on input lin
+e 2.
+
+
+LaTeX Warning: Citation 'chernozhukov_hansen_2005' on page 1 undefined on input
+ line 2.
+
+
+LaTeX Warning: Citation 'chernozhukov_hansen_wuthrich_2017' on page 1 undefined
+ on input line 2.
+
+
+LaTeX Warning: Citation 'chernozhukov_hansen_2008' on page 1 undefined on input
+ line 2.
+
+
+LaTeX Warning: Citation 'belloni_chernozhukov_2011' on page 1 undefined on inpu
+t line 4.
+
+
+LaTeX Warning: Citation 'belloni_chernozhukov_kato_2019' on page 1 undefined on
+ input line 4.
+
+
+LaTeX Warning: Citation 'chernozhukov_et_al_2018' on page 1 undefined on input 
+line 4.
+
+
+LaTeX Warning: Citation 'chen_huang_tien_2021' on page 1 undefined on input lin
+e 4.
+
+[1{C:/Users/User/DML-IVQR_Master_Thesis/journal_article/qa/batch4/runtime/data/
+fonts/map/pdftex/pdftex.map}{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/
+enc/dvips/newtx/ntx-ec-tlf.enc}{C:/Users/User/AppData/Local/Programs/MiKTeX/fon
+ts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
+
+LaTeX Warning: Citation 'chen_huang_tien_2021' on page 2 undefined on input lin
+e 6.
+
+
+LaTeX Warning: Reference `sec:performance-measures' on page 2 undefined on inpu
+t line 8.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 2 undefined on input lin
+e 14.
+
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/02_framework.tex
+
+LaTeX Warning: Citation 'chernozhukov_hansen_2005' on page 2 undefined on input
+ line 4.
+
+[2]
+
+LaTeX Warning: Reference `app:score-algebra' on page 3 undefined on input line 
+123.
+
+
+LaTeX Warning: Reference `app:density-divergence' on page 3 undefined on input 
+line 125.
+
+
+LaTeX Warning: Citation 'chen_huang_tien_2021' on page 3 undefined on input lin
+e 129.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd) [3]
+
+LaTeX Warning: Reference `app:reproducibility' on page 4 undefined on input lin
+e 133.
+
+
+LaTeX Warning: Reference `app:score-algebra' on page 4 undefined on input line 
+135.
+
+
+LaTeX Warning: Reference `sec:performance-measures' on page 4 undefined on inpu
+t line 180.
+
+
+LaTeX Warning: Citation 'chernozhukov_hansen_2008' on page 4 undefined on input
+ line 182.
+
+
+LaTeX Warning: Citation 'chernozhukov_hansen_jansson_2009' on page 4 undefined 
+on input line 182.
+
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/03_design.tex
+
+LaTeX Warning: Citation 'chen_huang_tien_2021' on page 4 undefined on input lin
+e 5.
+
+[4{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+
+LaTeX Warning: Reference `app:kappa-derivation' on page 5 undefined on input li
+ne 105.
+
+[5] [6]
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 7 undefined
+ on input line 191.
+
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/04_results.tex
+
+LaTeX Warning: Reference `app:evidence-map' on page 7 undefined on input line 3
+.
+
+
+LaTeX Warning: Reference `tab:strength-calibration' on page 7 undefined on inpu
+t line 7.
+
+
+LaTeX Warning: Reference `sec:performance-measures' on page 7 undefined on inpu
+t line 7.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/table_strength_calibration.tex)
+
+LaTeX Warning: Reference `tab:strength-calibration' on page 7 undefined on inpu
+t line 11.
+
+[7]
+
+LaTeX Warning: Reference `tab:main-performance' on page 8 undefined on input li
+ne 18.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/table_main_performance.tex) [8] [9]
+
+LaTeX Warning: Reference `fig:coverage-heatmap' on page 10 undefined on input l
+ine 35.
+
+
+LaTeX Warning: Reference `fig:coverage-heatmap' on page 10 undefined on input l
+ine 35.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_coverage_main.tex)
+
+LaTeX Warning: Reference `sec:results-point-accuracy' on page 10 undefined on i
+nput line 39.
+
+[10 <C:/Users/User/DML-IVQR_Master_Thesis/journal_validation/publication_review
+/lssp_optimization/source/figures/generated/coverage_heatmap.pdf>]
+
+LaTeX Warning: Reference `app:coverage-forensic-audit' on page 11 undefined on 
+input line 49.
+
+
+LaTeX Warning: Reference `app:evaluation-sequence' on page 11 undefined on inpu
+t line 49.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 11 undefined on input li
+ne 51.
+
+
+LaTeX Warning: Reference `fig:power-median-combined' on page 11 undefined on in
+put line 56.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_power_main.tex)
+
+LaTeX Warning: Reference `sec:results-coverage' on page 11 undefined on input l
+ine 64.
+
+[11] [12 <C:/Users/User/DML-IVQR_Master_Thesis/journal_validation/publication_r
+eview/lssp_optimization/source/figures/generated/power_median_combined.pdf>]
+
+LaTeX Warning: Reference `fig:power-median-combined' on page 13 undefined on in
+put line 66.
+
+
+LaTeX Warning: Reference `fig:accepted-measure-main' on page 13 undefined on in
+put line 73.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_accepted_measure_main.tex)
+
+LaTeX Warning: Reference `fig:appendix_full_domain_acceptance' on page 13 undef
+ined on input line 81.
+
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 13 undefine
+d on input line 83.
+
+[13] [14 <C:/Users/User/DML-IVQR_Master_Thesis/journal_validation/publication_r
+eview/lssp_optimization/source/figures/generated/accepted_measure_n500.png (PNG
+ copy)> <C:/Users/User/DML-IVQR_Master_Thesis/journal_validation/publication_re
+view/lssp_optimization/source/figures/generated/accepted_measure_n1000.png (PNG
+ copy)>] [15])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/05_discussion.tex
+
+LaTeX Warning: Reference `chap:results' on page 16 undefined on input line 4.
+
+
+LaTeX Warning: Reference `app:evidence-map' on page 16 undefined on input line 
+6.
+
+
+LaTeX Warning: Citation 'chernozhukov_et_al_2018' on page 16 undefined on input
+ line 8.
+
+
+LaTeX Warning: Citation 'chernozhukov_hansen_2008' on page 16 undefined on inpu
+t line 8.
+
+
+LaTeX Warning: Reference `app:density-divergence' on page 16 undefined on input
+ line 8.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 16 undefined on input li
+ne 8.
+
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/06_conclusion.tex
+
+LaTeX Warning: Citation 'chen_huang_tien_2021' on page 16 undefined on input li
+ne 2.
+
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/submission_declarations.tex [16])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/data_availability.tex
+
+LaTeX Warning: Reference `app:evidence-map' on page 17 undefined on input line 
+2.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 17 undefined on input li
+ne 4.
+
+)
+
+LaTeX Warning: Empty bibliography on input line 34.
+
+[17]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/A_numerical_domain.tex
+
+LaTeX Warning: Reference `tab:appendix-grid-measures' on page 18 undefined on i
+nput line 20.
+
+
+LaTeX Warning: Reference `fig:grid-domain' on page 18 undefined on input line 2
+0.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/generated/appendix_grid_key.tex [18])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/generated/figure_grid_domain.tex) [19]
+
+LaTeX Warning: Reference `fig:appendix_full_domain_acceptance' on page 20 undef
+ined on input line 28.
+
+
+LaTeX Warning: Reference `app:coverage-forensic-audit' on page 20 undefined on 
+input line 28.
+
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/B_kappa_derivation.tex [20 <C:/Users/User/D
+ML-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optimization/s
+ource/figures/grid_domain_expansion.png>]
+
+LaTeX Warning: Reference `sec:monte-carlo-design' on page 21 undefined on input
+ line 5.
+
+
+LaTeX Warning: Reference `tab:kappa-illustration' on page 21 undefined on input
+ line 58.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/appendix_kappa_illustration.tex) [21])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/C_coverage_audit.tex
+
+LaTeX Warning: Reference `sec:implementation' on page 22 undefined on input lin
+e 7.
+
+
+LaTeX Warning: Reference `tab:coverage-audit-summary' on page 22 undefined on i
+nput line 15.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/appendix_coverage_audit_summary.tex) [22]
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 23 undefine
+d on input line 22.
+
+
+LaTeX Warning: Reference `fig:appendix_full_domain_acceptance' on page 23 undef
+ined on input line 22.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_full_domain_acceptance.tex) [23])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/D_implementation.tex [24 <C:/Users/User/DML
+-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optimization/sou
+rce/figures/generated/full_domain_acceptance_heatmap.pdf>]
+
+LaTeX Warning: Reference `app:evidence-map' on page 25 undefined on input line 
+6.
+
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/D_evidence_map.tex
+
+LaTeX Warning: Reference `sec:results-relevance-calibration' on page 25 undefin
+ed on input line 15.
+
+
+LaTeX Warning: Reference `sec:results-relevance-calibration' on page 25 undefin
+ed on input line 15.
+
+
+LaTeX Warning: Reference `sec:results-point-accuracy' on page 25 undefined on i
+nput line 15.
+
+
+LaTeX Warning: Reference `sec:results-point-accuracy' on page 25 undefined on i
+nput line 15.
+
+
+LaTeX Warning: Reference `sec:results-coverage' on page 25 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `sec:results-power' on page 25 undefined on input line
+ 15.
+
+
+LaTeX Warning: Reference `sec:results-coverage' on page 25 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `sec:results-power' on page 25 undefined on input line
+ 15.
+
+
+LaTeX Warning: Reference `chap:results' on page 25 undefined on input line 15.
+
+
+LaTeX Warning: Reference `chap:results' on page 25 undefined on input line 15.
+
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 25 undefine
+d on input line 15.
+
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 25 undefine
+d on input line 15.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 25 undefined on input li
+ne 15.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 25 undefined on input li
+ne 15.
+
+
+LaTeX Warning: Reference `sec:results-relevance-calibration' on page 25 undefin
+ed on input line 15.
+
+
+LaTeX Warning: Reference `sec:results-point-accuracy' on page 25 undefined on i
+nput line 15.
+
+
+LaTeX Warning: Reference `sec:results-coverage' on page 25 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `sec:results-power' on page 25 undefined on input line
+ 15.
+
+
+LaTeX Warning: Reference `chap:results' on page 25 undefined on input line 15.
+
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 25 undefine
+d on input line 15.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 25 undefined on input li
+ne 15.
+
+
+LaTeX Warning: Reference `sec:results-relevance-calibration' on page 25 undefin
+ed on input line 15.
+
+
+LaTeX Warning: Reference `sec:results-point-accuracy' on page 25 undefined on i
+nput line 15.
+
+
+LaTeX Warning: Reference `sec:results-coverage' on page 25 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `sec:results-power' on page 25 undefined on input line
+ 15.
+
+
+LaTeX Warning: Reference `chap:results' on page 25 undefined on input line 15.
+
+
+LaTeX Warning: Reference `app:numerical-domain-diagnostics' on page 25 undefine
+d on input line 15.
+
+
+LaTeX Warning: Reference `app:reproducibility' on page 25 undefined on input li
+ne 15.
+
+) [25]
+
+LaTeX Warning: Reference `app:finite-solvers' on page 26 undefined on input lin
+e 22.
+
+
+LaTeX Warning: Reference `sec:framework' on page 26 undefined on input line 23.
+
+
+[26] [27] [28]) [29]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\build\main\main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+ )<C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI
+.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewT
+XMI5.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/
+NewTXMI7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
+/lmtt10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmtt9.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
+/txexs.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/newt
+x/txmiaX.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/ne
+wtx/txsym.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
+ewtx/txsys.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+newtx/ztmb.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+newtx/ztmr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+newtx/ztmri.pfb>
+Output written on C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publi
+cation_review\lssp_optimization\build\main\main.pdf (29 pages, 960904 bytes).
+Transcript written on C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\p
+ublication_review\lssp_optimization\build\main\main.log.
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.

@@ -1,0 +1,43 @@
+{
+  "protected_files_checked": 192,
+  "protected_changes": [],
+  "all_tracked_files_unchanged": true,
+  "abstract_verbatim": true,
+  "title_author_metadata_verbatim": true,
+  "appendix_B_byte_identical": true,
+  "mathematical_displays_identical": true,
+  "figure_bibliography_bytes_identical": true,
+  "table_asset_bytes_identical_except_prose_note": true,
+  "main_table_body_identical": true,
+  "relocated_table_blocks_identical": true,
+  "full_evidence_inventory_verbatim": true,
+  "documents": {
+    "original": {
+      "pages": 34,
+      "bytes": 1013853,
+      "sha256": "4fecad9e125211689910104b8b533cb5e03f1d96e24752dc58bb62b5e77e3388",
+      "unresolved_question_pairs": 0
+    },
+    "optimized": {
+      "pages": 29,
+      "bytes": 999364,
+      "sha256": "e67fec34b55995677e5cc8cdbde1349c6b59fbc8523eca6ebdfbb8b3c9f11fc9",
+      "unresolved_question_pairs": 0
+    },
+    "supplement": {
+      "pages": 5,
+      "bytes": 142445,
+      "sha256": "47934ab9d8217b26cedb3731b4a70dd780d3a57ae92858d16ed2d45fbf0c6855",
+      "unresolved_question_pairs": 0
+    }
+  },
+  "main_reference_warnings": [],
+  "main_overfull_boxes": [],
+  "technical_supplement_reference_warnings": [],
+  "technical_supplement_overfull_boxes": [],
+  "main_sections_unique_numeric_tokens_lost": [],
+  "numbered_scientific_labels_preserved_across_two_documents": 72,
+  "citation_key_set_unchanged": true,
+  "relocated_inventory_paths_present": 40,
+  "visual_inspection": "All 29 main and 5 technical pages reviewed in rendered contact sheets; no evident missing/cropped displays or blank pages. No full-resolution typographic certification."
+}

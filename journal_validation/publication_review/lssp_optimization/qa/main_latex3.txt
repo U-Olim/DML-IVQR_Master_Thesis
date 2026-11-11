@@ -1,0 +1,270 @@
+
+Sorry, but: The package database is locked and cannot be accessed.
+
+Another MiKTeX program has exclusevily locked the package database.
+
+Remedy: Close running MiKTeX programs and try again.
+For more information, visit: https://miktex.org/kb/fix-package-database-locked
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+entering extended mode
+
+(C:/Users/User/DML-IVQR_Master_Thesis/journal_validation/publication_review/lss
+p_optimization/source/main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\preamble.tex
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-
+english.tex)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
+f))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxtext.sty
+`newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\l3backend-pdfte
+x.def))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
+.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def)
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex))
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figurever
+sions.sty)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxmath.sty
+`newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
+amsthm NOT loaded
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
+g)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty)
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.st
+y
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.st
+y)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/translations\translation
+s.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.
+sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.st
+y) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+))) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authoryear.
+bbx
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bb
+x))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authoryear.
+cbx)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.
+sty)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+xurl: Set penalties for biblatex
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
+eys.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.st
+y) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitl
+estring.sty))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.st
+y) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.
+sty)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
+check.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqueco
+unter.sty)))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdft
+ex.def)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg)
+)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\t1ntxtlf.fd)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\build\main\main.aux)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
+i
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
+se.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
+g))
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\trans
+lations-basic-dictionary-english.trsl)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\build\main\main.bbl)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\build\main\main.out)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\build\main\main.out)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/01_introduction.tex [1{C:/Users/User/DML-IVQR_Ma
+ster_Thesis/journal_article/qa/batch4/runtime/data/fonts/map/pdftex/pdftex.map}
+{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf.e
+nc}{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-t
+lf.enc}])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/02_framework.tex [2]
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd) [3])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/03_design.tex [4{C:/Users/User/AppData/Local/Pro
+grams/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [5] [6])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/04_results.tex
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/table_strength_calibration.tex) [7]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/table_main_performance.tex) [8] [9]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_coverage_main.tex) [10 <C:/Users/User/DML-I
+VQR_Master_Thesis/journal_validation/publication_review/lssp_optimization/sourc
+e/figures/generated/coverage_heatmap.pdf>]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_power_main.tex) [11] [12 <C:/Users/User/DML
+-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optimization/sou
+rce/figures/generated/power_median_combined.pdf>]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_accepted_measure_main.tex) [13] [14 <C:/Use
+rs/User/DML-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optim
+ization/source/figures/generated/accepted_measure_n500.png (PNG copy)> <C:/User
+s/User/DML-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optimi
+zation/source/figures/generated/accepted_measure_n1000.png (PNG copy)>])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/05_discussion.tex)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/06_conclusion.tex)
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/submission_declarations.tex [15])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\sections/data_availability.tex) [16{C:/Users/User/AppData
+/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [17]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/A_numerical_domain.tex
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/generated/appendix_grid_key.tex [18])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/generated/figure_grid_domain.tex) [19])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/B_kappa_derivation.tex [20 <C:/Users/User/D
+ML-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optimization/s
+ource/figures/grid_domain_expansion.png>]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/appendix_kappa_illustration.tex) [21])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/C_coverage_audit.tex
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/appendix_coverage_audit_summary.tex) [22]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\tables/figure_full_domain_acceptance.tex) [23])
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/D_implementation.tex [24 <C:/Users/User/DML
+-IVQR_Master_Thesis/journal_validation/publication_review/lssp_optimization/sou
+rce/figures/generated/full_domain_acceptance_heatmap.pdf>]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\source\supplementary/D_evidence_map.tex) [25] [26] [27] [28])
+[29]
+(C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lss
+p_optimization\build\main\main.aux) )<C:/Users/User/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/User/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/newtx/NewTXMI5.pfb><C:/Users/User/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/User/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/User/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/User/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/User/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/User/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/newtx/txsym.pfb><C:/Users/User/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/User/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/User/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/User/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publi
+cation_review\lssp_optimization\build\main\main.pdf (29 pages, 999364 bytes).
+Transcript written on C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\p
+ublication_review\lssp_optimization\build\main\main.log.
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.

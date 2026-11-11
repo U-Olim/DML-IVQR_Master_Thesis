@@ -1,0 +1,20 @@
+{
+  "journal_article/main.pdf": "502c1444bf9b9924ec55b8a9f6dff8b53704c999a1db6369ff81c6d26e53a54b",
+  "journal_article/figures/generated/coverage_heatmap.pdf": "6a338dcf4645e6b1ff3c35708a2d3e05fae6a5e747664c1eb7f5e5f8e4681a64",
+  "journal_article/figures/generated/full_domain_acceptance_heatmap.pdf": "1f0154bd26a6e2810461c92426432230b7a92bbac1d21c2958b92288a609a795",
+  "journal_article/figures/generated/power_median_combined.pdf": "e9ee6f46f71087558479557603339f4239685ec71d491f70932f2d4b731d33bf",
+  "journal_article/qa/batch4/main.pdf": "d3f3ef20d0cc75212bc03326963140db6413f369aeaac3055a926376da05e214",
+  "journal_article/submission/named/manuscript_named.pdf": "4fecad9e125211689910104b8b533cb5e03f1d96e24752dc58bb62b5e77e3388",
+  "journal_article/submission/named/supplementary_tables.pdf": "c277db1a4c1c2ca6d8b1a826dacdaeb30c56e93c526c97273674a68d39715277",
+  "journal_article/submission/review/manuscript_review.pdf": "bc8ef361d7d46546412735d40ba2b4203876569c041fe24081fd8cee42ea7645",
+  "journal_article/submission/review/supplementary_tables_review.pdf": "c277db1a4c1c2ca6d8b1a826dacdaeb30c56e93c526c97273674a68d39715277",
+  "journal_article/submission/work/named_build/main.pdf": "4fecad9e125211689910104b8b533cb5e03f1d96e24752dc58bb62b5e77e3388",
+  "journal_article/submission/work/named_source/figures/generated/coverage_heatmap.pdf": "6a338dcf4645e6b1ff3c35708a2d3e05fae6a5e747664c1eb7f5e5f8e4681a64",
+  "journal_article/submission/work/named_source/figures/generated/full_domain_acceptance_heatmap.pdf": "1f0154bd26a6e2810461c92426432230b7a92bbac1d21c2958b92288a609a795",
+  "journal_article/submission/work/named_source/figures/generated/power_median_combined.pdf": "e9ee6f46f71087558479557603339f4239685ec71d491f70932f2d4b731d33bf",
+  "journal_article/submission/work/review_build/main.pdf": "bc8ef361d7d46546412735d40ba2b4203876569c041fe24081fd8cee42ea7645",
+  "journal_article/submission/work/review_source/figures/generated/coverage_heatmap.pdf": "6a338dcf4645e6b1ff3c35708a2d3e05fae6a5e747664c1eb7f5e5f8e4681a64",
+  "journal_article/submission/work/review_source/figures/generated/full_domain_acceptance_heatmap.pdf": "1f0154bd26a6e2810461c92426432230b7a92bbac1d21c2958b92288a609a795",
+  "journal_article/submission/work/review_source/figures/generated/power_median_combined.pdf": "e9ee6f46f71087558479557603339f4239685ec71d491f70932f2d4b731d33bf",
+  "journal_article/submission/work/tables_build/supplementary_tables.pdf": "c277db1a4c1c2ca6d8b1a826dacdaeb30c56e93c526c97273674a68d39715277"
+}

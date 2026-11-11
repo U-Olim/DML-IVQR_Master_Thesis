@@ -165,7 +165,7 @@ For estimator $e$, let $\widehat g_{e,i}(a)$ be its score. The common criterion 
     \operatorname*{arg\,min}_{a\in\mathcal A}W_{e,n}(a).
     \label{eq:gmm-point-estimator}
 \end{equation}
-The Monte Carlo candidate set $\mathcal A$ is the fixed grid specified below; the first exact minimizer is retained, and an incomplete profile receives no point estimate. Direct inversions use neither a generalized inverse nor additional matrix regularization. Failures or non-finite statistics are recorded as numerical failures.
+The Monte Carlo candidate set $\mathcal A$ is the fixed grid specified below; the first candidate attaining the minimum stored grid statistic is retained, and an incomplete profile receives no point estimate. Direct inversions use neither a generalized inverse nor additional matrix regularization. Failures or non-finite statistics are recorded as numerical failures.
 
 The procedures use the asymptotic $\chi^2_{d_z}$ reference cutoff nominally. For the stored candidate evaluations on the finite grid $\mathcal A=G_0$ specified below, inversion at nominal significance level $\gamma$ gives the grid accepted set
 \begin{equation}

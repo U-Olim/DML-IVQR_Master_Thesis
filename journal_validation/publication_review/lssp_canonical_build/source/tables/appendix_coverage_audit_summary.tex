@@ -1,0 +1,20 @@
+\begin{table}[!ht]
+\caption{Direct-at-truth coverage audit.}
+\label{tab:coverage-audit-summary}
+\centering
+\begin{tabular}{lrrrrrrr}
+\toprule
+Estimator & $n$ & Cells & \shortstack{Coverage\\min.} & \shortstack{Coverage\\max.} & \shortstack{Upper\\$<0.95$} & \shortstack{Lower\\$>0.95$} & \shortstack{Missing/\\nonfinite} \\
+\midrule
+Oracle-GMM & 500 & 20 & 0.858 & 0.954 & 6 & 0 & 0 \\
+Oracle-GMM & 1000 & 20 & 0.860 & 0.964 & 8 & 0 & 0 \\
+Full-GMM & 500 & 20 & 0.442 & 0.962 & 9 & 0 & 0 \\
+Full-GMM & 1000 & 20 & 0.502 & 0.962 & 12 & 0 & 0 \\
+DML-IVQR & 500 & 20 & 0.658 & 0.976 & 8 & 1 & 0 \\
+DML-IVQR & 1000 & 20 & 0.498 & 0.968 & 10 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+Each row covers 20 quantile--$\kappa$ cells, with 500 direct-at-truth evaluations per cell. Coverage is reported as a proportion. The upper/lower columns count cells whose unrounded Wilson upper endpoint is below 0.95 or lower endpoint is above 0.95. Intervals use integer acceptance counts, the verified denominator, and the two-sided 95\% Wilson formula without continuity correction. They are pointwise Monte Carlo intervals, not simultaneous or multiple-testing-adjusted intervals; exclusion counts are descriptive audit summaries. Missing/nonfinite counts concern direct-at-truth $W$ evaluations (missing values are counted once).
+\end{tablenotes}
+\end{table}

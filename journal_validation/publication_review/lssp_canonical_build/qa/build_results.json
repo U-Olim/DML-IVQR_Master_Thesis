@@ -1,0 +1,63 @@
+[
+  {
+    "step": "latex1",
+    "exit_code": 0,
+    "seconds": 25.34,
+    "command": [
+      "C:\\Users\\User\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-file-line-error",
+      "-recorder",
+      "-output-directory=C:\\Users\\User\\DML-IVQR_Master_Thesis\\journal_validation\\publication_review\\lssp_canonical_build\\build",
+      "main.tex"
+    ]
+  },
+  {
+    "step": "biber",
+    "exit_code": 0,
+    "seconds": 14.23,
+    "command": [
+      "C:\\Users\\User\\AppData\\Local\\Programs\\MiKTeX\\executables\\windows-x64\\biber\\biber.exe",
+      "--input-directory",
+      "C:\\Users\\User\\DML-IVQR_Master_Thesis\\journal_validation\\publication_review\\lssp_canonical_build\\build",
+      "--output-directory",
+      "C:\\Users\\User\\DML-IVQR_Master_Thesis\\journal_validation\\publication_review\\lssp_canonical_build\\build",
+      "main"
+    ]
+  },
+  {
+    "step": "latex2",
+    "exit_code": 0,
+    "seconds": 25.28,
+    "command": [
+      "C:\\Users\\User\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-file-line-error",
+      "-recorder",
+      "-output-directory=C:\\Users\\User\\DML-IVQR_Master_Thesis\\journal_validation\\publication_review\\lssp_canonical_build\\build",
+      "main.tex"
+    ]
+  },
+  {
+    "step": "latex3",
+    "exit_code": 0,
+    "seconds": 18.12,
+    "command": [
+      "C:\\Users\\User\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe",
+      "--disable-installer",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-file-line-error",
+      "-recorder",
+      "-output-directory=C:\\Users\\User\\DML-IVQR_Master_Thesis\\journal_validation\\publication_review\\lssp_canonical_build\\build",
+      "main.tex"
+    ]
+  }
+]

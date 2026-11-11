@@ -1,0 +1,15 @@
+[0] Config.pm:329> INFO - This is Biber 2.22
+[0] Config.pm:332> INFO - Logfile is 'C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_canonical_build\build\main.blg'
+[104] biber-MSWIN64:342> INFO - === 
+[151] Biber.pm:421> INFO - Reading 'C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_canonical_build\build\main.bcf'
+[250] Biber.pm:1002> INFO - Found 9 citekeys in bib section 0
+[261] Biber.pm:4487> INFO - Processing section 0
+[271] Biber.pm:4680> INFO - Looking for bibtex file 'references.bib' for section 0
+[350] bibtex.pm:1713> INFO - LaTeX decoding ...
+[383] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[472] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[472] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[473] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[480] bbl.pm:676> INFO - Writing 'C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_canonical_build\build\main.bbl' with encoding 'UTF-8'
+[486] bbl.pm:779> INFO - Output to C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_canonical_build\build\main.bbl

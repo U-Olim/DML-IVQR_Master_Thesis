@@ -1,0 +1,49 @@
+% Compile from journal_article/: pdflatex main; biber main; pdflatex main; pdflatex main
+\input{preamble}
+\title{Controlled Instrument-Relevance Sensitivity in High-Dimensional IVQR: A Monte Carlo Study}
+% Confirmed author order, shared affiliation and corresponding author.
+\author{\begin{minipage}{\dimexpr\textwidth-2\tabcolsep\relax}\centering
+\normalsize Umurzokov Olimjon Umidjon ugli\textsuperscript{a,*}\\
+\small ORCID: \href{https://orcid.org/0009-0008-0090-7100}{0009-0008-0090-7100}\\
+Email: \href{mailto:olimumurzokov022@gmail.com}{olimumurzokov022@gmail.com}\\[0.7em]
+\normalsize Kostaev Umidjon Umirzakovich\textsuperscript{a}\\
+\small ORCID: \href{https://orcid.org/0009-0000-0205-5142}{0009-0000-0205-5142}\\
+Email: \href{mailto:umidjonkostaev2025@gmail.com}{umidjonkostaev2025@gmail.com}\\[0.7em]
+\textsuperscript{a}Tashkent State University of Economics, Tashkent, Uzbekistan.\\[0.4em]
+\textsuperscript{*}Corresponding author: Umurzokov Olimjon Umidjon ugli;\\
+\href{mailto:olimumurzokov022@gmail.com}{olimumurzokov022@gmail.com}.
+\end{minipage}}
+\date{}
+\hypersetup{pdftitle={Controlled Instrument-Relevance Sensitivity in High-Dimensional IVQR: A Monte Carlo Study},pdfauthor={Umurzokov Olimjon Umidjon ugli; Kostaev Umidjon Umirzakovich}}
+\begin{document}
+\maketitle
+\noindent\textit{\{Monte Carlo simulation assesses instrument-relevance sensitivity in high-dimensional IVQR.\}}\par\medskip
+\begin{abstract}
+We study how weakening instrument relevance changes point accuracy, test calibration and inferential informativeness in high-dimensional instrumental variable quantile regression (IVQR). Extending the fixed-relevance Monte Carlo design of Chen, Huang, and Tien (2021), we scale the excluded signal and add independent compensating noise, preserving the joint treatment/outcome-disturbance distribution under the stated Gaussian construction. We compare preserved Oracle-GMM, Full-GMM and double/debiased machine learning IVQR (DML-IVQR) implementations across four relevance settings, five quantiles and sample sizes of 500 and 1000, with 500 replications per design. The contribution is a controlled sensitivity experiment, with no new estimator or theorem. At $n=1000$, $\tau=0.50$ and $\kappa=0.10$, DML-IVQR has direct-at-truth acceptance $0.942$, median grid-based accepted measure $3.900$ out of $4$, and rejection probability $0.094$ at the false candidate $\alpha_0(\tau)+0.50$. These different measures show that nominal-looking truth acceptance can coexist with little exclusion of false effects; direct acceptance is not membership coverage of the stored finite-grid set. Oracle-GMM also deteriorates under weaker relevance. DML--Full RMSE rankings have exceptions, and several strong-relevance cells exhibit substantial undercoverage. The comparisons do not isolate regularization. Non-finite mixed-density regularity, density proxies, differing residualization, same-sample fitting without cross-fitting, penalty randomness and selected-case numerical sensitivity limit interpretation; validity of the implemented nominal chi-square inference remains unestablished.
+\end{abstract}
+\noindent\textbf{Keywords:} instrumental variable quantile regression; double machine learning; weak instruments; Monte Carlo simulation; confidence-set informativeness
+\input{sections/01_introduction}
+\input{sections/02_framework}
+\input{sections/03_design}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+\input{sections/submission_declarations}
+\input{sections/data_availability}
+\FloatBarrier
+\printbibliography[title={References}]
+\clearpage
+\appendix
+\section*{Online supplementary material}
+\noindent Appendices A--D provide numerical-domain diagnostics, the controlled-design derivation, the coverage audit, and implementation notes. They are included here to keep all cross-references resolvable in a single review PDF.
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\renewcommand{\theHequation}{\thesection.\arabic{equation}}
+\renewcommand{\theHtable}{\thesection.\arabic{table}}
+\renewcommand{\theHfigure}{\thesection.\arabic{figure}}
+\input{supplementary/A_numerical_domain}
+\input{supplementary/B_kappa_derivation}
+\input{supplementary/C_coverage_audit}
+\input{supplementary/D_implementation}
+\end{document}

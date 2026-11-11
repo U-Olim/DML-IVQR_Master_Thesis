@@ -1,0 +1,299 @@
+[
+  {
+    "file": "main.tex",
+    "old": "\\noindent\\textit{\\{Monte Carlo simulation assesses instrument-relevance sensitivity in high-dimensional IVQR.\\}}\\par\\medskip",
+    "new": "",
+    "category": "DUPLICATE",
+    "reason": "Dispensable braced front-matter summary repeats title and abstract; no verified LSSP requirement.",
+    "remains": "Approved title and verbatim abstract.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "main.tex",
+    "old": "\\section*{Online supplementary material}",
+    "new": "\\section*{Supplementary appendices}",
+    "category": "CONDENSE",
+    "reason": "Describe the appendices as actually delivered inline.",
+    "remains": "All Appendices A--D remain inline.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "main.tex",
+    "old": "They are included here to keep all cross-references resolvable in a single review PDF.",
+    "new": "They remain inline; additional domain-diagnostic tables are supplied separately in the accompanying Technical Supplement.",
+    "category": "CONDENSE",
+    "reason": "Make the two-document delivery explicit.",
+    "remains": "Inline A--D and Technical Supplement.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/01_introduction.tex",
+    "old": "Fresh pivotal draws can distinguish separate DML evaluations even at the same candidate; unrestricted inversion remains conceptual.",
+    "new": "The distinct evaluation rules are specified in Section~\\ref{sec:performance-measures}.",
+    "category": "DUPLICATE",
+    "reason": "Detailed randomization explanation belongs at the performance definitions.",
+    "remains": "Section 3.2 and Appendix D evaluation sequence.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/01_introduction.tex",
+    "old": "The preserved DML-IVQR implementation has lower RMSE than the preserved Full-GMM implementation in 35 of the 40 matched designs, with documented exceptions.",
+    "new": "The implementation-level RMSE comparisons have exceptions.",
+    "category": "DUPLICATE",
+    "reason": "Avoid repeating an exact ranking count before Results.",
+    "remains": "Section 4.2 retains 35/40, 11/40, exceptions and numerical examples.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/01_introduction.tex",
+    "old": "Oracle-GMM also deteriorates under weaker relevance, so high-dimensional nuisance estimation is not the sole explanation. ",
+    "new": "",
+    "category": "DUPLICATE",
+    "reason": "Repeated result preview is unnecessary alongside the contribution and limitations.",
+    "remains": "Results 4.2, Discussion paragraph 2.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/02_framework.tex",
+    "old": "These implementation differences prevent automatic transfer of the ideal orthogonality calculation or its inference theory. Absence of cross-fitting alone does not prove invalidity; the same-sample nuisance and generated-score conditions remain unestablished.",
+    "new": "These differences prevent automatic transfer of ideal orthogonality or inference theory; same-sample justification remains unestablished (Appendix~\\ref{app:score-algebra}). Absence of cross-fitting alone does not prove invalidity.",
+    "category": "CONDENSE",
+    "reason": "Shorten a repeated qualification while retaining both the inferential boundary and cross-fitting distinction.",
+    "remains": "Framework conditional identities; Appendix D score-algebra conditions.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/02_framework.tex",
+    "old": "the first exact minimizer is retained",
+    "new": "the first candidate attaining the minimum stored grid statistic is retained",
+    "category": "CONDENSE",
+    "reason": "E3: distinguish grid selection from finite nuisance optimization.",
+    "remains": "Unchanged point-estimator equation and tie rule.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "In each calibration replication, the restricted OLS regression uses the continuous treatment $D$ as the dependent variable and includes an intercept and $X_1,\\ldots,X_{10}$. The unrestricted regression adds $Z_1$ and $Z_2$, which are tested jointly. The reported nested-regression $F$-statistic and partial $R^2$ are calculated over 100 replications for every $(n,\\kappa)$ design.",
+    "new": "The nested OLS diagnostic specified in Section~\\ref{sec:performance-measures} uses 100 replications for each $(n,\\kappa)$ design.",
+    "category": "DUPLICATE",
+    "reason": "Calibration regression has already been fully specified in Design.",
+    "remains": "Section 3.2 retains outcome, intercept, ten controls, instruments and joint test.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "These reductions establish better point accuracy in the larger simulated sample",
+    "new": "These reductions show lower observed Monte Carlo RMSE at the larger sample size",
+    "category": "CONDENSE",
+    "reason": "M3: do not assert population improvement beyond reported Monte Carlo estimates.",
+    "remains": "All original RMSE values and comparison counts.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": " Overall, accuracy falls as relevance weakens, despite qualified gains from a larger sample and from DML relative to Full-GMM.",
+    "new": "",
+    "category": "DUPLICATE",
+    "reason": "Closing summary repeats the subsection opening and preceding comparisons.",
+    "remains": "All original evidence remains in Section 4.2.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "\\subsection{Coverage and Finite-Sample Calibration}",
+    "new": "\\subsection{Direct-at-Truth Acceptance and Finite-Sample Calibration}",
+    "category": "CONDENSE",
+    "reason": "E1: make the historical coverage shorthand explicit locally.",
+    "remains": "Historical labels remain in equations, tables and artwork.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "shows that empirical coverage differs considerably",
+    "new": "shows that direct-at-truth acceptance (historically labelled coverage) differs considerably",
+    "category": "CONDENSE",
+    "reason": "E1: clarify the object before using historical shorthand.",
+    "remains": "Section 3.2 definitions unchanged.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "Its Monte Carlo standard error is",
+    "new": "Under independent replications, its conventional plug-in Monte Carlo standard error is",
+    "category": "CONDENSE",
+    "reason": "M3: qualify the conventional uncertainty formula.",
+    "remains": "Unchanged formula, intervals and Appendix D stream caveat.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "An individual rate's MCSE is not used as the standard error of a difference between correlated simulation results.",
+    "new": "An individual rate's MCSE is not used as the standard error of a difference between correlated simulation results. These uncertainty summaries assume independent replications; historical DML worker-stream independence is not verified (Appendix~\\ref{app:evaluation-sequence}).",
+    "category": "CONDENSE",
+    "reason": "M3: surface the existing RNG qualification next to MC uncertainty.",
+    "remains": "Appendix D retains full historical stream limitations.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "Thus declining relevance causes progressively more of the maintained domain to survive test inversion, even when coverage moves closer to $0.95$.",
+    "new": "Thus lower designed relevance is accompanied by a progressively larger median grid-acceptance measure, even when direct-at-truth acceptance moves closer to $0.95$.",
+    "category": "CONDENSE",
+    "reason": "E2: name the observed grid summary rather than continuous-domain survival or an isolated mechanism.",
+    "remains": "All numerical sequences, design construction and definitions unchanged.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/04_results.tex",
+    "old": "More observations improve localisation, but do not overcome the weakest relevance setting at these sample sizes.",
+    "new": "The larger sample has a smaller or unchanged observed median accepted measure in these comparisons, with little localization under the weakest relevance setting.",
+    "category": "CONDENSE",
+    "reason": "E2: describe the observed comparison at the two investigated sample sizes.",
+    "remains": "52/60 and eight unchanged, all examples retained.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/05_discussion.tex",
+    "old": "A lower RMSE likewise need not imply better test calibration. ",
+    "new": "",
+    "category": "DUPLICATE",
+    "reason": "Same proposition is already demonstrated numerically and previewed in Introduction.",
+    "remains": "Introduction paragraph 4 and Results 4.3.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/05_discussion.tex",
+    "old": "The preserved DML-IVQR implementation often has lower RMSE than preserved Full-GMM, with exceptions, but the procedures differ in nuisance dimension, regularization and residualization.",
+    "new": "The implementation-level RMSE comparisons have exceptions.",
+    "category": "DUPLICATE",
+    "reason": "Remove another full ranking/mechanism inventory; retain the next sentence prohibiting causal attribution.",
+    "remains": "Results 4.2 and Framework 2.2 retain all implementation differences.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/06_conclusion.tex",
+    "old": " Oracle-GMM also deteriorates under weaker relevance, so high-dimensional nuisance estimation cannot be the sole explanation.",
+    "new": "",
+    "category": "DUPLICATE",
+    "reason": "Conclusion need not repeat the same Oracle diagnostic a fourth time.",
+    "remains": "Results 4.2 and Discussion paragraph 2.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/06_conclusion.tex",
+    "old": "The non-finite mixed density, proxy/residualization choices, same-sample fitting and penalty randomness limit that link; selected numerical audits additionally show rank and decision sensitivity within a specified panel.",
+    "new": "The implementation and selected-case numerical limitations summarized in the Discussion restrict that link.",
+    "category": "DUPLICATE",
+    "reason": "Replace the third full limitation inventory with a concise pointer, retaining subsequent certificate/geometry boundaries.",
+    "remains": "Introduction, Framework, Discussion and Appendix D preserve every material limitation.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "sections/data_availability.tex",
+    "old": "That commit supplies the accessible evidence archive, not the current uncommitted manuscript revision.",
+    "new": "That commit supplies the checked evidence archive, rather than identifying the present manuscript version.",
+    "category": "CONDENSE",
+    "reason": "M2: remove stale Git-status assertion without claiming a new verified public release.",
+    "remains": "Original checked commit, access date, unresolved freeze and local-only exclusions retained.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/A_numerical_domain.tex",
+    "old": "A value close to four in \\(A_0\\) means that almost the entire four-unit primary domain is accepted; it does not mean that the unrestricted confidence region has length four.",
+    "new": "A value close to four in \\(A_0\\) means that the trapezoidal grid-acceptance summary is close to its maximum on the four-unit primary domain; it does not establish acceptance between evaluated points or unrestricted confidence-region length.",
+    "category": "CONDENSE",
+    "reason": "M1: remove actual continuous-domain acceptance overstatement.",
+    "remains": "Unchanged accepted-measure definition and all diagnostics.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/A_numerical_domain.tex",
+    "old": "Tables~\\ref{tab:appendix-grid-added}--\\ref{tab:appendix-grid-status} retain incremental measures, boundary frequencies, profile counts, and localization diagnostics.",
+    "new": "The accompanying Technical Supplement retains Tables A.2--A.5: incremental measures, boundary frequencies, profile counts, and localization diagnostics, with their original numbering and entries.",
+    "category": "MOVE TO SUPPLEMENT",
+    "reason": "Detailed verification tables support, but need not interrupt, the essential domain findings.",
+    "remains": "Technical Supplement Tables A.2--A.5; A.1 and figure stay inline. Failure and missing-profile disclosure stay inline.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/A_numerical_domain.tex",
+    "old": "\\input{tables/generated/appendix_grid_diagnostic}",
+    "new": "\\input{tables/generated/appendix_grid_key}",
+    "category": "MOVE TO SUPPLEMENT",
+    "reason": "Retain key complete domain-measure table, move four detailed tables unchanged.",
+    "remains": "Key Table A.1 inline; A.2--A.5 in separately supplied PDF and source.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/C_coverage_audit.tex",
+    "old": "The frozen audit report and supporting diagnostics remain preserved in the repository. ",
+    "new": "",
+    "category": "DUPLICATE",
+    "reason": "Generic preservation statement adds no locator beyond the evidence map.",
+    "remains": "Availability, Appendix D compact map and full repository inventory.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/C_coverage_audit.tex",
+    "old": "These checks rule out those numerical explanations for the reported coverage patterns. They do not establish correct theoretical specification, validate the asymptotic reference distribution for this DGP, or establish nominal finite-sample calibration.",
+    "new": "These checks do not establish correct theoretical specification, validate the asymptotic reference distribution for this DGP, or establish nominal finite-sample calibration.",
+    "category": "DUPLICATE",
+    "reason": "Remove repeated rule-out sentence, keep all validity limitations.",
+    "remains": "Preceding paragraph states exact excluded explanations; Results 4.3 limits numerical invariance.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/C_coverage_audit.tex",
+    "old": "Reading this frequency alongside coverage distinguishes retention of the true effect from the ability to exclude competing candidates within the maintained domain. Coverage near nominal can coexist with frequent acceptance of all primary-grid candidates: retaining the true value does not imply excluding alternatives.",
+    "new": "This frequency complements direct-at-truth acceptance by measuring retention of competing primary-grid candidates.",
+    "category": "DUPLICATE",
+    "reason": "Avoid repeating the central interpretation after Results, Discussion and Conclusion.",
+    "remains": "Next paragraph retains separate evaluation events, fresh draws, 41-point scope and global-geometry disclaimer.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/D_implementation.tex",
+    "old": "The computational archive is the project repository \\url{https://github.com/U-Olim/DML-IVQR_Master_Thesis}. This reference identifies the archived workflow; it is not a claim of bit-for-bit regeneration from a seed on arbitrary systems. Preserved source is in \\path{simulation/}, \\path{Empirical_work/}, and \\path{example/}; extension wrappers and configuration are in \\path{thesis_extension/src/} and \\path{thesis_extension/config/extension_config.R}. The checked accessible evidence archive is commit \\texttt{15b8b4dc}; it contains the earlier editorial batches. Current manuscript revisions are local and uncommitted. The freeze record's historical identifier \\texttt{ac9a9cca} (2 September 2026) remains unresolved; full identifiers and access limits appear in the data and code availability statement.",
+    "new": "The computational archive and checked evidence revision are identified in the data and code availability statement. They do not establish bit-for-bit regeneration from a seed on arbitrary systems. Appendix~\\ref{app:evidence-map} links the scientific findings to their frozen evidence; the full repository inventory retains source paths and the unresolved historical freeze record.",
+    "category": "MOVE TO SUPPLEMENT",
+    "reason": "Remove duplicated administrative archive/path/freeze inventory from inline D.1; M2 removes stale uncommitted wording.",
+    "remains": "Unabridged availability statement; accompanying EVIDENCE_INVENTORY.md.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/D_implementation.tex",
+    "old": "Frozen CSVs permit deterministic reporting without re-estimation. Input/output manifests in \\path{thesis_extension/reporting/}, diagnostic provenance records, reporting consistency checks, and figure validation records connect the reported numbers to archived outputs. Historical manifests describe their archived presentation state and can retain former asset paths. The original figure check covered 480 plotted values; selected-figure validation separately covered 120 coverage values, 120 full-grid frequencies, and 168 median rejection probabilities. The coverage summary is reconstructed from integer direct-at-truth counts; the variance illustration is analytical. This editorial conversion does not rerun those historical validations or simulations.",
+    "new": "Frozen CSVs permit deterministic reporting without re-estimation. The full evidence inventory records historical manifests and figure-check scopes, which do not certify a later source revision. The coverage summary uses integer direct-at-truth counts; the variance illustration is analytical. No historical validation or simulation is rerun for this document.",
+    "category": "MOVE TO SUPPLEMENT",
+    "reason": "Move administrative check counts/manifest presentation history while preserving the limits of those checks.",
+    "remains": "EVIDENCE_INVENTORY.md retains original paragraph verbatim and all paths.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/D_evidence_map.tex",
+    "old": "All paths below are repository-relative. The checked accessible evidence revision is \\texttt{15b8b4dc}; it is distinct from both the unresolved historical freeze identifier and the current uncommitted manuscript revision. Full identifiers and access limitations appear in the data and code availability statement. Keys E1--E6 connect the principal findings to saved evidence, including cells omitted from compact main-text displays. This map identifies sources; it does not recompute descriptive comparison counts or rerun historical checks.",
+    "new": "Keys E1--E6 below connect the findings to frozen evidence. The full locator inventory accompanies this proposal as \\texttt{EVIDENCE\\_INVENTORY.md} under \\path{journal_validation/publication_review/lssp_optimization/}. It retains all original paths, revision records and access limitations; it does not recompute results or establish public access to this proposed document. The checked evidence revision is distinct from the present manuscript version and the unresolved historical freeze identifier.",
+    "category": "MOVE TO SUPPLEMENT",
+    "reason": "M2 and concise repository-inventory pointer; retain compact finding-to-key map inline.",
+    "remains": "Full inventory supplied beside PDFs, original E1--E6 content preserved verbatim as source and readable text.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "supplementary/D_evidence_map.tex",
+    "old": "\\begingroup\\small\\raggedright\n\\Urlmuskip=0mu plus 1mu\\relax\n\\begin{description}\n\\item[E1: Relevance.] \\path{thesis_extension/calibration/instrument_strength_100rep/kappa_strength_summary.csv}; presentation: \\path{journal_article/tables/table_strength_calibration.tex}.\n\n\\item[E2: Full performance.] \\path{thesis_extension/final/output/n500/summary.csv} and \\path{thesis_extension/final/output/n1000/summary.csv} contain Bias, MAE, RMSE, historical \\texttt{Coverage}/\\texttt{Size}, accepted-measure and boundary/full-grid summaries. Replication-level sources are \\path{thesis_extension/final/output/n500/results.csv} and \\path{thesis_extension/final/output/n1000/results.csv}; stored candidate statistics are \\path{thesis_extension/final/output/n500/profiles.csv} and \\path{thesis_extension/final/output/n1000/profiles.csv}. Full presentation assets: \\path{journal_article/tables/generated/appendix_point_performance.tex}, \\path{journal_article/tables/generated/appendix_coverage.tex}, and \\path{journal_article/tables/generated/appendix_cr_informativeness.tex}; compact table: \\path{journal_article/tables/table_main_performance.tex}. Existing RMSE images are \\path{journal_article/figures/generated/rmse_n500.png} and \\path{journal_article/figures/generated/rmse_n1000.png}.\n\n\\item[E3: Truth testing and power.] Use E2's \\texttt{Coverage}, \\texttt{Size} and replication \\texttt{W\\_true} fields for direct-at-truth evaluations. False-candidate summaries are \\path{thesis_extension/final/output/n500/power_summary.csv} and \\path{thesis_extension/final/output/n1000/power_summary.csv}; replication records are \\path{thesis_extension/final/output/n500/power.csv} and \\path{thesis_extension/final/output/n1000/power.csv}. Full presentation: \\path{journal_article/tables/generated/appendix_power.tex}; figures: \\path{journal_article/figures/generated/coverage_heatmap.pdf} and \\path{journal_article/figures/generated/power_median_combined.pdf}. The abstract's $0.942/3.900/0.094$ contrast selects E2's \\texttt{Coverage}/\\texttt{median\\_grid\\_accepted\\_set\\_measure} and this power summary's \\texttt{power}, respectively, at $n=1000$, $\\tau=0.50$, $\\kappa=0.10$, estimator \\texttt{DML-IVQR-BC}, with $\\Delta=0.50$ for power only. These are different summaries, not a joint event or validated grid-set coverage.\n\n\\item[E4: Grid informativeness.] In addition to E2's summaries/profiles, \\path{thesis_extension/reporting/output/table_cr_informativeness_full.csv} contains all design cells. Existing images are \\path{journal_article/figures/generated/accepted_measure_n500.png}, \\path{journal_article/figures/generated/accepted_measure_n1000.png}, and \\path{journal_article/figures/generated/full_domain_acceptance_heatmap.pdf}. Grid quadrature and all-grid acceptance are distinct diagnostics on the maintained domain.\n\n\\item[E5: Domain expansion.] Tracked sources: \\path{thesis_extension/diagnostics/grid_sensitivity/output/stage1/stage1_summary.csv}, \\path{thesis_extension/diagnostics/grid_sensitivity/output/stage1/stage1_expansion_summary.csv}, \\path{thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_summary.csv}, and \\path{thesis_extension/diagnostics/grid_sensitivity/output/stage2/stage2_expansion_summary.csv}. Combined reporting view: \\path{thesis_extension/reporting/output/table_grid_domain_diagnostic.csv}; table and figure: \\path{journal_article/tables/generated/appendix_grid_diagnostic.tex} and \\path{journal_article/figures/grid_domain_expansion.png}. Design, failure and local-only artifact scope are in \\path{thesis_extension/diagnostics/grid_sensitivity/GRID_RESULTS_PROVENANCE.md} and \\path{thesis_extension/diagnostics/grid_sensitivity/GRID_RESULTS_MANIFEST.csv}. This separate diagnostic uses 100 intended replications; the recorded Stage 1 failure remains excluded from complete-profile summaries, not counted as acceptance. Large profiles and saved primitives are Git-ignored; tracked summaries do not supply full stochastic replay.\n\n\\item[E6: Numerical sensitivity.] \\path{journal_validation/stage2g/full_path_validation/FULL_PATH_REPORT.md} records the selected 24-problem comparison and five Policy A/C decision differences. \\path{journal_validation/stage2g/deterministic_implementation/DETERMINISTIC_IMPLEMENTATION_REPORT.md} and \\path{journal_validation/stage2g/deterministic_implementation/IMPLEMENTATION_CONTRACT_v1.md} specify the fixed-objective and input scope of later certificates. Earlier rank-stability evidence is in \\path{journal_validation/stage2c/stability/STABILITY_REPORT.md}. These reports are not population error rates or replacements for E2--E5.\n\\end{description}\n\\endgroup\nThe inventories \\path{thesis_extension/reporting/EMPIRICAL_RESULTS_MANIFEST.csv} and \\path{thesis_extension/reporting/REPORTING_OUTPUT_MANIFEST.csv} retain historical input/output hashes and provenance. An entry in a manifest alone does not establish public availability: local-only exclusions are stated in the data and code availability statement.\n",
+    "new": "\\noindent E1 identifies the 100-replication relevance calibration; E2 the main performance summaries, replication records and profiles for both sample sizes; E3 the direct truth tests and false-candidate rejection records; E4 grid informativeness; E5 the separate 100-replication domain expansion, including its failed profile; and E6 the selected-case numerical-sensitivity reports. The inventory supplies the exact CSV, table, figure and report locators for each key. Main frozen summaries are available at the checked revision described in the availability statement; large diagnostic profiles/primitives and Stage 2H raw outputs remain local-only. A locator is not a guarantee of public access or full stochastic replay.\n",
+    "category": "MOVE TO SUPPLEMENT",
+    "reason": "Long path-by-path inventory is useful verification material, not necessary inline statistical exposition.",
+    "remains": "EVIDENCE_INVENTORY.md and EVIDENCE_INVENTORY_ORIGINAL.tex retain all entries, source bytes, manifests, access caveats and abstract-number mapping.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  },
+  {
+    "file": "tables/table_main_performance.tex",
+    "old": "Coverage is evaluated directly at the true structural quantile effect.",
+    "new": "Coverage denotes direct-at-truth test acceptance, not membership coverage of the stored grid set.",
+    "category": "CONDENSE",
+    "reason": "E1: improve table-note terminology; no table cell changes.",
+    "remains": "Original historical column label and all numerical entries.",
+    "impact": "No scientific finding removed; interpretation retained or clarified."
+  }
+]

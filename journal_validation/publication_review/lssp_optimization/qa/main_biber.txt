@@ -1,0 +1,14 @@
+INFO - This is Biber 2.22
+INFO - Logfile is 'C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_optimization\build\main\main.blg'
+INFO - Reading 'C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_optimization\build\main\main.bcf'
+INFO - Found 9 citekeys in bib section 0
+INFO - Processing section 0
+INFO - Looking for bibtex file 'references.bib' for section 0
+INFO - LaTeX decoding ...
+INFO - Found BibTeX data source 'references.bib'
+INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+INFO - No sort tailoring available for locale 'en-US'
+INFO - Writing 'C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_optimization\build\main\main.bbl' with encoding 'UTF-8'
+INFO - Output to C:\Users\User\DML-IVQR_Master_Thesis\journal_validation\publication_review\lssp_optimization\build\main\main.bbl
